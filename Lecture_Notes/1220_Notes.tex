@@ -1,0 +1,2024 @@
+\documentclass[12pt, openany, letterpaper]{memoir}
+\usepackage{NotesStyle}
+%\renewcommand\thesection{\thechapter\Alph{section}}
+%\renewcommand\thesubsection{\thesection.\Numeral{subsection}}
+
+\begin{document}
+\title{CHEM 1220 Lecture Notes}
+\author{Matthew Rowley}
+\date{Summer 2020}
+\mainmatter
+\maketitle
+\chapter*{Course Administrative Details}
+\begin{itemize}
+	\item My office hours
+	\item Intro to my research
+	\item Introductory Quiz
+	\item Grading details
+	\begin{itemize}
+		\item Exams - 40, Final - 15, Quizzes - 15, Homework - 30
+		\item Online homework
+		\item Daily quizzes
+	\end{itemize}
+	\item Importance of reading and learning on your own
+	\item Learning resources
+	\begin{itemize}
+		\item My Office Hours
+		\item PAL group
+		\item Tutoring services - \href{https://www.suu.edu/academicsuccess/tutoring/}{https://www.suu.edu/academicsuccess/tutoring/}
+	\end{itemize}
+	\item Show how to access Canvas
+	\begin{itemize}
+		\item Calendar, Grades, Modules, etc.
+		\item Sapling Homework
+		\begin{itemize}
+			\item Conceptual vs. normal vs. learning curve assignments
+			\item Due dates are Fridays. If it is Friday and you haven't completed an assignment this week then it is time to panic!
+		\end{itemize}
+		\item Textbook
+	\end{itemize}	
+	\item Course Overview
+	\begin{itemize}
+		\item Phases and phase changes
+		\item Reaction rates (kinetics)
+		\item Equilibrium, equilibrium, equilibrium!
+		\item Electrochemistry (and equilibrium)
+		\item Nuclear Chemistry
+		\item Intro to biochemistry
+	\end{itemize}
+\end{itemize}
+
+\setcounter{chapter}{-1}
+\chapter{1210 Review}
+
+There is a whole semester of material from 1210, and these are only the topics which are \emph{most} important for success in 1220
+
+\begin{itemize}
+	\item Composition of atoms and ions (protons, neutrons and electrons)
+	\item Chemical formulas and names
+	\begin{itemize}
+		\item Formulas and molar masses
+		\item Polyatomic ion names
+		\item Naming ionic compounds
+		\item Naming binary molecular compounds
+		\item Naming acids
+	\end{itemize}
+	\item Balancing molecular equations
+	\item Solubility rules
+	\item Fundamentals of acid/base chemistry
+	\item Measurements vs. chemistry
+	\begin{itemize}
+		\item Converting from measurements to moles and back
+		\item Stoichiometry and predicting amounts
+		\item Limiting reactants
+	\end{itemize}
+	\item Enthalpy of reaction and heat equations
+	\item Lewis structures
+\end{itemize}
+
+\setcounter{chapter}{11}
+\chapter{Liquids and Solids}
+\section{Intermolecular Forces}
+\begin{itemize}
+	\item Chemical bonds are strong attractions between atoms or ions \emph{within} a compound
+	\item Intermolecular forces are weaker attractions between different molecules, or between molecules and ions
+	\item We talk about forces between two identical molecules of a pure substance, or between solvent and solute for a solution
+	\item Weaker forces lead to low boiling and melting points, and high vapor pressures
+	\item Stronger forces lead to high boiling and melting points, and low vapor pressures
+	\item There are 4 different types of intermolecular forces:
+	\begin{itemize}		
+		\item Ion-dipole forces
+		\begin{itemize}
+			\item Polar molecules (like water) have a positive side and a negative side
+			\item When an ionic compound dissolves, the ions will be exposed to the solute molecules
+			\item Figure 12.2 shows how the ions are surrounded by polar solvent molecules which orient around them in hydration shells
+		\end{itemize}
+		\item Dipole-dipole forces
+		\begin{itemize}
+			\item Polar molecules will also be attracted to each other
+			\item Figure 12.3 shows how polar molecules align their dipoles and experience an attractive force
+		\end{itemize}	
+		\item Hydrogen bonding
+		\begin{itemize}
+			\item Hydrogen bonds are a special type of dipole-dipole interaction that rivals true covalent bonds for strength
+			\item There are two parts to a hydrogen bond, a \ch{H} donor, and a \ch{H} acceptor
+			\item The donor must have a \ch{H} atom bound to a highly electronegative partner (\ch{N}, \ch{O}, or \ch{F})
+			\item This bond is so electronegative that the electrons are mostly stripped from the \ch{H}
+			\item The acceptor must have lone pairs on a highly atom (\ch{N}, \ch{O}, and \ch{F})
+			\item In a hydrogen bond, the lone pair from the acceptor forms a quasi-covalent bond with the exposed \ch{H}
+			\item Figure 12.5 shows how hydrogen bonds work in water and ammonia
+			\item Hydrogen bonds lead hydrogens to easily hop from one water to the other
+			\item Figure 12.6 shows how the directional nature of hydrogen bonds leads to an open crystal structure in ice
+			\item Hydrogen bonds are also the forces which hold complementary strands of DNA together (Figure 12.7)
+		\end{itemize}
+		\item Dispersion forces
+		\begin{itemize}
+			\item Even non-polar molecules exhibit weak attractions, called dispersion (or Van der Waals) forces
+			\item These forces arise from random distortions of the electric field, creating an instantaneous dipole
+			\item An instantaneous dipole can induce a matching dipole in neighbors, creating an attractive force
+			\item Figure 12.8 shows how these dipoles can form
+			\item Some atoms distort more easily, forming stronger forces. This is called \emph{polarizability}
+			\item Larger atoms are more polarizable because the valence electrons are held less tightly
+			\item Larger molecules contain more atoms, giving more dispersion forces
+			\item Natural gas, kerosene, and wax all are non-polar hydrocarbons -- the only difference is size
+			\item Shape also matters. An extended shape with more surface area will have stronger attractions
+			\item Figure 12.10 shows the comparison of n-pentane and neopentane (like trampolines and a velcro wall)
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\section{Properties of Liquids}
+\begin{itemize}
+	\item The strength of intermolecular forces leads to different properties of liquids related to flow
+	\item Viscosity is the resistance to flow
+	\begin{itemize}
+		\item Substances like honey have high viscosity, and substances like acetone have low viscosity
+		\item Higher intermolecular forces (\ch{H}-bonding) lead to higher viscosity
+		\item Item also affects viscosity -- higher temperatures lead to lower viscosity
+	\end{itemize}
+	\item Surface Tension is the tendency to liquids to minimize their surface area
+	\begin{itemize}
+		\item Figure 12.12 shows how surface molecules have fewer attractive interactions, and are therefore higher in energy
+		\item Spheres have the lowest surface area, so liquids will curve their surfaces to approach a spherical shape
+		\item Cohesion is the attraction between like particles, adhesion is the attraction between different particles
+	\end{itemize}
+	\item Capillary Action is the force which pulls liquids into any narrow cavity
+	\begin{itemize}
+		\item Strong cohesive forces will pull a liquid into a capillary in order to create more liquid-capillary interactions
+		\item Capillary action is essential to life -- pulling water through the xylem of plant tissues
+		\item Figure 21.13 shows how competing adhesion and cohesion can affect the shape of a meniscus
+	\end{itemize}
+\end{itemize}
+\section{Phase Changes and Heating Curves}
+\begin{itemize}
+	\item Phase changes: fusion, freezing, vaporization, condensation, sublimation, deposition
+	\item Each phase change has an associated change in enthalpy $\left(\Delta H_{fus}, \Delta H_{vap}, \Delta H_{sub}\right)$
+	\item This is the energy required to overcome intermolecular interactions and change the phase
+	\item For water, $\Delta H_{fus}=6.01\dfrac{kJ}{mol}$ and $\Delta H_{vap}=40.7\dfrac{kJ}{mol}$, so $\Delta H_{sub}=46.7\dfrac{kJ}{mol}$
+	\item The heat required for a phase change is given by: $q=n\Delta H$ (when $\Delta H$ is a -per-mole value)
+	\item As you add or remove heat through a phase change, the temperature remains constant
+	\item Figure 12.16 shows a heating curve through two phase changes
+	\item Find the final temperature if you add $32.0~kJ$ of heat to a $10.0~g$ sample of ice at $-5.00~^\circ C$?
+	
+	Table 12.3 gives the necessary values to solve this ($186.8~^\circ C$)
+\end{itemize}
+\section{Vapor Pressure, Boiling Point, and the Clausius-Clapeyron Equation}
+\begin{itemize}
+	\item Every substance (liquid or solid) has a vapor pressure, meaning it will vaporize until it reaches equilibrium with the gas phase at that pressure
+	\item Substances with a relatively high vapor pressure are called volatile	
+	\item Most vapor pressures are vanishingly small, making non-volatile substances
+	\item Vapor pressure depends on intermolecular forces and temperature, just like viscosity
+	\item Figure 12.19 shows how temperature affects the distribution of molecular kinetic energy, which in turn affects the vapor pressure
+	\item The enthalpy of vaporization is often given at both the boiling point and at $25~^\circ C$ (Table 12.4)
+	\item Because of the different specific heats for different phases, the enthalpy of vaporization will actually depend on temperature, but that dependence is realtively weak
+	\item The Clausius Clapeyron equation relates $\Delta H_{vap}$ to vapor pressure at different temperatures
+	\begin{itemize}
+		\item There are two forms of the equation:
+		\begin{itemize}
+			\item $\ln P_{vap} = \dfrac{-\Delta H_{vap}}{R}\left(\dfrac{1}{T}\right) + \ln\beta$
+			\item $\ln\dfrac{P_2}{P_1}=\dfrac{\Delta H_{vap}}{R}\left(\dfrac{1}{T_1} - \dfrac{1}{T_2}\right)$
+		\end{itemize}
+		\item Note that the proper form of the gas constant here is $R=8.314~\dfrac{J}{mol~K}$
+		\item Either form can be illustrated by Figure 12.20
+		\item Methanol has a normal boiling point of $64.60~^\circ C$ and a heat of vaporization of $35.2~\dfrac{kJ}{mol}$. What is the vapor pressure of methanol at $25~^\circ C$? ($0.189~atm$)
+		\item The vapor pressure for diethyl ether is $401~mmHg$ at $18.00~^\circ C$ and $660~mmHg$ at $32.00~^\circ C$. What is $\Delta H_{vap}$ for diethyl ether? ($26.3~\dfrac{kJ}{mol}$)
+	\end{itemize}
+	\item The boiling point is where the vapor pressure is equal to atmospheric pressure
+	\begin{itemize}
+		\item The boiling point at precisely $1.00~atm$ is called the \emph{normal} boiling point
+		\item Under low pressures (like in Cedar City), the boiling points of liquids are lowered
+		\item Under higher pressures (like in a pressure cooker), the boiling point is raised
+	\end{itemize}
+	\item Distillation is a method for separating liquid mixtures
+	\begin{itemize}
+		\item Each component in a mixture has its own vapor pressure
+		\item At the right temperature, the more volatile component will boil off much more rapidly than the the other component
+		\item This is how solvents are purified, distilled spirits are made, and how crude oil is separated into different fuel products
+		\item A more detailed description of distillation is covered in CHEM 3610
+	\end{itemize}
+	\item Vapor pressures represent a dynamic equilibrium (Figure 12.24)
+	\item If equilibrium cannot be established, the entire liquid will vaporize trying to achieve it. This is how things become dry even below the boiling point
+\end{itemize}
+\section{Phase Diagrams}
+\begin{itemize}
+	\item The phase of a substance depends on both temperature and pressure
+	\item A phase diagram summarizes which phase is stable under which conditions (Figure 12.25)
+	\begin{itemize}
+		\item The boundaries between phases represent melting points, boiling points, and sublimation points
+		\item The triple point is the only combination of temperature and pressure where solid, liquid, and gas can all coexist \emph{at equilibrium}
+		\item Note that a glass of ice water will not maintain all three phases forever \emph{unless} it is precisely at the triple point
+		\item At the critical point, a discrete phase transition between liquid and gas disappears
+		\item Beyond it, a fluid will become \emph{supercritical}, and exhibit properties of both liquids and gases
+		\item The solid/liquid boundary is usually very steep, but positively sloped
+	\end{itemize}
+	\item Water has an unusual phase diagram because of its strong hydrogen bonds (Figure 12.27)
+	\begin{itemize}
+		\item Hydrogen bonds give solid water an open structure, making it less dense than liquid water
+		\item This gives the solid/liquid boundary a negative slope
+		\item Water also has an unusually large range of conditions where the liquid phase is stable
+	\end{itemize}
+\end{itemize}
+\section{Classification of Solids}
+\begin{itemize}
+	\item Solids can be classified by the degree of order in their microscopic structure
+	\begin{itemize}
+		\item Crystalline solids will have an orderly, repeating pattern across the bulk of the material
+		\item Crystalline solids have a distinct melting point
+		\item Diamonds (molecular), snowflakes (molecular), and quartz crystals (ionic) are crystalline 
+		\item Amorphous solids are disorderly, and look like a static snapshot of a liquid phase material
+		\item Amorphous solids melt over a range of temperatures, becoming softer and softer until it finally melts completely
+		\item Glass (ionic) and chocolate (molecular) are amorphous
+	\end{itemize}
+	\item Solids can also be classified by the types of interactions holding them together (Table 12.6)
+	\begin{itemize}
+		\item Molecular solids are individual molecules held together by intermolecular forces
+		\item Ionic solids are ions held together by ionic bonds
+		\item Network solids are held together by covalent bonds, like one enormous molecule
+		\item Metallic solids are held together by metallic bonds
+		\item Table 12.5 gives many examples of each type, along with their melting points
+	\end{itemize}
+	\item Metallic bonds will not be covered much in this course
+	\begin{itemize}
+		\item In metals, the nuclei arrange themselves in an orderly pattern like ionic compounds
+		\item Electrons are shared between atoms in a metal, which leads to their high electrical and thermal conductivity
+		\item In the \emph{electron-sea model}, the electrons are no longer bound to any particular atom and are free to flow around the substance
+		\item This is sort of a reverse ``plum-pudding'' atomic model
+		\item Band theory is more sophisticated, placing electrons in overlapping delocalized orbitals which extend throughout the material
+		\item Both models allow for the nuclei to rearrange themselves without completely breaking the metallic bond, leading to malleability and ductility of the metal
+	\end{itemize}
+	
+\end{itemize}
+\section{The Unit Cell and the Structure of Crystalline Solids}
+\begin{itemize}
+	\item Crystalline solids exhibit a repeating structure on the microscopic scale
+	\item The smallest pattern which repeats is called the \emph{unit cell}	
+	\item For any unit cell, we are interested primarily in four things:
+	\begin{itemize}
+		\item Atoms per unit cell
+		\item Coordination number (number of neighbors)
+		\item Relation of cell edge length to atomic radius
+		\item Density
+	\end{itemize}
+	\item There are many different unit cell patterns, but the most common are cubic (Figure 12.33)
+	\begin{itemize}
+		\item Simple Cubic (Figure 12.34)
+		\item Body-Centered Cubic (Figure 12.35)
+		\item Face-Centered Cubic (Figure 12.36)
+		\item Table 12.7 summarizes the properties on these unit cells
+	\end{itemize}
+	\item Polonium has a density of $9.196~\dfrac{g}{cm^3}$ and a simple cubic structure. Based on this, estimate the atomic radius of polonium (True value is $168~pm$)
+	\item Gold has an atomic radius of $144~pm$ and a face-centered cubic structure. Based on this, estimate the density of gold in $\dfrac{g}{cm^3}$ (true value is $19.3~\dfrac{g}{cm^3}$)
+	\item Face-Centerd is also called cubic close-packing (ccp) structure because it is as space-efficient as mathematically possible
+	\item hexagonal close-packing (hcp) is slightly different (Figure 12.37), but equally efficient at packing
+	\item Ionic solids need to account for the structure of both the anions and the cations
+	\begin{itemize}
+		\item Often the cations are much smaller than the anions -- sometimes even fitting in the empty space of the anion structure
+		\item The ionic bond length is the anion radius plus the cation radius
+		\item Figure 12.38 shows the sodium chloride unit cell, which is fcc, but must be solved like simple cubic
+		\item Figure 12.39 shows the \ch{CsCl} unit cell, which is simple cubic, but must be solved like bcc
+	\end{itemize}
+\end{itemize}
+
+\chapter{Solutions}
+\section{The Solution Process}
+\begin{itemize}
+	\item A \emph{solution} is any homogeneous mixture (not just things dissolved in water)
+	\item The \emph{solvent} is the majority component of the mixture
+	\item The \emph{solutes} are all other components of the mixture
+	\item Table 13.1 shows diverse types of solutions in everyday life
+	\item Solvation is the process of dissolving a solute in a solvent
+	\begin{itemize}
+		\item The rule ``Like dissolves like'' refers to intermolecular forces
+		\item Figure 13.2 shows how ionic compounds are dissolved in water
+		\item To dissolve, solute-solute and solvent-solvent interactions are replaced by solvent-solute interactions
+		\item Figure 13.3 shows the energetics involved, which can be exothermic or endothermic
+		\item When water is the solvent, $\Delta H_{sol}$ is sometimes called the \emph{hydration energy}		
+	\end{itemize}
+\end{itemize}
+\section{Saturated, Unsaturated, and Supersaturated Solutions}
+\begin{itemize}
+	\item Most solutes will only dissolve to a certain limit, and no more
+	\item This limit is called the \emph{solubility}, and it depends on the solute, solvent, and temperature
+	\item The units of solubility are usually in units of $\dfrac{g_{solute}}{g_{solvent}}$
+	\item Higher temperatures will increase the solubility (sometimes by a lot) of most solids, but decrease the solubility of gases
+	\item Gases decrease in solubility at higher temperature because molecules with more kinetic energy are more likely to escape into the gas phase
+	\item Figure 13.4 shows the temperature dependence of solubility for several compounds
+	\item A solute can be purified through \emph{recrystalization}
+	\begin{itemize}
+		\item Dissolve the solute and any impurities in a minimum of hot solvent
+		\item Cool the solvent, reducing the solubility and crashing out the solute
+		\item Any impurities which are \emph{more} soluble will remain in solution and can be washed away
+	\end{itemize}
+	\item \emph{Supersaturated} solutions have more solute than the solubility should allow
+	\begin{itemize}
+		\item Heat up a solution to dissolve solute while the solubility is high
+		\item Carefully cool the solution down, and some solutes will not crash out
+		\item The supersaturated solution is unstable - a seed crystal or even a shock can nucleate recrystalization
+		\item Supersaturated sodium acetate demo
+	\end{itemize}
+	\item The solubility of a gas is also dependent on the partial pressure of the gas
+	\item $[gas] = kP$ is called Henry's Law
+	\item \ch{CO2} has a Henry's Law constant $k=0.034\dfrac{M}{atm}$. Cans of soda have a pressure of about $2.5~atm$. What is the molar concentration of \ch{CO2} in a can of soda?
+	\item Liquids which can mix together in any ratios are called \emph{miscible}
+	\item Liquids which are mostly insoluble together are called \emph{immiscible}
+\end{itemize}
+\section{Concentration Units}
+\begin{itemize}
+	\item Molarity is only one convenient unit of concentration
+	\item For these units we need to be careful to distinguish between solvent, solute, and solution
+	\item $\%~by~Mass = \dfrac{Solute~Mass}{Solution~Mass}*100\%$
+	\item $Molality = \dfrac{Moles~of~Solute}{kg~of~Solvent}$
+	\item Mole Fraction: ~  $\chi_{_A}=\dfrac{Moles~of~A}{Total Moles}$
+	\item Table 13.2 summarizes each of these concentration units
+	\item Give the concentration in these three units for a solution with $12.5~g$ of \ch{C12H22O11} in $100.0~ml$ of water
+\end{itemize}
+\section{Colligative Properties of Nonelectrolytes}
+\begin{itemize}
+	\item Colligative properties depend on the concentration of solute particles, but do not depend on the identity of those particles
+	\item Vapor-pressure lowering, freezing-point depression, boiling-point elevation, and osmotic pressure are colligative properties
+	\item Vapor-pressure lowering
+	\begin{itemize}
+		\item Figure 13.10 shows how solute molecules block solvent access to the surface
+		\item This will reduce the vapor pressure
+		\item Raoult's law: $P_A=\chi_{_A}P^\circ_A$
+		\item $P^\circ_A$ is the vapor pressure of pure solvent 
+		\item A solution which follows Raoult's law is called an \emph{ideal solution} and has A-B interactions similar in strength to A-A and B-B interactions
+		\item Solutions with strong A-B interactions will exhibit lower vapor pressures, and solutions with weak A-B interactions will exhibit higher vapor pressures compared to an ideal solution
+		\item For a mixture of two volatile components, $P_{total} = \chi_{_A}P^\circ_A + \chi_{_B}P^\circ_B$
+	\end{itemize}
+	\item Vapor composition
+	\begin{itemize}
+		\item The composition of the vapor phase will not be equal to the composition of the solution phase
+		\item $\dfrac{n_A}{n_B} = \dfrac{P_A}{P_B}$
+		\item $\chi_{_{A,gas}}=\dfrac{P_A}{P_{total}}$
+	\end{itemize}
+	\item Freezing-point depression and boiling-point elevation
+	\begin{itemize}
+		\item Figure 13.12 shows how a solute can disrupt freezing and depress the freezing point
+		\item For freezing point depression, $T_{f,solution}=T_{f,solvent}-K_fm$
+		\item $m$ is molality and $K_f$ is the freezing point depression constant for the solvent
+		\item For boiling point elevation, $T_{b,solution}=T_{b,solvent}+K_bm$
+		\item $m$ is molality and $K_b$ is the boiling point elevation constant for the solvent
+		\item $K_b$ and $K_f$ are independent of the solute
+		\item Table 13.3 gives some values for freezing point depression and boiling point elevation
+		\item Find the freezing point for a solution which contains $300~g$ of Naphthalene in $500.0~g$ of cyclohexane
+	\end{itemize}
+	\item Osmotic pressure
+	\begin{itemize}
+		\item A semipermeable membrane will allow water to pass through it, but not any dissolved solutes
+		\item Water will flow across such a membrane to equalize the molality on either side (draw diagram)
+		\item This flow is powered by osmotic pressure
+		\item $\Pi = \dfrac{nRT}{V}=MRT$ where $M$ is the molar concentration
+		\item IV solutions must be \emph{isotonic} to avoid hemolysis or crenation of blood cells
+		\item Calculate $\Pi$ for a solution which contains $75~g$ of \ch{C12H22O11} in $200.0~g$ of water
+	\end{itemize}
+\end{itemize}
+\section{Colligative Properties of Electrolytes}
+\begin{itemize}
+	\item When electrolytes dissolve, they produce more than a molar amount of ions in solution
+	\item We account for this with a van't Hoff factor: $i=\dfrac{n_{particles}}{n_{solute}}$
+	\item In principle, $i$ can become very complicated because dissolved ions form clusters, but we will assume that electrolytes dissociate completely
+	\item For \ch{NaCl}, $i=2$ \hspace{2em} for \ch{CaCl2}, $i=3$ \hspace{2em} for \ch{HNO3}, $i=2$
+	\item Each different particle counts toward the total osmotic pressure
+	\item For electrolytes, $\Pi=iMRT$
+\end{itemize}
+
+\chapter{Chemical Kinetics}
+\section{Rates of Reactions}
+\begin{itemize}
+	\item One of the most important ideas in chemistry is not what a reaction produces, but how quickly it is produced
+	\item The study of reaction rates is called \emph{chemical kinetics}
+	\item Kinetics are controlled by 5 factors:
+	\begin{itemize}
+		\item Particle size of solid reactants (surface area)
+		\item Concentration of dissolved and gas reactants
+		\item Temperature
+		\item The nature of the reaction (activation energy, sterics, etc.)
+		\item The presence of a \emph{catalyst}
+	\end{itemize}
+	\item Reaction rates are expressed mathematically
+	\begin{itemize}
+		\item $rate=\dfrac{\Delta\left[A\right]}{\nu_A\Delta t}$
+		\item $\dfrac{\Delta\left[A\right]}{\Delta t}$ is the change in concentration over time
+		\item $\nu$ is the stoichiometric coefficient in the balanced chemical reaction
+		\item $\nu$ is positive for products, and negative for reactants, so the rate is always positive
+	\end{itemize}
+	\item Figures 14.1 through 14.4 show concentration curves for many different types of reactions
+	\item We can sometimes directly measure the concentrations of reactants and products
+	\begin{itemize}
+		\item Some chemical species can be monitored by an electrochemical potential (voltage)
+		\item Others absorb light and can be monitored by spectroscopy
+		\item Beer's law relates how much light is absorbed: $A=\alpha lc$
+	\end{itemize}
+\end{itemize}
+\section{Reaction Rates and Concentration: Rate Laws}
+\begin{itemize}
+	\item There are two ways to measure reaction rates
+	\begin{itemize}
+		\item If your data has low time resolution, the \emph{average} rate is given by $\dfrac{\Delta\left[A\right]}{\nu_A\Delta t}$
+		\item With high enough time resolution, the average rate essentially becomes an \emph{instantaneous} rate (calculus!)
+		\item These two methods are really the same, taking the slope of a tangent line
+	\end{itemize}
+	\item Use the table below to calculate the reaction rate at different times for the reaction \ch{A-> 2 B}
+	
+	\begin{tabular}{c|c|c|c|c}
+		{\bfseries Time (s)}&$0$&$5$&$10$&$15$ \\ \midrule
+		{\bfseries $\left[B\right](M)$}&$0$&$0.0160$&$0.0295$&$0.0503$
+	\end{tabular}
+	\item The reaction rate changes with reactant  according to the \emph{rate law}
+	\begin{itemize}
+		\item For reaction \ch{aA + bB -> cC + dD}, the rate law will be $rate=k\left[A\right]^m\left[B\right]^n$
+		\item Only reactants are included in the rate law
+		\item $m$ and $n$ are the reaction order with respect to each reactant, and have nothing to do with stoichiometry
+		\item Reaction rates can be \emph{zero order}, \emph{first order}, and \emph{second order} w.r.t. each reactant
+		\item The overall reaction order is the sum of $m$ and $n$
+		\item Consider the effect of doubling the concentration of a reactant that is zero, first, and second order
+		\item These ideas extend to reactions with more or fewer reactants than shown here
+	\end{itemize}
+	\item The rate law is related to the rate by: $\dfrac{\Delta\left[A\right]}{\nu_A\Delta t}=k\left[A\right]^m\left[B\right]^n$
+	\item The initial rate method for determining reaction order:
+	\begin{itemize}
+		\item Run a reaction under several different careful conditions (double $\left[A\right]$ or $\left[B\right]$)
+		\item Measure the initial rate (rate at the very beginning of the reaction)
+		\item Check the numbers against expectations for doubling a zero, first, and second order reactant
+		\item There is a mathematically rigorous way to deal with this, but doubling the reactant concentrations makes it very simple
+	\end{itemize}
+	\item After finding the reaction orders, you can take any data point and back-calculate the value of $k$
+	\item Note that the units of $k$ depend on the overall reaction order as shown in Table 14.4
+	\item Use the data below to find the complete rate law (including the value of $k$) for the reaction:
+	
+	\ch{aA + bB -> cC + dD}
+	
+	\begin{tabular}{c|c|c|c}
+		Trial & $\left[A\right](M)$ & $\left[B\right](M)$ & Initial rate $\left(\nicefrac{M}{s}\right)$ \\ \midrule
+		$1$ & $0.0250$ & $0.0250$ & $2.04\times10^{-3}$ \\
+		$2$ & $0.0500$ & $0.0250$ & $8.16\times10^{-3}$ \\
+		$3$ & $0.0500$ & $0.0500$ & $1.63\times10^{-2}$ \\
+	\end{tabular}
+\end{itemize}
+\section{Integrated Rate Laws and Half-lives}
+\begin{itemize}
+	\item We can take the relation of concentration to the rate law, and rearrange it collect like terms on the same side
+	\item $-\dfrac{\Delta \left[A\right]}{\Delta t} = k\left[A\right]^m$ ~~ becomes ~~ $-\dfrac{\Delta \left[A\right]}{\left[A\right]^m} = k\Delta t$
+	\item If we change our $\Delta$s to $\mathrm{d}$s, then we can integrate to get a function of $\left[A\right]$ over time
+	\item Perhaps the most important part of this function is the \emph{half-life}
+	\begin{itemize}
+		\item The half-life is the time it takes for half of a reactant to be consumed (Figure 14.11)
+		\item Sometimes the half-life changes over the course of the reaction
+		\item Sometimes the half-life is totally independent of concentration and is constant across time
+	\end{itemize}
+	\item First-order kinetics:
+	\begin{itemize}
+		\item $\int-\dfrac{\mathrm{d} \left[A\right]}{\left[A\right]} = \int k\mathrm{d} t$ integrates to: $\ln\left(\dfrac{[A]_t}{[A]_0}\right) = -kt$
+		\item We can rearrange this into a linear format: $\ln \left[A\right]_t = -kt + \ln\left[A\right]_0$
+		\item The line slope is $-k$
+		\item The half-life is given by: $t_{\nicefrac{1}{2}}=\dfrac{\ln 2}{k}$ 
+	\end{itemize}
+	\item Second-order kinetics:
+	\begin{itemize}
+		\item $\int-\dfrac{\mathrm{d} \left[A\right]}{\left[A\right]^2} = \int k\mathrm{d} t$ integrates to: $\dfrac{1}{[A]_t} = kt + \dfrac{1}{[A]_0}$
+		\item The line slope is $+k$
+		\item The half-life is given by: $t_{\nicefrac{1}{2}}=\dfrac{1}{k\left[A\right]_0}$ 
+	\end{itemize}
+	\item Zeroth-order kinetics:
+	\begin{itemize}
+		\item $\int-\mathrm{d} \left[A\right] = \int k\mathrm{d} t$ integrates to: $[A]_t = -kt + [A]_0$
+		\item The line slope is $-k$
+		\item The half-life is given by: $t_{\nicefrac{1}{2}}=\dfrac{\left[A\right]_0}{2k}$ 
+	\end{itemize}
+	\item Table 14.5 summarizes the integrated rate laws and half-lives
+	\item Determining reaction order graphically:
+	\begin{itemize}
+		\item The linear forms of the integrated rate laws are all different
+		\item Graph $\left[A\right]$, $\ln \left[A\right]$, and $\dfrac{1}{\left[A\right]}$ vs $t$
+		\item Two will be curved, but one will be straight, indicating the overall reaction order
+		\item Making one reactant in excess will probe the reaction order of only the other reactant
+	\end{itemize}
+	\item Figure from Example 14.10a shows how to graph real concentration data to determine the reaction order
+	\item Use my prepared Excell spreadsheet to look at real data
+\end{itemize}
+\section{Reaction Rates and Temperature: Activation Energy}
+\begin{itemize}
+	\item Reaction coordinate diagrams show how the energy changes over the course of a reaction
+	\begin{itemize}
+		\item Figure 14.14 and 14.15 show typical reaction coordinate diagrams
+		\item For simple reactions the x-axis can represent actual measurements, like bond lengths
+		\item Generally, the x-axis just represents progress in the reaction from reactants to products
+		\item The diagram shows if the reaction is exothermic or endothermic
+		\item The highest energy point is called the \emph{transition state}
+		\item At the transition state, reactant bonds are nearly broken but product bonds have barely started to form
+		\item The activation energy is the energy required to reach the transition state
+	\end{itemize}
+	\item Collision theory explains reaction rates in terms of molecular collisions
+	\begin{itemize}
+		\item Reactions only occur when reactant molecules encounter each other in collisions, but not all collisions will lead to a reaction
+		\item Some collisions don't have enough energy to overcome the activation energy barrier
+		\item Some collisions happen in the wrong orientation to lead to reaction (Figure 14.16)
+		\item These considerations are summarized by the Arrhenius Equation: $k=Ae^{-\nicefrac{E_a}{RT}}$
+		\item $k$ is the rate constant from the rate law
+		\item $A$ is the frequency factor, and it includes both the rate of collisions, and the fraction of those collisions which lead to reaction
+		\item $A$ is dependent only weakly temperature, so we'll assume that it is constant
+		\item $E_a$ is the activation energy in $\dfrac{J}{mol}$, so we should use $R=8.314\dfrac{J}{mol~K}$
+		\item The exponential term is called a Boltzmann factor, and gives the fraction of collisions which have enough energy
+		\item Figure 14.17 shows how temperature affects the kinetic energy of collisions
+	\end{itemize}
+	\item We can use the Arrhenius Equation to measure the activation energy
+	\begin{itemize}
+		\item Take the natural log of both sides of the Arrhenius equation
+		\item $\ln k=\ln\left(Ae^{-\nicefrac{E_a}{RT}}\right)$ ~~ becomes ~~ $\ln k = \ln A - \dfrac{E_a}{RT}$
+		\item If we plot the $\ln k$ at different temperatures against $\dfrac{1}{T}$, we get a linear equation
+		\item The slope of the line is $-\dfrac{E_a}{RT}$ and the intercept is $\ln A$
+		\item We can also create the two-point form of this equation: $\ln\left(\dfrac{k_1}{k_2}\right)=\dfrac{E_a}{R}\left(\dfrac{1}{T_2}-\dfrac{1}{T_1}\right)$
+		\item Measure the reaction rate and get the rate constant at two or more temperatures
+		\item Put the values into the two-point equation to get $E_a$		
+	\end{itemize}
+	\item The decomposition of \ch{HI} proceeds as follows: \ch{2 HI(g) -> H2(g) + I2(g)}
+	
+	At $655~K$ the rate constant is $8.15\times10^{-8}\dfrac{1}{M~s}$ and at $705~K$ the rate constant is $1.39\times10^{-6}\dfrac{1}{M~s}$
+	
+	Determine the activation energy and frequency factor for this reaction $\left(218\dfrac{kJ}{mol}~\mathrm{and}~1.91\times10^{10}\dfrac{1}{M~s}\right)$
+\end{itemize}
+\section{Reaction Mechanisms}
+\begin{itemize}
+	\item Chemical reaction \emph{can} happen in just one step, but often proceed in two or more distinct steps
+	\item The details of how a reaction actually proceeds is called the Reaction Mechanism
+	\item Each step in the mechanism cannot be broken down or simplified further, and is called an \emph{elementary step} 
+	\item Elementary steps involve either the spontaneous decomposition of a single molecule, or an encounter between two molecules
+	\item Consider the following reaction: \ch{NO2(g) + CO(g) -> NO(g) + CO2(g)}
+	
+	Elementary Step 1: \ch{NO2(g) + NO2(g) -> NO(g) + NO3(g)} \hspace{1em} SLOW
+	
+	Elementary Step 2: \ch{NO3(g) + CO(g) -> NO2(g) + CO2(g)} \hspace{1em} FAST
+	\item The two steps add up to the total equation
+	\item \ch{NO3(g)} is produced in the first step, then consumed in the second step, so it never shows up in the overall reaction
+	\item This makes \ch{NO3(g)} an \emph{intermediate}
+	\item Intermediates are different from transition states because they are energetically stable (minimum in the reaction coordinate diagram)
+	\item Intermediates may sometimes be observed directly in the course of the reaction, or they may be so dilute or so short-lived that they cannot be observed
+	\item Figure 14.19 shows the reaction coordinate diagram for a two-step reaction like this one
+	\item Elementary steps each have their own reaction rates:
+	\begin{itemize}
+		\item The rate law for an elementary step depends on the \emph{molecularity} of the step
+		\begin{itemize}
+			\item Unimolecular steps have only one reactant: \ch{AB -> A + B}
+			\item Bimolecular steps involve an encounter between two molecules: \ch{A + B -> C} or \ch{2 A -> B}
+			\item Termolecular steps are very rare, but can occur
+		\end{itemize}
+		\item The rate law can be inferred from the stoichiometry of the step
+		\begin{itemize}
+			\item \ch{AB -> A + B} ~~ gives ~~ $rate=k\left[AB\right]$
+			\item \ch{A + B -> C} ~~ gives ~~ $rate=k\left[A\right]\left[B\right]$
+			\item \ch{2 A -> B} ~~ gives ~~ $rate=k\left[A\right]^2$
+		\end{itemize}
+		\item While each step has its own rate, the overall reaction can only proceed at the rate of the \emph{slowest} step
+		\item The slowest step is therefore called the \emph{rate-limiting} step of the reaction
+		\item Looking at the reaction of \ch{NO2} and \ch{CO} above, the first step is slower so the overall reaction rate will be $rate=k\left[NO2\right]^2$
+	\end{itemize}
+	\item Any proposed mechanism must, at a minimum, add up to the total equation, and produce a rate law consistent with observations
+	\item This is not conclusive proof of a mechanism's validity, as one could contrive infinite mechanisms within these two constraints
+	\item Some elementary steps are reversible, and establish an equilibrium (subject of the next chapter):
+	\begin{itemize}
+		\item Consider the reaction \ch{2 NO(g) + Cl2(g) -> 2 NOCl(g)} \hspace{1em} $rate=k\left[NO\right]^2\left[Cl\right]$
+		\item This observed rate law seems consistent with a single-step \emph{termolecular} mechanism, but termolecular reactions are exceptionally rare
+		\item An alternative proposed mechanism is:
+		
+		\ch{NO(g) + Cl2(g) <=>[ $k_1$ ][ $k_{-1}$ ] NOCl2(g)} \hspace{1em} FAST
+		
+		\ch{NOCl2(g) + NO(g) ->[ $k_2$ ] 2 NOCl(g)} \hspace{1em} SLOW
+		\item The first step will reach an equilibrium, where the forward rate will equal the reverse rate
+		
+		$k_1\left[\ch{NO}\right]\left[\ch{Cl2}\right] = k_{-1}\left[\ch{NOCl2}\right]$
+		\item Rearrange this to give the equilibrium concentration of the intermediate $\left[\ch{NOCl2}\right]=\dfrac{k_1}{k_{-1}}\left[\ch{NO}\right]\left[\ch{Cl2}\right]$
+		\item The reaction rate is ultimately determined by the formation of product in the second step:
+		
+		$rate=k_2\left[\ch{NOCl2}\right]\left[\ch{NO}\right]$
+		\item Substitute in our expression for $\left[\ch{NOCl2}\right]$
+		
+		$rate=k_2\left(\dfrac{k_1}{k_{-1}}\left[\ch{NO}\right]\left[\ch{Cl2}\right]\right)\left[\ch{NO}\right]=\dfrac{k_2k_1}{k_{-1}}\left[\ch{NO}\right]^2\left[\ch{Cl2}\right]$		
+	\end{itemize}
+	\item Consider the reaction: \ch{2 NO(g) + O2(g) -> 2 NO2(g)} \hspace{1em} $\Delta H_{rxn}=-116.2\dfrac{kJ}{mol}$ 
+	\begin{itemize}
+		\item The observed rate law is: $rate=k\left[\ch{NO}\right]^2\left[\ch{O2}\right]$
+		\item A proposed mechanism is:
+		
+		\ch{NO(g) + O2(g) <=> NO3(g)} \hspace{1em} FAST
+		
+		\ch{NO(g) + NO3(g) -> 2 NO2(g)} \hspace{1em} SLOW
+		\item Is the reaction mechanism consistent with the observed rate law?
+		\item What is the value of $k$ in terms of the elementary step rate constants?
+		\item Draw a basically accurate reaction coordinate diagram for this reaction
+	\end{itemize}
+	\item Reaction mechanisms can become complex and interesting for certain reactions (harpoon mechanism and collisional activation)
+\end{itemize}
+\section{Catalysis}
+\begin{itemize}
+	\item Catalysts provide an alternative reaction mechanism which is faster than the uncatalyzed pathway
+	\item Figure 14.21 shows a typical reaction coordinate diagram for a catalyzed reaction
+	\item Catalysts appear in in the reaction mechanism, being first \emph{consumed}, then \emph{regenerated}
+	\item The reaction \ch{2 H2O2(aq) -> 2 H2O(l) + O2(g)} can be catalyzed by \ch{HBr(aq)}
+	
+	\ch{H2O2(aq) + 2 HBr(aq) -> Br2(aq) + 2 H2O(l)} \hspace{1em} SLOW
+	
+	\ch{Br2(aq) + H2O2(aq) -> O2(g) + 2 HBr(aq)} \hspace{1em} FAST
+	\item Note that the \ch{HBr} is consumed in the first step, but regenerated in the second step
+	\item Catalysts can be \emph{homogeneous} (\ch{HBr} above) or \emph{heterogeneous} (catalytic converters)
+	\item (not in the book) Catalysts can operate in several ways:
+	\begin{itemize}
+		\item Heterogeneous catalysts confine reactants to a surface, increasing the encounter frequency
+		\item Enzymes hold the reactants in precise configurations, improving the steric component of the frequency factor and stabilizing the activated complex
+		\item Homogeneous catalysts produce new compounds which shift electron density and weaken bonds which must be broken for the reaction to proceed
+	\end{itemize}
+	\item Analyze the following reaction mechanism:
+	
+	\ch{C3H6(aq) + H^+(aq) -> C3H7^+(aq)}
+	
+	\ch{C3H7^+(aq) + H2O(l) -> C3H9O^+(aq)}
+	
+	\ch{C3H9O^+(aq) -> C3H8O(aq) + H^+(aq)}
+	\begin{itemize}
+		\item Give the total overall reaction
+		\item Identify any catalysts and intermediates
+	\end{itemize}
+\end{itemize}
+
+\chapter{Chemical Equilibrium}
+\section{Introduction to Equilibrium}
+\begin{itemize}
+	\item Some reactions can go in both the forward and reverse directions
+	
+	\ch{3 H2(g) + N2(g) -> 2 NH3(g)} and \ch{2 NH3(g) -> 3 H2(g) + N2(g)}
+	\item Such reactions will reach an equilibrium
+	\begin{itemize}
+		\item Equilibrium is when the forward reaction rate and the reverse reaction rate are equal
+		\item The concentrations of reactants and products remains steady indefinitely once equilibrium is reached
+		\item Figure 15.2 shows how the amounts of reactant and product shift over time until equilibrium is reached
+		\item Equilibrium is a dynamic state -- reactions continue, they merely balance each other
+		\item The precise concentrations at equilibrium will depend on the starting conditions
+	\end{itemize}
+	\item The above two reactions can be combined into one equation: \ch{3 H2(g) + N2(g) <=> 2 NH3(g)}
+	\item Equilibrium can be reached whether you start with reactants or start with products (Figure 15.1)
+	\item Note that \ch{N2(g)} alone or \ch{H2(g)} alone cannot lead to equilibrium from the reactant side -- both are needed
+\end{itemize}
+\section{Equilibrium Constants}
+\begin{itemize}
+	\item Consider the equilibrium reaction: \ch{2 I(g) <=> I2(g)}
+	\begin{itemize}
+		\item Since the forward and reverse reaction rates are equal, set them equal to each other
+		\item Assume the reaction is single-step (elementary)
+		\item $k_1\left[\ch{I}\right]^2=k_{-1}\left[\ch{I2}\right]$
+		\item We can rearrange this to: $\dfrac{k_1}{k_{-1}}=\dfrac{\left[\ch{I2}\right]}{\left[\ch{I}\right]^2}$
+		\item The ratio $\dfrac{k_1}{k_{-1}}$ is called the equilibrium constant, and given the symbol $K$
+		\item Now we can give the equilibrium expression without reference to rate constants: $K = \dfrac{\left[\ch{I2}\right]}{\left[\ch{I}\right]^2}$
+		\item Because $\left[\ch{I}\right]$ is squared, the ratio of $\left[\ch{I}\right]$ to $\left[\ch{I2}\right]$ will depend on initial conditions (Figure 15.3)		
+	\end{itemize}
+	\item Equilibrium expressions can be generalized: \ch{a A + b B <=> c C + d D}\hspace{1em}$K=\dfrac{\left[\ch{C}\right]^c\left[\ch{D}\right]^d}{\left[\ch{A}\right]^a\left[\ch{B}\right]^b}$ 
+	\item Products over reactants, raised to the power of their stoichiometric coefficients
+	\item Solids and pure liquids will be \emph{absent} from the equilibrium expression -- only include solvated and gaseous species
+	\item $K$ is actually unitless, for reasons we don't go into in this class
+	\item Give the equilibrium expression for the formation of ammonia above: $K=\dfrac{\left[\ch{NH3}\right]^2}{\left[\ch{N2}\right]\left[\ch{H2}\right]^3}$
+	\item Although the particular concentrations of reactants and products will depend on starting conditions, the equilibrium expression will be the same (at constant $T$)
+	\item The magnitude of $K$ can tell about general conditions at equilibrium
+	\begin{itemize}
+		\item If $K \gg 1$ then equilibrium will favor products
+		\item If $K \ll 1$ then equilibrium will favor reactants
+	\end{itemize}
+	\item Equilibrium expressions can be given in terms of pressures, instead of molar concentrations
+	\begin{itemize}
+		\item We have technically been using $K_c$ up until now, which works for (aq) and (g) species
+		\item If we use pressures instead, we instead use $K_p$, which only works for gases
+		\item We can show that $K_p = K_c\left(RT\right)^{\Delta n}$ by substituting in $P=MRT$
+		\item Give the relationship between $K_p$ and $K_c$ for the formation of ammonia: $K_p = \dfrac{K_c}{\left(RT\right)^2}$
+	\end{itemize}
+\end{itemize}
+\section{Using Equilibrium Expressions}
+\begin{itemize}
+	\item We can measure the concentrations at equilibrium and directly measure the equilibrium constant
+	\begin{itemize}
+		\item Consider the reaction: \ch{CO(g) + H2O(g) <=> CO2(g) + H2(g)}
+		\item Find $K_c$ if $\left[\ch{CO}\right]=0.0600~M$, $\left[\ch{H2O}\right]=0.120~M$, $\left[\ch{C2O}\right]=0.150~M$, and $\left[\ch{H2}\right]=0.300~M$
+	\end{itemize}
+	\item We can use the equilibrium constant to find an unknown concentration
+	\begin{itemize}
+		\item \ch{CH3CO2H(aq) + H2O(l) <=> H3O^+(aq) + CH3CO2^_(aq)} \hspace{1em} $K=1.8\times10^{-5}$
+		\item Find $\left[\ch{H3O^+}\right]$ if $\left[\ch{CH3COOH}\right] = 0.250~M$ and $\left[\ch{CH3COO^-}\right]=0.350~M$
+	\end{itemize}
+	\item We can easily find $K$ for doubled, reversed, or added equations
+	\begin{itemize}
+		\item For a reversed equation, reactants and products switch, so $K_{reverse} = K_{normal}^(-1)$
+		\item For a doubled (or tripled) reaction, $K$ should be squared (or cubed)
+		\item For added reactions (multi-step) $K_{total}=K_1K_2$
+	\end{itemize}
+	\item Find $K$ for the reaction: \ch{N2(g) + 2 O2(g) <=> 2 NO2(g)}
+	
+	\ch{N2(g) + O2(g) <=> 2 NO(g)} \hspace{1em} $K=2.0\times10^{-25}$
+	
+	\ch{2 NO(g) + O2(g) <=> 2 NO2(g)} \hspace{1em} $K=6.4\times10^{9}$
+\end{itemize}
+\section{The Reaction Quotient}
+\begin{itemize}
+	\item The equilibrium expression is really only true once equilibrium has been reached
+	\item On short time scales, a reaction can be far from equilibrium
+	\item The reaction quotient, $Q$ has the same formula of $K$ but is calculated away from equilibrium
+	\item Comparing $Q$ to $K$ can tell which direction the reaction must shift to reach equilibrium
+	\begin{itemize}
+		\item If $Q<K$ then the reaction must produce more product, shifting right
+		\item If $Q>K$ then the reaction has too much product and must shift left
+		\item If $Q=K$ then the reaction has reached equilibrium
+	\end{itemize}
+\end{itemize}
+\section{Calculations Using ICE Tables}
+\begin{itemize}
+	\item If we know the equilibrium constant, we can find equilibrium concentrations based on the initial conditions
+	\item We do this using an ICE table:
+	\begin{itemize}
+		\item I -- Initial conditions (often one or more species will have an initial concentration of $0$)
+		\item C -- Change. Express the change in terms of $x$ and be sure to consider stoichiometry
+		\item E -- Equilibrium conditions. These values (I + C) should be put in the equilibrium expression
+		\item Once you have the equilibrium expression you can calculate the change amount ($x$)
+		\item You can do this technique with pressures or molar concentrations, depending on the form of $K$
+		\item If you do your change calculations in pure moles, be sure to change them into $P$ or $[]$ before you put them into the equilibrium expression
+	\end{itemize}
+	\item Consider the reaction \ch{H2(g) + I2(g) <=> 2 HI(g)}
+	
+	$5.00~mol$ \ch{H2} and $0.500~mol$ \ch{I2} are reacted in a $1.00~L$ chamber and at equilibrium $\left[\ch{HI}\right] = 0.900~M$. Find the value of $K_C$ ($324$)
+	\item Consider the reaction \ch{CO(g) + H2O(g) <=> H2(g) + CO2(g)} \hspace{1em} $K_C=5.80$
+	
+	Find the equilibrium conditions if initial concentrations are: $\left[\ch{CO}\right]= \left[\ch{H2O}\right]=0.0125~M$
+	\item Often the equilibrium expression will lead to a quadratic equation when solving for $x$
+	\item The quadratic formula is: $ax^2 + bx + c = 0 \rightarrow x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$
+	\item Consider the reaction: \ch{I2(g) <=> 2 I(g)} \hspace{1em} $K_{P,1000K}=0.260$
+	
+	Find the equilibrium conditions if a reaction chamber is initially charged with $0.200~atm$ \ch{I} and $0.00500~atm$ \ch{I2}
+	\item Some quadratic equations can be greatly simplified by recognizing when $x$ is small compared to initial amounts
+	\begin{itemize}
+		\item If $x$ is small, then it can be neglected from any species with an initial amount
+		\item First solve the equation \emph{assuming} that $x$ can be neglected
+		\item Compare the solved value of $x$ to the amounts it was neglected from
+		\item If $x$ is less than $5\%$ of those values then your simplification was valid
+		\item If not, then you must go back and solve the complete quadratic equation
+	\end{itemize}
+	\item Consider the reaction \ch{HCOOH(aq) + H2O(l) <=> H3O^+(aq) + HCOO^-(aq)} \hspace{1em} $K_C=1.8\times10^{-4}$
+	
+	Find the equilibrium conditions for a solution that begins with $\left[\ch{HCOOH}\right]=0.250~M$
+\end{itemize}
+\section{Le Ch\^atelier's Principle}
+\begin{itemize}
+	\item When changes are made to a system at equilibrium, it will shift in response to that change to maintain equilibrium
+	\item This is called Le Ch\^atelier's Principle
+	\item We can calculate $Q$ after the change and compare it to $K$
+	\item In practice, though, a few simple rules are sufficient without any calculations
+	\item Adding or removing a reactant or product
+	\begin{itemize}
+		\item If a reactant or product is added or removed, the system will respond to counteract the change
+		\item A U-pipe with water is a good analogy for this shift
+		\item Consider the reaction \ch{2 H2S(g) <=> 2 H2(g) + S2(g)}
+		
+		How would the reaction shift if each species is added or removed in turn?
+	\end{itemize}
+	\item Changing volume
+	\begin{itemize}
+		\item If the reaction volume changes, all the concentrations or pressures will change together
+		\item The effect this has depends on the stoichiometry of the reaction
+		\item Consider the reaction \ch{3 H2(g) + N2(g) <=> 2 NH3(g)} -- How will the reaction quotient change if the volume doubles?
+		\item The shift depends on $\Delta_n$, considering only the moles of gas or aqueous substances
+		\item If volume increases (dilution), the reaction will shift to the side with \emph{more} moles
+		\item If volume decreases (concentration), the reaction will shift to the side with \emph{fewer} moles
+		\item If $\Delta_m=0$, then the reaction is unaffected by dilution and concentration
+		\item Figure 15.6 illustrates this principle
+	\end{itemize}
+	\item Temperature changes
+	\begin{itemize}
+		\item Unlike with the other changes, a change in $T$ will actually change the value of $K$
+		\item How $K$ changes depends on $\Delta H_{rxn}$
+		\item We will explore this relationship mathematically later, but for now we can use a trick to determine the direction of the shift
+		\item Consider ``heat'' as a reactant for endothermic reactions, and as a product for exothermic reactions
+		\item Heat is not really a product or reactant (how many $g$ of heat are produced)
+		\item Lowering $T$ removes heat and the reaction will respond just like removing any other reactant or product
+		\item Raising $T$ adds heat and will have the same effect as adding any other reactant or product
+	\end{itemize}
+	\item Equilibrium is often not the most important factor in industrial settings. The Haber process is run at high temperatures to increase the reaction rate even though it pushes equilibrium toward reactants
+	\item Addition of a catalyst has \emph{no} effect on the equilibrium position
+\end{itemize}
+
+\chapter{Acid-Base Theory}
+\section{Ionization Reactions of Acids and Bases}
+\begin{itemize}
+	\item Arrhenius acid/base theory defines acids and bases in terms of \ch{H3O^+} and \ch{OH^-} ions
+	\begin{itemize}
+		\item \ch{HCl(aq) + H2O(l) -> H3O^+(aq) + OH^-(aq)}
+		\item \ch{NaOH(s) ->[water] Na^+(aq) + OH^-(aq)}
+	\end{itemize}
+	\item Acids and bases can be \emph{strong} or \emph{weak}
+	\begin{itemize}
+		\item Strong acids and bases are those which dissociate completely (or, at least, nearly so) 
+		\item Weak acids and bases establish an equilibrium which is usually highly reactant-favored
+		\item Figures 16.1 and 16.2 show the extend of ionization for strong and weak acids and bases
+	\end{itemize}
+	\item \ch{H^+} vs \ch{H3O^+}
+	\begin{itemize}
+		\item In the past, you may have used \ch{H^+(aq)} in your equations
+		\item I will tend to use \ch{H3O^+} instead, but either way is acceptable
+		\item Really, \ch{H^+} is a flagrant lie. Bare protons don't exist in water. \ch{H3O^+} is also a little bit of a lie. The extra proton and the charge create clusters of many water molecules. It gets really complicated
+	\end{itemize}
+\end{itemize}
+\section{Br\o nsted-Lowry Theory}
+\begin{itemize}
+	\item Arrhenius theory is unable to account for reactions that don't involve \ch{H3O^+} and \ch{OH^-} ions directly
+	\item Consider \ch{HNO2(aq) + ClO2^-(aq) <=> HClO2(aq) + NO2^-(aq)} -- should this reaction be considered acid/base?
+	\item Br\o nsted-Lowry theory defines acids as proton \emph{donors} and bases as proton \emph{acceptors}
+	\item \ch{HNO2} is the acid, and \ch{ClO2} is the base
+	\item Conjugate pairs
+	\begin{itemize}
+		\item We can also consider the reverse reaction, where \ch{HClO2} is the acid and \ch{NO2^-} is the base
+		\item We call these linked species \emph{conjugate pairs}
+		\item \ch{HNO2} is the conjugate acid to \ch{NO2^-}, while \ch{NO2^-} is the conjugate base to \ch{HNO2}
+		\item The strengths of a conjugate pair are inverse to each other -- A stronger acid has a weaker conjugate base and vice-versa
+	\end{itemize}
+	\item Some acids are \emph{multiprotic} and some bases are \emph{multibasic}
+	\begin{itemize}
+		\item Consider the series \ch{H2SO3 <=> HSO3^- <=> SO3^{2-}} 
+		\item Or the series \ch{H3PO4 <=> H2PO4^- <=> HPO4^{2-} <=> PO4^{3-}}
+		\item \ch{H2SO3} is a diprotic acid, and \ch{SO3^{2-}} is a dibasic base because they can exchange 2 protons
+		\item \ch{H3PO4} is a triprotic acid, and \ch{PO4^{3-}} is a tribasic base because they can exchange 3 protons
+		\item The intermediates, \ch{HSO3^-}, \ch{ H2PO4^-} and \ch{HPO4^{2-}} can act as either an acid or a base
+		\item These types of ions are called \emph{amphoteric} or \emph{amphiprotic}
+		\item Whether they act as an acid or a base depends on the context -- what is their reaction partner
+	\end{itemize}
+\end{itemize}
+\section{Autoionization of Water}
+\begin{itemize}
+	\item Water is also amphoteric: \ch{H3O^+ <=> H2O <=> OH^-}
+	\item Because of this, water will undergo autoionization: \ch{2 H2O(l) <=> H3O^+(aq) + OH^-(aq)} \hspace{1em} $K_w=1.00\times10^{-14}$
+	\item For pure water, this leads to concentrations of $\left[\ch{H3O^+}\right]=\left[\ch{OH^-}\right]=1.00\times10^{-7}$
+	\item This water ionization equilibrium is the great arbiter of acid/base chemistry. It defines what is an acid, what is a base, and what are their various strengths
+	\item Even for reactions which don't explicitly contain water (\ch{NH3(aq) + HNO2(aq) -> NH4^+(aq) + NO2^-{aq}}), water is actually mediating the proton exchange behind the scenes
+	\item Because of this, acidity and basicity are defined by the balance between $\left[\ch{H3O^+}\right]$ and $\left[\ch{OH^-}\right]$
+	\begin{itemize}
+		\item $\left[\ch{H3O^+}\right] > \left[\ch{OH^-}\right]$ is an acid
+		\item $\left[\ch{H3O^+}\right] < \left[\ch{OH^-}\right]$ is a base
+		\item $\left[\ch{H3O^+}\right] = \left[\ch{OH^-}\right]$ is neutral
+	\end{itemize}
+	\item We can always find $\left[\ch{H3O^+}\right]$ or $\left[\ch{OH^-}\right]$ from the other, based on $K_w = \left[\ch{H3O^+}\right]\left[\ch{OH^-}\right]$
+\end{itemize}
+\section{pH Calculations}
+\begin{itemize}
+	\item Acidity of a solution is summarized by the quantity $pH = -\log\left[\ch{H3O^+}\right]$
+	\item Neutral solutions have $pH=7$, acidic solutions have $pH<7$, and basic solutions have $pH>7$
+	\item $0$ and $14$ are actually not boundaries at all, and you \emph{can} have solutions with $pH<0$
+	\item We can find the $\left[\ch{H3O^+}\right]$ by $\left[\ch{H3O^+}\right]=10^{-pH}$
+	\item Table 16.1 shows both the $pH$ and $\left[\ch{H3O^+}\right]$ for several common substances
+	\item We can make similar calculations for $\left[\ch{OH^-}\right]$ and $pOH$
+	\item This gives us the interesting relationship that $pH+pOH=14$ -- draw the conversion rectangle
+	\item We can measure $pH$ in several ways:
+	\begin{itemize}
+		\item Color indicators are chemicals which change color based on $pH$ conditions
+		\item We will see that these indicators are themselves weak acids/base conjugate pairs
+		\item Indicators can be dissolved in the solution or applied onto paper strips
+		\item By mixing several indicators, we can get a different value at each $pH$, making a ``universal indicator''
+		\item Figure 16.5 shows how a universal indicator $pH$ paper works
+		\item We can also measure an electrochemical response using a $pH$ probe
+		\item How these $pH$ probes work is a bit complicated, but they can measure $\left[\ch{H3O^+}\right]$ across a wide range
+	\end{itemize}
+\end{itemize}
+\section{Weak Acids and Bases}
+\begin{itemize}
+	\item Weak acids and weak bases will react with water to reach an equilibrium
+	\item Because equilibrium concentrations are different from initial concentrations, pedantic people (like me!) will sometimes use \emph{formal} concentration, $F$, instead of molar concentration
+	\item The equilibrium constant for their hydrolysis reactions are given the name $K_a$ for acids, and $K_b$ for bases
+	\item Table 16.2 shows the $K_a$ and $K_b$ values for a number of different acids and bases
+	\item It is also sometimes useful to find the $pK_a = -\log K_a$ or the $pK_b=-\log K_b$
+	\item We can use these equilibrium constants with an ICE table to find the $pH$ of a solution under different circumstances
+	\begin{itemize}
+		\item Weak acids always follow the same format: $K_a=\dfrac{\left[\ch{A^-}\right]\left[\ch{H3O^+}\right]}{\left[\ch{HA}\right]}$
+		\item Weak bases always follow the same format: $K_b=\dfrac{\left[\ch{HB^+}\right]\left[\ch{OH^-}\right]}{\left[\ch{B}\right]}$
+		\item We will often be able to use the simplification that the change is much less than the initial amounts
+	\end{itemize}
+	\item Find the $pH$ for a $0.250~F$ solution of nitrous acid ($K_a=4.0\times10^{-4}$)
+	\item Find the $pH$ for a $0.325~F$ solution of pyridine ($K_b=1.7\times10^{-9}$)
+	\item A few useful relations that are not in your textbook:
+	\begin{itemize}
+		\item For conjugate acid/base pairs: $K_aK_b=K_w$
+		\item For the reaction between an acid and a base: $K=\dfrac{K_aK_b}{K_w}$
+	\end{itemize}
+\end{itemize}
+\section{Polyprotic Acids}
+\begin{itemize}
+	\item For polyprotic acids and bases, each step has its own $K_a$ or $K_b$ values
+	\item Each successive proton loss will have significantly lower acid strength
+	\item Table 16.3 shows $K_a$ values for several polyprotic acids
+	\item Amphoteric species can establish multiple simultaneous and interdependent equilibria, but we will only look at the simple problems
+	\item Find pH, $\left[\ch{H2C6H6O6}\right]$, $\left[\ch{HC6H6O6^-}\right]$, and  $\left[\ch{C6H6O6^{2-}}\right]$ for a $0.500~F$ solution of Ascorbic acid
+	\begin{itemize}
+		\item First, solve the ICE table for the first deprotonation
+		\item Then, use the $\left[\ch{H3O^+}\right]$ and $\left[\ch{HC6H6O6^-}\right]$ as starting values for the second deprotonation
+		\item Because the $\left[\ch{H3O^+}\right]$ will not change much, we don't have to revisit the first equilibrium
+	\end{itemize}
+\end{itemize}
+\section{Acid-Base Properties of Salts}
+\begin{itemize}
+	\item Some salts have no effect on $pH$ when dissolved on water, while others do
+	\item To determine the acid/base strength of a salt, look at the individual ions which dissociate in the water
+	\item Cations are usually neutral with two exceptions:
+	\begin{itemize}
+		\item \ch{NH4^+} and others based off of it are weak acids
+		\item Some metal cations can act as acids -- we will cover this more in the Lewis Acids section
+	\end{itemize}
+	\item The anions are usually where the activity lies:
+	\begin{itemize}
+		\item Many anions are neutral, such as the conjugates to strong acids
+		\item Some anions are amphoteric, and their effect depends on their $K_a$ and $K_b$ values
+		\item If $K_a>K_b$, then the anion will be acidic, and if $K_a<K_b$, then the ion will be basic
+		\item Some anions are simply weak bases
+	\end{itemize}
+	\item You can then find the $pH$ based on the acid/base activity of the individual ions
+	\item Find the $pH$ of a $0.125~M$ solution of \ch{CaF2}
+\end{itemize}
+\section{Relating Acid Strength to Structure}
+\begin{itemize}
+	\item Acid strength ultimately comes from the strength of the \ch{H} bond and the stability of the product ions
+	\item Bond strength:
+	\begin{itemize}
+		\item Weaker \ch{H} bonds lead to stronger acids
+		\item Longer bonds tend to be weaker, hence the strength of \ch{HI} is greater than the strength of \ch{HF} (Table 16.6)
+		\item Electronegative groups nearby pull electrons away from the \ch{H} bond and make it weaker (Table 16.7)
+	\end{itemize}
+	\item Ion stability:
+	\begin{itemize}
+		\item Even strong \ch{H} bonds can be acidic if the anion after deprotonation is particularly stable
+		\item Consider the structure of acetic acid and acetate
+		\begin{itemize}
+			\item Acetic acid does not exhibit resonance, but acetate ion does
+			\item By losing a hydrogen, the acetate ion can stabilize with resonance
+			\item This makes acetic acid stronger than we might have assumed based only on the \ch{O-H} bond strength
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\section{Lewis Acids and Bases}
+\begin{itemize}
+	\item Coordinate bonds are bonds where both shared electrons come from a single bonding partner, rather than one electron from each
+	\item Br\o nsted bases can accept a \ch{H^+} because they have a lone pair of electrons which can form a coordinate covalent bond
+	\item We could define bases in terms of donating electrons instead of accepting protons, and this is the Lewis definition
+	\begin{itemize}
+		\item A Lewis base is an electron pair donor
+		\item A Lewis acid is an electron pair acceptor -- the proton itself for Br\o nsted acids
+		\item The molecule formed by the coordinate bond (Br\o nsted conjugate acid) is called a Lewis adduct
+	\end{itemize}
+	\item The Lewis definition expands acid/base reactions to reactions which don't involve the exchange of a proton at all
+	\item Consider the reaction of \ch{BF3} with \ch{NH3}
+	\item Many metal cations can act as a Lewis acid by forming coordinate bonds with water molecules
+	
+	\ch{Al^{3+}(aq) + 6 H2O(l) -> Al(H2O)6^{3+}(aq)}
+	\item Carbonic acid makes gas due to Lewis acid action: \ch{H2CO3(aq) <=> CO2(g) + H2O(l)}
+\end{itemize}
+
+\chapter{Aqueous Equilibria}
+\section{Introduction to Buffer Solutions}
+\begin{itemize}
+	\item Buffer solutions resist a change in $pH$ when acid or base is added to them
+	\item Buffer solutions are everywhere in nature -- blood, soil, ocean water, etc.
+	\item The common-ion effect is critical to how buffer solutions work
+	\begin{itemize}
+		\item Consider the equilibrium reaction: \ch{HNO2(aq) + H2O(l) <=> NO2^-(aq) + H3O^+(aq)}
+		\item Adding \ch{NaNO2} will affect this equilibrium because it adds nitrite ion to solution
+		\item Le Ch\^atelier's principle will shift the reaction left, reducing the effect \ch{HNO2} has on $pH$
+		\item Any equilibrium reaction involving ions can be affected by addition of other salts containing those emails -- This is the common ion effect
+	\end{itemize}
+	\item Buffer solutions contain amounts of both members of a weak conjugate acid/base pair
+	\begin{itemize}
+		\item Adding strong acid or strong base to the buffer will react with the weak base/acid rather than with water, resulting in a suppressed change in $pH$
+		\item Figure 17.1 shows how $\left[\ch{HA}\right]$ and $\left[\ch{A^-}\right]$ change in this case
+		\item The buffer can only absorb a certain amount of acid or base, called the buffer capacity, which will be covered later
+	\end{itemize}
+\end{itemize}
+\section{The Henderson-Hasselbach Equation}
+\begin{itemize}
+	\item For a buffer solution, we can solve an ICE table with initial amounts of both \ch{HA} and \ch{A^-}
+	\item In this case, the equilibrium expression simplifies to: $\left[\ch{H3O^+}\right]=K_a\dfrac{\left[\ch{HA}\right]}{\left[\ch{A^-}\right]}$
+	\item We can calculate the $pH$ from here to be: $pH = pK_a-\log\dfrac{\left[\ch{HA}\right]}{\left[\ch{A^-}\right]}$
+	\item This is the Henderson-Hasselbach equation
+	\item Buffer capacity describes the range of $pH$ values where a buffer works
+	\begin{itemize}
+		\item The buffer performs best (smallest $pH$ changes) when $pH=pK_a$
+		\item $pH$ changes become more pronounced as more acid or base is added
+		\item Once the $pH$ strays beyond $\pm 1$ of $K_a$, the buffer capacity is exceeded and the buffer will stop working
+		\item Higher concentrations of \ch{HA} and \ch{A^-} can absorb more acid or base before its capacity is exceeded
+	\end{itemize}
+	\item \ch{H2S} has $K_a=9.1\times10^{-8}$. Find the $pH$ of a solution if $2.7~g$ of \ch{H2S} and $1.5~g$ of \ch{NaHS} are dissolved in $0.50~L$ of water
+	\item \ch{H2PO4^-} has $pK_a=6.8$ and is responsible for regulating the $pH$ of blood at $pH=7.4$. 
+	\begin{itemize}
+		\item If $\left[\ch{HPO4^{2-}}\right]\approx0.200~M$, find the $\left[\ch{H2PO4^{-}}\right]$ to maintain proper blood $pH$
+		\item How many $g$ of \ch{HCl} could be added to $5.0~L$ of blood before the buffer capacity is exceeded?
+		\item How many $g$ of \ch{NaOH} could be added to $5.0~L$ of blood before the buffer capacity is exceeded?	
+	\end{itemize}
+\end{itemize}
+\section{Titrations of Strong Acids and Strong Bases}
+\begin{itemize}
+	\item A titration is the gold standard technique for determining the concentration of a solute
+	\item The unknown substance is called the \emph{analyte}
+	\item A solution of suitable reaction partner, called the \emph{titrant} is slowly added until the analyte is completely consumed
+	\item Acid/base, redox, and precipitation reactions can all be titrated, though the first two are by far more common
+	\item Figures 17.3 and 17.4 show typical titration setups, with different methods of determining the exact point where the analyte is consumed (called the \emph{equivalence point})
+	\item Figure 17.5 shows a titration curve for a strong acid with a strong base
+	\begin{itemize}
+		\item Point A will be the pH of the analyte solution, $pH=-\log\left[\ch{H3O^+}\right]=-\log\left[\ch{HA}\right]$
+		\item In region B the base is reacting with the acid and causing the $pH$ to rise
+		\item Solve the $pH$ using a BCA table
+		\item At point C, the equivalence point, the base has precisely neutralized the acid, and $pH=7.00$ exactly
+		\item In region D, the $pH$ changes as excess base is added
+	\end{itemize}
+	\item Figure 17.6 shows a titration curve for a strong base with a strong acid
+	\item At the equivalence point, moles of titrant added is equal to moles of analyte
+	\item This relation can be summarized as $M_aV^\circ_a=M_tV_{eq}$
+\end{itemize}
+\section{Titrations of Weak Acids and Weak Bases}
+\begin{itemize}
+	\item Titrating a weak acid or base follows a similar process as titrating a strong acid or base
+	\item The buffering property of weak acids and bases does change the details of the titration curve (Figure 17.8)
+	\begin{itemize}
+		\item The starting point A must be solved using a ICE table after the concentration is known
+		\item Region B is called the buffer region, and will be centered around $K_a$
+		\item Solve for the $pH$ using the Henderson-Hasselbach equation
+		\item $pH=pK_a$ at precisely half of the equivalence volume
+		\item Point C, the equivalence point, will have a pH determined by the strength of the conjugate base (Solve using an ICE table)
+		\item In region D, the $pH$ is governed by the excess base added as in strong acid/base titrations
+		\item Figure 17.9 shows how these curves can be very different for different acids, even at the same concentration
+		\item Note the strong inflection in curves for very weak acids
+	\end{itemize}
+	\item Figure 17.11 shows an analogous titration of weak base with strong acid
+	\item The equivalence point is recognized as the point with steepest $pH$ change	
+	\item Multiprotic acids or bases will pass through more than one equivalence point (Figure 17.12)
+\end{itemize}
+\section{Indicators in Acid-Base Titrations}
+\begin{itemize}
+	\item Color indicators are often used in titrations instead of $pH$ probes
+	\item Color indicators are themselves weak acid/base conjugate pairs
+	\begin{itemize}
+		\item \ch{HA(aq) + H2O(l) <=> A-(aq) + H3O^+(aq)}
+		\item \ch{HA} is one color, and \ch{A^-} is another
+		\item The indicator is in such low concentration, that the $pH$ is governed by the titrant and analyte rather than by the indicator
+		\item The ratio of \ch{HA} and \ch{A^-} responds to the $pH$ according to the H-H equation
+		\item Over the buffer range ($pK_a \pm1$) the indicator goes from primarily \ch{HA} to primarily \ch{A^-} and the solution color changes
+	\end{itemize}
+	\item A color indicator should be carefully chosen to match the titration it will be used for
+	\begin{itemize}
+		\item The expected equivalence point $pH$ should lie within the buffer range for the indicator
+		\item The point of color change, when you actually stop the titration, is called the \emph{end point} and should be close to the true equivalence point
+		\item Figure 17.13 shows how the end point and equivalence point are situated in a titration curve
+		\item Table 17.1 shows the appropriate ranges for some common indicators
+	\end{itemize}
+\end{itemize}
+\section{Solubility Product Constant, $K_{sp}$}
+\begin{itemize}
+	\item Most insoluble salts are really just \emph{sparingly} soluble
+	\item This means that the solvation of the solid salt is a reactant-favored equilibrium
+	\item For \ch{PbI2}, the equation is: \ch{PbI2(s) <=> Pb^{2+}(aq) + 2 I^-(aq)} \hspace{1em} $K_{sp} = 9.8\times10^{-9}$
+	\item The equilibrium expression here would be: $K_{sp}=\left[\ch{Pb^{2+}}\right]\left[\ch{I^-}\right]^2$
+	\item $K_{sp}$ determines the ion concentrations, but is not mathematically equivalent to the solubility
+	\item Solubility is usually defined as the moles of the salt which will dissolve in $1.00~L$ of solution
+	\begin{itemize}
+		\item We solve the molar solubility with an ICE table just like with other equilibria
+		\item Be careful about the stoichiometry
+		\item $x$ will represent the molar solubility
+		\item For \ch{PbI2}, this would be: $9.8\times10^{-9}=x\left(2x\right)^2 = 4x^3$, which solves to: $x = 1.35\times10^{-3}$
+		\item The molar solubility is $1.35\times10^{-3}~M$
+		\item The same equation can be used in reverse to find $K_{sp}$ from the molar solubility
+	\end{itemize}
+	\item Find the molar solubility for \ch{Sr3(PO4)2}
+	\item Find $K_{sp}$ for \ch{AgI}, which has a molar solubility of $9.0\times10^{-9}~M$
+\end{itemize}
+\section{The Common-Ion Effect and the Effect of pH on Solubility}
+\begin{itemize}
+	\item If either cations or anions from the compound are already present in solution, solubility will be suppressed
+	\item This is apparent when we put them in as initial concentrations on the ICE table
+	\item Solubility in a salt solution will not be the same as solubility in pure water
+	\item Even very soluble salts will become insoluble with the common ion effect
+	\item \ch{NaCl} has a $K_{sp} = 37.66$. Find how many grams of \ch{NaCl} can dissolve in $100.0~ml$ of a $12~M$ \ch{HCl} solution
+	\item Many hydroxide salts are insoluble in pure water but soluble in acidic solutions
+	\begin{itemize}
+		\item This can be explained because even insoluble salts have some small amount of ions in solution
+		\item Acidic solutions will react with the tiny amount of \ch{OH^-} and drive the reaction toward products
+		\item Even very low $K_{sp}$ salts will dissolve if the $\left[\ch{OH^-}\right]$ is held low by the $pH$
+	\end{itemize}
+\end{itemize}
+\section{Precipitation: $Q$ vs $K_{sp}$}
+\begin{itemize}
+	\item Unlike other equilibrium reactions, solvation reactions are often stuck in non-equilibrium states
+	\item Consider first a fairly soluble salt when very little salt is added to solution:
+	\begin{itemize}
+		\item If all of the salt dissolves, it has likely not reached equilibrium
+		\item There are simply not enough ions to reach $K_{sp}$, and $Q<K$
+		\item Such a solution is called \emph{unsaturated}
+		\item \ch{NaCl} has a $K_{sp} = 37.66$. Calculate $Q$ if $2.00~g$ of \ch{NaCl} are dissolved in $100.0~ml$ of water
+	\end{itemize}
+	\item A solution which has achieved equilibrium is called \emph{saturated}
+	\begin{itemize}
+		\item You can tell a solution is saturated when some solid salt remains behind
+		\item The salt will not lose mass because the ion concentration has already reached its maximum amount
+		\item This equilibrium is a dynamic state (ions are dissolved and deposited at the same rate)
+		\item Show my 3-year salt solution with larger crystals due to dynamic equilibrium
+	\end{itemize}
+	\item Sometimes a solution can have $Q>K$
+	\begin{itemize}
+		\item This type of solution is called \emph{supersaturated}
+		\item A supersaturated solution can be made taking advantage of the temperature dependence of solubility
+		\item A lot of salt is dissolved in hot water, which is then carefully cooled to make a supersaturated solution
+		\item This solution is metastable, and will form precipitate once a seed crystal is introduced
+		\item Demonstrate supersaturated sodium acetate solution
+	\end{itemize}
+	\item Figure 17.17 shows these three situations
+\end{itemize}
+\section{Qualitative Analysis}
+\begin{itemize}
+	\item You don't need to memorize this process at all - just know the general solubility rules and general principle
+	\item We can take advantage of the solubility properties of ions to identify a solution with unknown ions
+	\item Figure 17.18 shows one pathway for separating metal cations in a solution
+	\item Other schema can be used as well
+\end{itemize}
+\section{Complex Ion Equilibria, $K_f$}
+\begin{itemize}
+	\item Transition metals will often act as Lewis acids and form coordinate covalent bonds with other species in solution
+	\item The Lewis adduct is called a complex ion, and the Lewis bases are called \emph{ligands}
+	\item These complex ions will be formed by an equilibrium reaction whose equilibrium constant is called a formation constant $K_f$
+	\item Table 17.3 gives formation constants for several common complex ions -- note that they tend to be large numbers
+	\item Find the equilibrium concentrations for a \ch{Co(NH3)6^{2+}} formation reaction
+	\begin{itemize}
+		\item Suppose you start with $\left[\ch{Co^{2+}}\right]=0.0200~M$ and $\left[\ch{NH3}\right]=0.100~M$
+		\item Trying to find the concentrations with a normal ICE table will lead to problems because $x$ is so large
+		\item The equilibrium condition will be reached from different starting conditions as long as they are consistent
+		\item First, assume that the complex ion is formed completely in a limiting reactant problem
+		\item Then, do an ICE table where $x$ represents the dissociation of the complex ion
+	\end{itemize}
+\end{itemize}
+
+\chapter{Chemical Thermodynamics}
+\section{Entropy and Spontaneity}
+\begin{itemize}
+	\item Thermodynamics is the study of how heat and work are involved in chemical reactions
+	\item For us, thermodynamics primarily concerns the \emph{spontaneity} of a process
+	\begin{itemize}
+		\item We can write a well-balanced reaction and talk about its products, $\Delta H_{rxn}$, etc, but some reactions simply will \emph{not} happen
+		\item \ch{2 Au(s) + 3 H2O(l) -> Au2O3(s) + 3 H2(g)} -- Gold doesn't corrode in water (Gold coins in old shipwrecks still shine)
+		\item Reactions that happen under the current conditions are called \emph{spontaneous}, while those that don't are called \emph{non-spontaneous}
+		\item Some spontaneous reactions are slow -- perhaps they take millions of years -- but they will eventually happen
+		\item Non-spontaneous reactions will \emph{never} happen, unless conditions change
+	\end{itemize}
+	\item First Law of Thermodynamics
+	\begin{itemize}
+		\item The total energy of the universe is constant
+		\item This leads to our understanding of enthalpy, $\Delta H$
+		\item Any chemical potential energy lost or gained by the chemical reaction must be given to or taken from the surroundings
+	\end{itemize}
+	\item Second Law of Thermodynamics
+	\begin{itemize}
+		\item Spontaneous processes always result in an increase in the entropy of the universe (though not necessarily the system)
+		\item \emph{Entropy} ($S$) was originally defined as an abstract thermodynamic potential, $\int \dfrac{\mathrm{d}q}{T}$
+		\item Today, we usually talk about entropy as a measure of disorder or randomness in a system
+		\item Higher $S$ systems have more potential configurations -- are more disordered
+		\item The following processes have positive $\Delta S$
+		\begin{itemize}
+			\item An upward phase change (\ch{s->l}, \ch{l->g})
+			\item Mixing (including solvation of a solid into aqueous solution)
+			\item Increasing the temperature
+			\item Increasing the number of particles (positive $\Delta n$)
+			\item Increasing the volume of an aqueous or gaseous system
+		\end{itemize}
+	\end{itemize}
+	\item The Boltzmann definition of entropy is: $S=k_B\ln W$
+	\begin{itemize}
+		\item $k_B$, the Boltzmann constant, is actually $\dfrac{R}{N_A} = 1.38\times10^{-23}\dfrac{J}{K}$
+		\item $W$ is the number of microstates for the current macrostate, or microscopic configurations of the system with the same observable state variables
+		\item Figure 18.2 shows how expansion increases the value of $W$
+		\item Figure 18.3 explores the value of $W$ an idealized system
+		\item My spheres\_demo program showing how systems tend toward macrostates with greatest $W$
+	\end{itemize}
+\end{itemize}
+\section{Entropy Changes -- Both Chemical and Physical}
+\begin{itemize}
+	\item Third Law of Thermodynamics
+	\begin{itemize}
+		\item The third law defines $0$ entropy as the entropy of a perfectly ordered crystal at absolute $0$
+		\item For such a crystal, $W=1$, so $\ln W = 0$		
+	\end{itemize}
+	\item Substances at $298~K$ have a standard molar enthalpy $S^{\circ}$ based off of this $0$ standard
+	\item Table 18.1 gives the standard molar enthalpies for several common substances
+	\item For a reaction, we can find $\Delta S^{\circ}_{rxn}$ just like $\Delta H_{rxn}$
+	\item  $\displaystyle\Delta S^{\circ}_{rxn} = \sum\limits_{i, products} \nu_iS_i^{\circ} - \sum_{j, reactants} \nu_jS_j^{\circ}$
+\end{itemize}
+\section{Entropy and Temperature}
+\begin{itemize}
+	\item While we do see reactions with $\Delta S^{\circ}_{rxn}<0$, the second law requires that $\Delta S_{universe}>0$
+	\item $\Delta S_{universe} = \Delta S_{sys} + \Delta S_{surr}$
+	\item We can calculate the entropy change of the surroundings based on the heat released by the system
+	\item For isothermal processes, $\Delta S_{surr} = \dfrac{-q_sys}{T}$, and at constant pressure this is: $\Delta S_{surr} = \dfrac{-\Delta H_{sys}}{T}$
+	\item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for combustion of $1~mol$ of methane at room temperature
+	\item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for condensing $1.00~g$ of water vapor ($\Delta H_{vap}=2257~\dfrac{J}{g}$)
+\end{itemize}
+\section{Gibbs Free Energy}
+\begin{itemize}
+	\item A new equation can be derived from the second law: $\Delta G = \Delta H - T\Delta S$
+	\item We will often use the form:  $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, which is under standard conditions
+	\item Standard conditions means $1~M$ for solutes and $1~bar$ ($\approx1~atm$) for gases
+	\item $G$ is called \emph{Gibbs free energy}, and is a measure of spontanaety
+	\item $\Delta G < 0$ for spontaneous processes, and $\Delta G > 0$ for non-spontaneous processes
+	\item Systems at equlibrium will have $\Delta G=0$
+	\item Find $\Delta G$ for the reaction: \ch{2 H2(g) + O2(g) -> 2 H2O(g)} \hspace{1em} $\Delta H_{rxn} = -483.6~\dfrac{kJ}{mol}$ \hspace{1em} $\Delta S_{rxn} = -89.0~\dfrac{J}{mol~K}$
+	\begin{itemize}
+		\item At $T=298~K$
+		\item At $T=5500~K$ (Assume $\Delta H_{rxn}$ and $\Delta S_{rxn}$ are independent of temperature)
+	\end{itemize}
+	\item Appendix A.2 also has $\Delta G^{\circ}_f$ values, so you don't have to calculate $\Delta H^{\circ}_{rxn}$ and $\Delta S^{\circ}_{rxn}$ values independently -- These values \emph{only} work at $298~K$
+	\item Endothermic reactions must have a sufficiently large $T\Delta S_{rxn}$ to make $\Delta G_{rxn}<0$
+	\item Solvation reactions are prominent examples - dissolving a regular, ordered crystal lattice has a very large $\Delta S_{rxn}$
+	\item The $\Delta G_{rxn}$ for dissolving a substance is called the free energy of solution
+\end{itemize}
+\section{Free-Energy Changes and Temperature}
+\begin{itemize}
+	\item Looking at $\Delta G = \Delta H - T\Delta S$, we can see that temperature plays a role in the spontaneity of a process
+	\item Draw my quadrant diagram for $\pm\Delta H_{rxn}$ and $\pm\Delta S_{rxn}$
+	
+	\begin{tabular}{cc|c|c|}
+		&& \multicolumn{2}{c}{$\Delta H_{rxn}$}\\
+		&& $+$ & $-$ \\ \midrule
+		\multirow{2}{*}{$\Delta S_{rxn}$} & $+$ & Spontaneous @ High $T$ & Always Spontaneous \\ \cmidrule{2-4}
+		& $-$ & Never Spontaneous & Spontaneous @ Low $T$ \\ \midrule
+	\end{tabular}
+	\item We can find the threshold temperature by solving the Gibbs energy equation for\\$\Delta G_{rxn} = 0 \rightarrow 0 = \Delta H_{rxn} - T\Delta S_{rxn}$
+	\item This simplifies to: $T_{threshold}=\dfrac{\Delta H_{rxn}}{\Delta S_{rxn}}$
+\end{itemize}
+\section{Gibbs Free Energy and Equilibrium}
+\begin{itemize}
+	\item We will often have to deal with reactions that are not at the standard state
+	\item We can relate any conditions to standard conditions through: $\Delta G = \Delta G^{\circ} + RT\ln Q$
+	\begin{itemize}
+		\item $Q$ is the reaction quotient
+		\item $R$ is the gas constant, $R=8.314~\dfrac{J}{mol~K}$
+		\item $T$ must be in Kelvin
+		\item $\ln$ is the base-$e$ natural logarithm
+	\end{itemize}
+	\item When a system is at equilibrium, $\Delta G=0$ and $Q=K$
+	\item This transforms the above equation into: $\Delta G^{\circ} = -RT\ln K$ and therefore $K = e^{\left(-\dfrac{\Delta G^{\circ}}{RT}\right)}$
+	\item Figure 18.9 shows how $G$ varies with reaction progress for various reactions
+	\item Find the equilibrium constant for the combustion of hydrogen gas at $298~K$ and $5500~K$
+	\item Solvation of \ch{NaCl} at $298~K$ has $K_{sp}=37.66$ Calculate $\Delta G^{\circ}_{soln}$ for \ch{NaCl}
+\end{itemize}
+
+\chapter{Electrochemistry}
+\section{Redox Reactions}
+\begin{itemize}
+	\item Electrochemistry studies the links between chemistry and electricity
+	\item Electricity is the flow of charge (usually electrons), and only redox reactions can facilitate that flow
+	\item Redox reactions can be split into half-reactions, addressing reduction and oxidation separately
+	\begin{itemize}
+		\item Consider the reaction: \ch{2 Al(s) + 3 Cl2(g) -> 2 AlCl3(s)}
+		\item Aluminum is oxidized in the half-reaction: \ch{Al -> Al^{3+} + 3 e^-}
+		\item Chlorine is reduced int he half-reaction: \ch{Cl2 + 2 e^- -> 2 Cl^-}
+		\item The electrons gained by chlorine come from the aluminum
+		\item To combine these half-reactions, the total number of electrons must match
+		\item So, we combine \ch{2 Al} with \ch{3 Cl2}
+	\end{itemize}
+	\item We will revisit half-reactions (and see why they are useful) later
+	\item Sometimes a single reactant can be both oxidized and reduced
+	\begin{itemize}
+		\item Such reactions are called \emph{disproportionation} reactions
+		\item Consider the reaction: \ch{2 Cu^+(aq) -> Cu(s) + Cu^{2+}(aq)}
+		\item One \ch{Cu^+} ion is reduced and one is oxidized, making \ch{Cu^+} both the oxidizing and the reducing agent
+	\end{itemize}
+\end{itemize}
+\section{Balancing Redox Reactions}
+\begin{itemize}
+	\item Some redox reactions are particularly difficult to balance
+	\begin{itemize}
+		\item First, some reactants or products are often left out (\ch{H2O}, \ch{OH^-}, and \ch{H3O^+})
+		\item Second, there is a hidden constraint that the electrons lost in one half-reaction must match the number of electrons gained in the the other
+		\item A related fact is that redox reactions must balance total \emph{charge}, and not just the numbers and types of atoms
+	\end{itemize}
+	\item There are seven steps for balancing redox reactions in acidic conditions: 
+	\begin{enumerate}
+		\item Balance any elements other than \ch{H} and \ch{O} as usual
+		\item Assign oxidation numbers to all elements in the equation
+		\item Identify the elements which are reduced and oxidized
+		\item Modify the coefficients, if necessary, to balance the electron exchange
+		\item Balance any missing \ch{O} atoms by adding water molecules
+		\item Balance any missing \ch{H} atoms by adding \ch{H^+} ions
+		\item Verify that all atoms and the overall charges are balanced
+	\end{enumerate}
+	\item Balancing \ch{S2O3^{2-}(aq) + Cl2(g) -> SO4^{2-}(aq) + Cl^-(aq)}:
+	\begin{enumerate}
+		\item \ch{S2O3^{2-}(aq) + Cl2(g) -> 2 SO4^{2-}(aq) + 2 Cl^-(aq)}
+		\item S:$+2$ \hspace{1em} O:$-2$ \hspace{1em} Cl:$0$ \ch{->} S:$+6$ \hspace{1em} O:$-2$ \hspace{1em} Cl:-1
+		\item S:$+2\rightarrow +6$ (lost $4$ \ch{e^-}) and Cl:$0\rightarrow -1$ (gained $1$ \ch{e^-})
+		\item \ch{S2O3^{2-}(aq) + 4 Cl2(g) -> 2 SO4^{2-}(aq) + 8 Cl^-(aq)}
+		\item \ch{S2O3^{2-}(aq) + 4 Cl2(g) + 5 H2O(l) -> 2 SO4^{2-}(aq) + 8 Cl^-(aq)}
+		\item \ch{S2O3^{2-}(aq) + 4 Cl2(g) + 5 H2O(l) -> 2 SO4^{2-}(aq) + 8 Cl^-(aq) + 10 H^+(aq)}
+	\end{enumerate}
+	\item Practice balancing \ch{Cr2O7^{2-}(aq) + Sn^{2+}(aq) -> Cr^{3+}(aq) + SnO2(s)}
+	
+	\ch{Cr2O7^{2-}(aq) + 3 Sn^{2+}(aq) 2 H^+(aq) -> 2 Cr^{3+}(aq) + 3 SnO2(s) + H2O(l)}
+	\item To balance in basic conditions, add four steps:
+	\begin{enumerate}
+		\item For each \ch{H^+(aq)} ion in the equation, add one \ch{OH^-} ion to \emph{both} sides
+		\item Combine \ch{H^+} and \ch{OH^-} ions on the same side to form \ch{H2O}
+		\item Cancel out any \ch{H2O} that appears on both sides
+		\item Verify that all atoms and total charges are balanced
+	\end{enumerate}
+	\item Balance the previous two equations in base instead of in acid:
+	\begin{itemize}
+		\item \ch{S2O3^{2-}(aq) + 4 Cl2(g) + 10 OH^-(aq) -> 2 SO4^{2-}(aq) + 8 Cl^-(aq) + 5 H2O(l)}
+		\item \ch{Cr2O7^{2-}(aq) + 3 Sn^{2+}(aq) + H2O(l) -> 2 Cr^{3+}(aq) + 3 SnO2(s) + 2 OH^-(aq)}
+	\end{itemize}
+\end{itemize}
+\section{Redox Titrations}
+\begin{itemize}
+	\item Redox reactions can be used to titrate unknowns with redox reactivity
+	\item The endpoint can be detected in three ways:
+	\begin{itemize}
+		\item The titrant itself may be colored (purple \ch{MnO4^-} is a oxidizing agent that turns to colorless \ch{Mn^{2+}} ions in redox reactions)
+		\item A secondary redox reaction acting as a color indicator (starch and \ch{I3^-} like in your lab)
+		\item An electrochemical probe (just like a $pH$ probe)
+	\end{itemize}
+	\item Redox reactions will often have complex stoichiometry which must be taken into account when solving a titration problem
+	\item A $15.00~ml$ solution of methanol (\ch{CH3COH}) required $7.35~ml$ of $0.0887~M$ \ch{NaCr2O7^{2-}} according to the reaction: \ch{3 CH3OH(aq) + 2 Cr2O7^{2-}(aq) + 16 H^+(aq) -> 3 CH2O2(aq) + 4 Cr^{3+}(aq) + 11 H2O(l)} ($0.0652~M$)
+\end{itemize}
+\section{Voltaic Cells}
+\begin{itemize}
+	\item Redox reactions can occur in solution with electrons directly transferring between partners
+	\item If we physically separate the reactants, we can force the electrons to travel through a wire to complete the reaction -- We can even force them to do work on their way!
+	\item This is how electrochemical cells work
+	\begin{itemize}
+		\item Voltaic (or galvanic) cells use spontaneous chemical reactions to produce a voltage and electron flow (batteries)
+		\item Electrolytic cells use an external voltage source to force electron flow and drive a non-spontaneous reaction (recharging spent batteries, electroplating, etc.)
+		\item The activity series given in Table 4.7 shows which metal/ion pairs will react spontaneously
+		\item \ch{Zn(s)} with \ch{Cu^{2+}(aq)}, for example, will react spontaneously and thus can make a voltaic cell
+		\item \ch{Ag(s)} with \ch{Cu^{2+}(aq)}, however, is non-spontaneous and will make an electrolytic cell
+	\end{itemize}
+ 	\item Figure 19.4 shows a simple voltaic cell made from the reaction of \ch{Zn(s)} with \ch{Cu^{2+}(aq)}
+ 	\item The solid metal bars are called \emph{electrodes}
+ 	\begin{itemize}
+ 		\item If a solid reactant is not a part of the chemical reaction, one or both of the electrodes can be made of any conductive but chemically inert material, such as graphite or platinum
+ 		\item The \ch{Zn} electrode is where oxidation occurs, and is called the anode
+ 		\item Sometimes the whole left half the cell is called the anode
+ 		\item The \ch{Cu} electrode is where reduction occurs, and is called the cathode
+ 		\item Again, sometimes that whole half of the cell is called the cathode
+ 		\item \emph{Anode} and \emph{oxidation} both start with vowels, while \emph{cathode} and \emph{reduction} both start with consonants
+ 		\item The cathode is labeled ``+'', and has a ``t'' in the middle of it which looks a bit like a ``+''
+ 		\item Use whatever method you need to always know which is anode and which is cathode
+ 	\end{itemize}
+ 	\item To complete the electrical circuit, a \emph{salt bridge} is also required
+ 	\begin{itemize}
+ 		\item As electrons flow, charges would quickly build up and stop the reaction
+ 		\item The salt bridge prevents this buildup by providing ions to counteract the build-up of charge
+ 		\item Anions from the bridge flow into the anode to balance out the new metal cations formed
+ 		\item Cations from the bridge flow into the cathode to replace the lost cations
+ 		\item Electricity flows through the salt bridge, completing the circuit -- it is electricity in the form of moving ions, rather than moving electrons
+ 	\end{itemize}
+ 	\item Reactions in electrochemical cells are often split up into two parts
+ 	\begin{itemize}
+ 		\item Each half of the cell is called a ``half-cell''
+ 		\item Each half-cell has its own electrochemical potential (voltage)
+ 		\item The total cell potential depends on the two half-cells it is constructed from
+ 		\item Half-cells are modular -- you can swap out one to get a different voltage
+ 	\end{itemize}
+ 	\item Cell notation is a simple map of the physical construction of a cell
+ 	\begin{itemize}
+ 		\item Cell notation is much simpler and more useful than complete, balanced chemical reactions
+ 		\item Start with the anode, and work toward the cathode writing all the chemical species present
+ 		\item Single vertical lines indicate phase boundaries, while double vertical lines indicate a salt bridge
+ 		\item Our \ch{Zn(s)}/\ch{Cu^{2+}(aq)} cell would be: \ch{Zn(s)|Zn^{2+}( $1$ ~M)||Cu^{2+}( $1$ ~M)|Cu(s)}
+ 	\end{itemize}
+ 	\item Write the cell notation for a voltaic cell made from a reaction of \ch{Ag^+} ions with \ch{Cu(s)} under standard conditions
+ 	\item Draw a diagram of the \ch{Cu(s)}/\ch{Ag^+} cell
+ 	\begin{itemize}
+ 		\item Identify the cathode and anode
+ 		\item Show the flow of electrons and ions, assuming the salt-bridge contains \ch{KNO3}
+ 	\end{itemize} 
+\end{itemize}
+\section{Cell Potential}
+\begin{itemize}
+	\item In voltaic cells, each half-cell has its own electrochemical potential
+	\item This potential is measured relative to a standard hydrogen electrode (Figure 19.5)
+	\item Table 19.2 shows the reduction potentials of many common half-reactions relative to the SHE
+	\item Note that these are potentials under standard conditions ($1.00~M$ and $1.00~atm$)
+	\item These are also only reduction reactions - it is easiest to tabulate only reduction potentials
+	\item To find the potential (voltage) of a complete voltaic cell, use $E^\circ_{cell}=E^\circ_{cathode}-E^\circ_{anode}$
+	\item We don't need to balance the reaction or consider the number of electrons exchanged
+	\item Note that these are both \emph{reduction} potentials, though oxidation occurs at the anode -- That's why we \emph{subtract} the anode's potential
+	\item Find the standard cell potential for the \ch{Zn(s)|Zn^{2+}( $1$ ~M)||Cu^{2+}( $1$ ~M)|Cu(s)} cell ($1.10~V$)
+\end{itemize}
+\section{Free Energy and Cell Potential}
+\begin{itemize}
+	\item Positive $E_{cell}$ and negative $\Delta G$ both mean that a reaction is spontaneous under the current conditions
+	\item $E$ and $\Delta G$ are actually related by: $\Delta G=-nFE$
+	\item Here, $F$ is the Faraday constant, which gives the charge of a mole of electrons: $F=96,485~\dfrac{C}{mol}$
+	\item $n$ is the number of electrons which are transferred in the properly balanced chemical equation
+	\item Note that the units for $nFE$, $CV$ are actually equal to a $J$ (i.e. $1~CV=1~J$) so a $J$ to $kJ$ conversion is necessary
+	\item This equation is often expressed under standard conditions as: $\Delta G^\circ = -nFE^\circ$
+	\item Using the $E^\circ_{cell}$ found above for the \ch{Zn(s)/Cu^{2+}} cell ($1.10~V$), find $\Delta G^{\circ}$ \hspace{1em} $\left(-212~\dfrac{kJ}{mol}\right)$
+	\item Now, because $\Delta G^\circ = -RT\ln K$, we can now also relate $E^\circ$ and $K$: \hspace{1em} $E^\circ = \dfrac{RT}{nF}\ln K$
+	\item Figure 19.8 summarizes the relationships between $\Delta G^\circ$, $E^\circ$, and $K$
+	\item Using the $E^\circ_{cell}$ found above for the \ch{Zn(s)/Cu^{2+}} cell ($1.10~V$), find $K$ \hspace{1em} ($1.62\times10^{37}$)
+\end{itemize}
+\section{The Nernst Equation and Concentration Cells}
+\begin{itemize}
+	\item Most of the time, we want to construct electrochemical cells under non-standard conditions
+	\item The relationships between $E$ and $\Delta G$ give us the foothold to find voltages of non-standard cells
+	\item $\Delta G = \Delta G^\circ + RT\ln Q \rightarrow -nFE = -nFE^\circ + RT\ln Q \rightarrow E = E^\circ - \dfrac{RT}{nF}\ln Q$ 
+	\item This is called the Nernst equation
+	\item The Nernst equation can be applied to a half-cell or to a whole cell
+	\item Calculate $E$ for a \ch{Zn(s)/Cu^{2+}} cell with $\left[\ch{Zn^{2+}}\right]=0.00500~M$ and $\left[\ch{Cu^{2+}}\right]=3.00~M$ \hspace{1em} ($1.18~V$)
+	\item Concentration cells are made from two half-cells of the same type
+	\begin{itemize}
+		\item The Nernst equation shows how different concentrations lead to different potentials
+		\item A concentration cell made from two \ch{Cu} half-cells would have different $\left[\ch{Cu^{2+}}\right]$ in each cell
+		\item The balanced equation is: \ch{Cu(s) + Cu^{2+}(aq,~cathode) <=> Cu(s) + Cu^{2+}(aq,~anode)}
+		\item For such a cell, $Q=\dfrac{\left[\ch{Cu^{2+}}\right]_{anode}}{\left[\ch{Cu^{2+}}\right]_{cathode}}$ \hspace{1em} and $E^\circ = 0$
+	\end{itemize}
+	\item Find $E$ for a \ch{Cu} concentration cell with $\left[\ch{Cu^{2+}}\right]_{anode} = 0.00200~M$ and $\left[\ch{Cu^{2+}}\right]_{cathode} = 5.50~M$ \hspace{1em} ($0.102~V$)
+\end{itemize}
+\section{Voltaic Cell Applications}
+\begin{itemize}
+	\item A common electrolytic cell is the lead storage battery used in cars, boats, etc. (Figure 19.10)
+	\begin{itemize}
+		\item Anode: \ch{Pb(s) + SO4^{2-}(aq) -> PbSO4(s) + 2 e^-}
+		\item Cathode: \ch{PbO2(s) + SO4^{2-}(aq) + 4 H^+(aq) + 2 e^- -> PbSO4(s) + 2 H2O(l)}
+		\item Note that all redox active species in this cell are solid
+		\item This eliminates the need for a salt bridge -- both electrodes can share the same solution
+		\item For higher voltage multiple pares of electrodes can share the same \ch{H2SO4} solution
+		\item The concentrated \ch{H2SO4} solution ensures that concentrations don't change much as the cell discharges, keeping the voltage relatively constant
+	\end{itemize}
+	\item Dry Cells (common batteries -- Figure 19.11)
+	\begin{itemize}
+		\item Dry cells use mobile ions in a gel or paste rather than an aqueous solution
+		\item The salt bridge is usually a thin sheet of porous paper soaked in an electrolyte gel
+		\item The first dry cells used acidic paste, while later ``alkaline'' cells used basic paste
+	\end{itemize}
+	\item Lithium Ion Polymer (LiPo) Cells
+	\begin{itemize}
+		\item In LiPo cells, no metal is actually oxidized or reduced in the common way
+		\item The cathode and anode are open network polymers with permanent charges
+		\item In a charged LiPo cell, \ch{Li^+} ions are forced into the positively chaged anode polymer matrix
+		\item As it dischages, the \ch{Li^+} ions migrate and intercalate themselves into the negatively charged cathode
+		\item This flow of charge induces a complementary flow of electrons from the anode to the cathode through the external circuit
+	\end{itemize}
+	\item Fuel Cells (Figure 19.13)
+	\begin{itemize}
+		\item A fuel cell is any cell where the reactants are replenished as the reaction proceeds
+		\item In practice, fuel cells usually use combustion reactions like \ch{2 H2 + O2 -> 2 H2O}
+		\item This reaction is technically a redox reaction and can be separated into half-reactions like we see in ordinary cells
+		\item Anode: \ch{H2(g) -> 2 H^+(aq) + 2 e^-}
+		\item Cathode: \ch{O2(g) + 4 H^+(aq) + 4 e^- -> 2 H2O(l)}
+		\item As \ch{H^+} ions migrate from anode to cathode across the electrolyte, electrons flow the same way through the external circuit to maintain charge balance
+		\item \ch{H2} fuel cells have a much higher theoretical limit of efficiency than \ch{H2} combustion engines
+	\end{itemize}
+	\item Corrosion (rusting) is the unintended oxidation of metal
+	\begin{itemize}
+		\item Figure 19.14 shows how water can mediate corrosion
+		\item Acidic conditions and dissolved salts can exacerbate the problem of corrosion
+		\item Cathodic protection is a way of preventing corrosion (Figure 19.15)
+		\begin{itemize}
+			\item A vital metal is placed in contact with a more reactive metal -- the sacrifical anode
+			\item When corrosion occurs, the sacrifical anode is oxidized first, leaving the vital metal intact
+			\item Galvanized steel has been coated with a layer of \ch{Zn} to offer cathodic protection
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\section{Electrolytic Cells and Applications of Electrolysis}
+\begin{itemize}
+	\item Figure 19.16 illustrates how electrolytic cells work like the voltaic cells in reverse
+	\item We can reduce even very reactive metals (like \ch{Na} and \ch{K}) using electrolysis
+	\item Aluminum was more expensive than gold until electrolysis was discovered because chemically reducing aluminum was impossible at the time
+	\item Electrolysis Calculations
+	\begin{itemize}
+		\item We can measure the flow of electrons using amperes $\left(1~A = 1~\dfrac{C}{s}\right)$
+		\item Recall that $F$ relates $C$ to $mol$: $1~mol~e^-=96,485~C$
+		\item Find the mass of \ch{Al(s)} produced if an electrolytic cell runs at $0.575~A$ for $40~min$
+		\item $40~min \rightarrow 2400~s \rightarrow 	1380~C \rightarrow 	0.0143~mol~e^- \rightarrow 0.00477~mol~\ch{Al}\rightarrow 0.129~g~\ch{Al}$
+		\item A LiPo cell-phone battery has a full charge of $3000~mAh$. How many $g$ of \ch{Li^+} ions does the battery contain (assume complete migration of the ions) ($0.78~g$)
+	\end{itemize}
+	\item Applications of Electrolysis
+	\begin{itemize}
+		\item Figure 19.18 shows a simple electroplating process
+		\item Electroplating is used to make galvanized materials, white gold jewelry, and more
+		\item Figure 19.19 shows electrolytic refining of copper
+	\end{itemize}
+\end{itemize}
+
+\chapter{Nuclear Chemistry}
+\section{Natural Radioactivity}
+\begin{itemize}
+	\item Until now, we have talked exclusively about \emph{chemical reactions}
+	\item Table 20.1 shows how \emph{nuclear reactions} differ from chemical ones
+	\item Nuclei are sequestered from the outside world inside their hermitage with electron walls -- environmental and chemical conditions don't seem to affect nuclear reactions in any way
+	\item Nuclear chemistry realizes the alchemist's dream of nuclear transmutation, elbeit within strict limits
+	\item ``Isotope'' and ``nuclide'' are near-synonyms. Technically, isotope is the whole atom while nuclide omits the electrons
+	\item Radioactive decay:
+	\begin{itemize}
+		\item Isotopes which spontaneously undergo nuclear decay are called radioactive
+		\item Nuclear radiation is the energy and matter cast off in a nuclear reaction
+		\item Table 20.2 lists the different types of nuclear radiation
+		\item Each type of radiation has a symbol, like an atomic symbol, which is useful for balancing nuclear reactions
+		\item The reactant is called a parent nuclide, and the product is called a daughter nuclide
+		\item Balance the reactions by balancing the mass \# and charge \#
+	\end{itemize}
+	\item Alpha decay:
+	\begin{itemize}
+		\item Alpha decay ejects an alpha particle (\ch{^4_2He} nuclide)
+		\item Balance the $\alpha$ decay of \ch{^{238}_{92}U}: \hspace{1em} \ch{^{238}_{92}U -> ^{234}_90Th + ^4_2$\alpha$}
+	\end{itemize}
+	\item Beta decay:
+	\begin{itemize}
+		\item Beta decay converts a neutron into a proton and an electron, and ejects the electron
+		\item Beta decay does \emph{not} imply that a neutron is simply a proton plus an electron -- talk to the physicists because I've never quite understood the standard model
+		\item Balance the $\beta$ decay of \ch{^{210}_81Tl}: \hspace{1em} \ch{^{210}_81Tl ->  ^{210}_{82}Pb + ^0_{-1}$\beta$}
+	\end{itemize}
+	\item \ch{^{234}_{90}Th} decays into \ch{^{234}_{91}Pa}. What decay process is involved? (beta decay)
+	\item Gamma decay:
+	\begin{itemize}
+		\item A gamma ray is simply a very high energy photon
+		\item Most nuclear reactions will release a gamma ray, but some reactions release nothing else
+		\item Balance the gamma decay of \ch{^{119}_{50}Sn}: \hspace{1em} \ch{^{119}_{50}Sn -> ^{119}_{50}Sn + ^0_0$\gamma$}
+	\end{itemize}
+	\item Positron Emission:
+	\begin{itemize}
+		\item Positron emission converts a proton into a neutron and emits a positron
+		\item A positron is the anti-matter equivalent of an electron
+		\item Balance the positron emission decay of \ch{^{18}_{9}F}: \hspace{1em} \ch{^{18}_{9}F -> ^{18}_{8}O + ^0_{+1}$\beta$}
+	\end{itemize}
+	\item Electron Capture:
+	\begin{itemize}
+		\item Electron capture consumes an electron to convert a proton into a neutron
+		\item Balance the electron capture decay of \ch{^{11}_6C}: \hspace{1em} \ch{^{11}_6C + ^0_{-1}e -> ^{11}_5B} 
+	\end{itemize}
+	\item \ch{^{40}_{19}K} decays into \ch{^{40}_{18}Ar} and a radiation particle. What decay process is involved? (positron emission)
+	\item Radioactive Series:
+	\begin{itemize}
+		\item Some nuclear reaction products are themselves also radioactive
+		\item A whole chain of nuclear reactions can take place, until a stable product is reached
+		\item Figure 20.3 shows the radioactive series for \ch{^{238}_{92}U}
+	\end{itemize}
+	\item Measuring radioactivity:
+	\begin{itemize}
+		\item Activity is defined as disintegrations per unit time
+		\item The becquerel is the SI unit: $1~Bq = 1~\dfrac{d}{s}$
+		\item The curie is a much more useful unit: $1~Ci = 3.7\times10^{10}~Bq$
+		\item A Geiger counter is a common instrument for measuring radioactivity
+		\item Radioisotopes can be used as \emph{tracers} in medical imaging, and in determining reaction mechanisms
+	\end{itemize}
+\end{itemize}
+\section{Nuclear Stability}
+\begin{itemize}
+	\item Why are some nuclei stable, while others are radioactive?
+	\item The \emph{strong} nuclear force holds protons and neutrons together in a nucleus despite the repulsions between protons
+	\item Too many neutrons, though, can also destabilize the nucleus
+	\item Table 20.3 shows how pairing neutrons and protons seems to lend stability
+	\item Magic numbers:
+	\begin{itemize}
+		\item Ions tend to be stable when they have certain \#s of electrons (2, 10, 18, 36, etc.)
+		\item Similarly, nuclides are stable with certain numbers of neutrons or protons
+		\item These numbers are called ``magic numbers'' (terrible name), and suggest energy level structures for nuclides like electronic energy levels for ions
+	\end{itemize}
+	\item Belt of Stability
+	\begin{itemize}
+		\item Figure 20.5 shows the belt of stability
+		\item Lead is the largest element with a stable isotope -- all elements beyond lead show radioactivity for all their isotopes
+		\item Nuclides above the belt will likely decay through $\beta$ decay
+		\item Nuclides below the belt will likely decay through $\alpha$ decay
+		\item We can estimate if an isotope is above or below the belt by comparing its mass number to the atomic weight found on the periodic table (weights are based on stable isotopes)
+		\item Some models predict that there is an ``island of stability'' much further out -- promising whole new stable elements to be discovered in particle accelerators
+	\end{itemize}
+\end{itemize}
+\section{Half-Life}
+\begin{itemize}
+	\item Decay activity depend only the number of radioactive nuclides present $A=kN$
+	\item This is just a form of \nth{1}-order kinetics: $rate=k\left[\ch{A}\right]$
+	\item So, the half-life does not depend on the amount of the sample (Figure 20.6)
+	\item Table 20.4 shows the half-life for some common radioactive isotopes
+	\item One form of \nth{1}-order integrated rate law: $\ln\left(\dfrac{N_0}{N}\right)=\left(\dfrac{\ln 2}{T_{\nicefrac{1}{2}}}\right)t$
+	\item A $10.0~g$ sample of \ch{^{131}I} ($t_{\nicefrac{1}{2}}=8~d$) is left out for 2 weeks. How many $g$ remain? \\($10~g\cdot e^{-1.213}=2.97~g$)
+	\item Rearrange the above eqution to get: $t = ln\left(\dfrac{N_0}{N}\right)\left(\dfrac{t_{\nicefrac{1}{2}}}{\ln 2}\right)$
+	\item \ch{^{90}Sr} has $t_{\nicefrac{1}{2}}=28.8~y$. How long does it take for a \ch{^{90}Sr} sample to decay to $\dfrac{1}{3}$ of its initial amount? ($45.6~y$)
+\end{itemize}
+\section{Radiometric Dating}
+\begin{itemize}
+	\item Because of the reliability of radioactive decay, we can use decay rates to accurately measure time
+	\item We can measuring the ratio of parent and daughter nucleides in an old sample to determine how long ago that sample contained pure parent nucleide
+	\item This process is called radiometric dating
+	\item Comparing \ch{^{238}U} and \ch{^{206}Pb}, or \ch{^{40}K} and \ch{^{40}Ar} can give dates on the order of billions of years
+	\item \ch{^{238}U} has $t_{\nicefrac{1}{2}}=4.47\times10^9~y$ and \ch{^{40}K} has $t_{\nicefrac{1}{2}}=1.250\times10^9~y$
+	\item Calculate the age of a rock which contains $5.5~g$ of \ch{^{206}Pb} and $29.6~g$ of \ch{^{238}U} ($1.3\times10^8~y$)
+	\item Carbon dating:
+	\begin{itemize}
+		\item \ch{^{14}C} has $t_{\nicefrac{1}{2}}=5730~y$
+		\item \ch{^{14}C} is also useful because it is naturally generated in the upper atmosphere, at rates that keep the \ch{^{14}C} abundance in the atmosphere constant
+		\item \ch{^{14}C} is then incorporated into living tissues of plants and animals at that same abundance
+		\item Once an organism dies, its \ch{^{14}C} decays and we can use it to predict the date of death
+		\item The \ch{^{14}C} decay product (\ch{^{14}N}) is ubiquitous, so we cannot use the parent/daughter ratio -- instead we compare the sample activity to the activity of current living tissues
+		\item Living biomatter has an activity of $15.3~\dfrac{d}{min~g}$, and an ancient wooden tool exhibits an activity of $14.4~\dfrac{d}{min~g}$. How old is the wooden tool? ($501~y$)
+	\end{itemize} 
+\end{itemize}
+\section{Fission and Fusion}
+\begin{itemize}
+	\item In addition to natural decay processes, entirely different nuclear reactions can be induced and controlled to produce energy
+	\item These reactions often involve isotopes produced in other nuclear reactions or in particle accelerators
+	\item The first of these reactions involved bombarding stable nuclei with alpha particles, but it was later discovered that neutrons can induce reactions as well
+	\item Nuclear Fission
+	\begin{itemize}
+		\item Fission is when a large nuclide breaks apart into two smaller daughter nuclides (not simply an $\alpha$ particle)
+		\item Figure 20.9 shows the most common nuclear fission reaction: \\
+		\ch{^{235}_{92}U + ^1_0n -> ^{141}_{56}Ba + ^{92}_{36}Kr + 3 ^1_0n}
+		\item This reaction requires a neutron to initiate, and that neutron must have low kinetic energy
+		\item Becaues these constraints, this reaction doesn't occur naturally except under very ideal conditions
+		\item Each fission produces three new neutrons which \emph{can} trigger three new fission reactions
+		\item This type of reaction can rapidly grow out of control, and is called a \emph{chain reaction}
+		\item The reaction of \ch{^{235}U} or \ch{^{239}Pu} is allowed to escalate exponentially in nuclear weapons, resulting in an enormous amount of energy released in a very short time
+		\item Detonation is triggered by bringing two sub-critical masses of \ch{^{235}U} or \ch{^{239}Pu} together to make a critical mass
+		\item For nuclear power generation, the reaction is carefully controlled to run at a steady rate
+		\item Figure 20.11 shows a simple diagram of a nuclear power plant
+		\item Water around the fuel rods moderates the kinetic energy of the neutrons and absorbs energy to be converted to electricity in a standard steam generator
+		\item Carbon or zirconium control rods will absorb neutrons, removing them from the reaction and slowing the reaction down
+		\item A ``nuclear melt-down'' is when the fuel rods literally melt, which circumvents the ability of the control rods to stop a chain reaction 
+		\item Fusion reactions can have different products. Finish balancing the following reaction:\\
+		\ch{^{235}_{92}U + ^1_0n -> ^{137}_{52}Te + ? + 2 ^1_0n} \hspace{2em} $\left(\ch{^{97}_{40}Zr}\right)$		
+	\end{itemize}
+	\item Nuclear Fusion
+	\begin{itemize}
+		\item Some reactions will combine nuclides to create bigger ones
+		\item These reactions are called \emph{fusion} reactions
+		\item Fusion reactions power the sun itself
+		\begin{itemize}
+			\item \ch{^1_1H + ^1_1H -> ^2_1H + ^0_{+1}$\beta$}
+			\item \ch{^1_1H + ^2_1H -> ^3_2He + ^0_0$\gamma$}
+			\item \ch{^3_2He + ^3_2He -> ^4_2He + 2 ^1_1 H}
+			\item \ch{^2_1H} is called deuterium, and its nucleus is called a deuteron
+			\item \ch{^3_1H} is called tritium, and its nucleus is called a triton
+			\item Different elements are generated depending on the age and size of the star, with the largest elements only being generated in cataclysmic supernova events
+		\end{itemize}
+		\item These reactions require very high temperatures and pressures
+		\item Nuclear fusion power plants are only in early research stages
+		\item Nuclear fusion weapons, called thermonuclear weapons or ``H-bombs'', require a fission bomb to first generate the energy to drive the fusion reaction
+	\end{itemize}
+\end{itemize}
+\section{Energetics of Nuclear Reactions}
+\begin{itemize}
+	\item In exothermic chemical reactions, the energy given off comes from the formation of stable chemical bonds
+	\item In nuclear reactions, the energy given off comes from the formation of stable nuclei
+	\item The energy lost is so great, it manifests as a lost mass according to $E=mc^2$
+	\item Consider the reaction: \ch{^{238}_{92}U -> ^{234}_{90}Th + ^4_2He}
+	
+	\begin{tabular}{rl}
+		Isotope & Mass ($u$) or $\left(\dfrac{g}{mol}\right)$ \\ \midrule
+		\ch{^{238}_{92}U} & $238.00033$\\
+		\ch{^{234}_{90}Th} & $233.99423$\\
+		\ch{^4_2He} & $4.00151$
+	\end{tabular}
+	\begin{itemize}
+		\item Adding up the products gives a mass $0.00459~\dfrac{g}{mol}$ less than the mass of \ch{^{238}_{92}U}
+		\item This change is mass can be used to find the energy released: $\Delta E=\delta mc^2$ (convert to $kg$)
+		\item So, the reaction released $4.125\times10^{11}~\dfrac{J}{mol}$, or $4.125\times10^{8}~\dfrac{kJ}{mol}$
+		\item Note that this is 100,000 times more energy than any chemical reactions
+		\item This is an $\alpha$-decay reaction, fission and fusion reactions are still more energetic!
+	\end{itemize}
+	\item Nuclear reactions are often described as converting mass into energy -- this is a bit misleading -- rather, energy has its own mass, and enough energy is lost that we can observe it when we measure mass
+\end{itemize}
+\section{Nuclear Binding Energy}
+\begin{itemize}
+	\item We can see a similar mass/energy relationship in any nucleus
+	\item Consider a helium nucleus:
+	
+	\begin{tabular}{rl}
+		Particle & Mass ($u$) or $\left(\dfrac{g}{mol}\right)$ \\ \midrule
+		proton \ch{^{1}_{1}p} & $1.00728$\\
+		neutron \ch{^{1}_{0}n} & $1.00866$\\
+		\ch{^4_2He} & $4.00151$
+	\end{tabular}
+	\begin{itemize}
+		\item The mass of \ch{^4_2He} is less than the sum of its parts by $0.03037~\dfrac{g}{mol}$!
+		\item This discrepancy is called the mass defect
+		\item The mass defect is due to binding energy holding all nucleons together in a stable nucleus
+	\end{itemize}
+	\item The binding energy per nucleon increases sharply through the small elements until it reaches a maximum at \ch{Fe}, and begins to slowly drop
+	\item This means that it is energetically favorable to combine small elements up until \ch{Fe}, and it is energetically favorable to break down large elements down until \ch{Fe}
+\end{itemize}
+
+\chapter{Organic Chemistry}
+\section{Introduction to Hydrocarbons}
+\begin{itemize}
+	\item Organic chemistry is the study of compounds which contain carbon
+	\item Carbon's small size, tendency to form 4 bonds, and ability to bond into long chains makes it possible to form many complex organic compounds
+	\item The simplest organic molecules are hydrocarbons, composed of only hydrogen and carbon
+	\item Because structural information is relevant to organic molecules, a chemical formula is usually not sufficient
+	\item Table 21.1 shows different ways to represent organic molecules
+	\item Alkanes, or saturated hydrocarbons, have only single bonds and a chemical formula of \ch{C_nH_{2n+2}}
+	\item Alkane carbons are $sp^3$-hybridized, with tetrahedral geometry and $109.5^\circ$ bond angles
+	\item Alkanes are named according to their own rules
+	\begin{enumerate}
+		\item The name is based on the longest continuous chain of carbons
+		\begin{itemize}
+			\item These names use uncommon prefixes given in Table 21.1
+			\item These are the parent names, which we will add to in the other rules
+		\end{itemize}
+		\item Branches are named according to their length as shows in Table 21.3
+		\item The position of a branch is counted from the end, such that the first branch point has the lowest possible number
+		\item For multiple substituents, use the prefixes di-, tri-, tetra-, etc.
+		\item An apparent branch on the first or final carbon is not actually a branch, but a continuation of the main longest chain
+		\item Numbers \emph{may} be omitted when the branch position is unambiguous, but I recommend including them anyway
+		\item Different substituents are listed in alphabetical order (excluding prefixes)
+		\item Halogen substituents are called fluoro-, chloro-, bromo-, and iodo-
+	\end{enumerate}
+	\item Practice naming 4-ethyl-2-methylhexane
+	\item Draw 2,2-dichloro-4,5-methylhexane
+	\item All alkanes undergo similar reactions regardless of their length:
+	\begin{itemize}
+		\item Complete Combustion: \ch{2 C2H6(g,~excess) + 7 O2(g) ->[heat] 4 CO2(g) + 6 H2O(g)}
+		\item Incomplete Combustion: \ch{2 C2H6(g) + 5 O2(g) ->[heat] 4 CO(g) + 6 H2O(g)}
+		\item Halogenation: \ch{CH4(g) + Br2(g) ->[heat] CH3Br(g) + HBr(g)}\\
+		\hphantom{Halogenation: } \ch{CH4(g) + Br2(g,~excess) ->[heat] CBr4(g) + 4 HBr(g)}
+	\end{itemize}	
+\end{itemize}
+\section{Unsaturated Hydrocarbons}
+\begin{itemize}
+	\item Alkenes are hydrocarbons with one or more C-C double bond
+	\item Alkenes will have fewer Hs than alkanes, so they are called \emph{unsaturated}
+	\item Alkene carbons are $sp^2$-hybridized, with trigonal planar geometry and $120^\circ$ bond angles
+	\item Alkenes are named like alkanes, ending in -ene
+	\item The double-bond position is numbered according to the carbon closest to the start of the chain
+	\item Alkenes can undergo addition reactions across their double-bond:
+	\begin{itemize}
+		\item \ch{CH2=CH2(g) + Br2(g) -> CH2Br-CH2Br(g)}
+		\item \ch{CH2=CH2(g) + HBr(g) -> CH3-CH2Br(g)}
+		\item \ch{CH2=CH2(g) + H2O(g) ->[Acid~Catalyst] CH3-CH2OH(g)}
+		\item \ch{CH2=CH2(g) + H2(g) ->[Nickel~Catalyst] CH3-CH3(g)}
+	\end{itemize}
+	\item Alkynes are hydrocarbons with one or more C-C triple bond
+	\item Alkynes are even further unsaturated
+	\item Alkyne carbons are $sp$-hybridized, with linear geometry and $180^\circ$ bond angles
+	\item Alkynes are named just like alkenes, but ending in -yne
+	\item Alkynes can undergo double addition reactions across their triple-bond:
+	\begin{itemize}
+		\item \ch{CH$\equiv$CH(g) + 2 Br2(g) -> CHBr2-CHBr2(g)}
+		\item \ch{CH$\equiv$CH(g) + 2 H2(g) ->[Catalyst] CH3-CH3(g)}
+	\end{itemize}
+	\item Aromatic hydrocarbons contain multiple delocalized double bonds
+	\item Alternating single and double bonds allows the electrons to be shared across $\pi$ bonds
+	\item Benzene and its derivatives are examples of aromatic hydrocarbons
+	\item Aromatic double-bonds do not undergo addition reactions like in alkenes, but can be halogenated like alkanes
+	\item Figure 21.9 shows two different ways to name substituted benzenes
+\end{itemize}
+\section{Introduction to Isomerism}
+\begin{itemize}
+	\item Atoms can be arranged in different ways to make different molecules with the same chemical formula
+	\item These are called \emph{isomers}, and they have different chemical and physical properties
+	\item Structural isomers have different bonds between different atoms
+	\begin{itemize}
+		\item Butane and 2-methylpropane are structural isomers
+		\item The larger a chemical formula is, the more structural isomers it will have
+		\item Figure 21.12 shows how butane can rotate around its bond to make different conformers, but they are still the same isomer
+	\end{itemize}
+	\item \emph{Cis/trans} isomers are arranged differently around a double bond
+	\begin{itemize}
+		\item Figure 21.13 shows why $\pi$ bonds cannot rotate
+		\item This creates the possibility of \emph{cis/trans} isomers
+		\item Figure 21.14 shows \emph{cis/trans} isomers of 2-butene
+		\item \emph{cis-} isomers put the substituents on the same side of the double bond
+		\item \emph{trans-} isomers put the substituents on opposite sides of the double bond
+		\item Cis/trans isomers can't exist if either side of the double bond has two identical groups
+	\end{itemize}
+	\item Optical isomers are not superimposable on their mirror image
+	\begin{itemize}
+		\item Molecules which have optical isomers are called \emph{chiral}
+		\item Figure 21.15 shows an analogy between optical isomers and right/left handed-ness
+		\item A left and a right glove have the same parts in the same places (thumb next to the pointer, etc.), but they only fit on the correct hand
+		\item Molecules are chiral if there is one tetrahedral center with four unique groups
+		\item \ch{CHClBrF} is chiral, and there are two non-superimposable versions of it
+		\item 3-chloro-3-methylhexane is also chiral, with the 3rd carbon acting as a chiral center
+		\item Macrostructures can also be chiral, like protein helixes
+		\item Levomethamphetamine is a decongestant, and rectomethamphetamine is a controlled drug
+	\end{itemize}
+\end{itemize}
+\section{Organic Halides, Alcohols, Ethers, and Amines}
+\begin{itemize}
+	\item Organic molecules will often contain \emph{heteroatoms} -- atoms other than \ch{C} and \ch{H}
+	\item Heteroatoms make up \emph{functional groups} -- moeties of atoms which control the reactive properties of atoms
+	\item Organic molecules can be viewed as modular, like Legos, with different functional groups attaching at different points and performing different functions
+	\item Alkyll groups are often notated as \ch{R} (\ch{R}$^\prime$,  \ch{R}$^{\prime\prime}$, etc. for different alkyll groups)
+	\item Organic halides, or alkyll halides were already covered in the alkanes section
+	\item Alcohols contain an \ch{OH} functional group
+	\begin{itemize}
+		\item Alcohols are named with an -ol ending to the parent name
+		\item The alcohol is numbered according to the carbon which is bonded to the \ch{OH} group
+		\item Alcohols can react with reactive metals like \ch{Na} and \ch{K} in the same way that water does
+		\item Alcohols can react with each other to produce ethers in dehydration reactions
+		
+		\ch{ROH + R^{$\prime$}OH ->[ H2SO4 ] ROR^{$\prime$} + H2O}
+	\end{itemize}
+	\item Ethers contain two alkyll groups linked through an \ch{O}
+	\begin{itemize}
+		\item Ethers are named by the longer alkyl chain, with the other alkyl chain making a substituent with an -oxy ending (methoxyethane)
+		\item An older convention is to just name the two alkyl groups and end with ether (ethyl methyl ether)
+		\item Ethers are structural isomers of alcohols with the general formula of \ch{C_nH_{2n+2}O}
+	\end{itemize}
+	\item Amines contain a nitrogen bound to one or more alkyl groups
+	\begin{itemize}
+		\item Amines are named by listing the alkyl groups and ending with amine
+		\item Figure 21.18 shows primary, secondary, and tertiary amines
+	\end{itemize}
+\end{itemize}
+\section{Aldehydes, Ketones, Carboxylic Acids, Esters, and Amides}
+\begin{itemize}
+	\item Aldehydes and ketones both contain a carbonyl group (\ch{C=O})
+	\begin{itemize}
+		\item Aldehydes have the \ch{C=O} on a terminal carbon, while ketones have it in the body of the chain
+		\item Aldehydes are named with an -al ending on the parent name
+		\item Ketones end in -one, with a number indicating the carbonyl position
+		\item Aldehydes and ketones result from the oxidation of alchohols (see Figure 21.19)
+	\end{itemize}
+	\item Carboxylic acids contain the \ch{CO2H} group on a terminal carbon
+	\begin{itemize}
+		\item A carboxylic acid looks like an aldehyde and an alcohol together, but its reactive properties are \emph{very} different from either of those
+		\item The \ch{OH} group on a carboxylic acid is acidic
+		\item Carboxylic acids are named with an -oic acid ending
+		\item Carboxylic acids are formed by further oxidizing aldehydes
+	\end{itemize}
+	\item Esters contain the \ch{RCOOR^{$\prime$}} functional group
+	\begin{itemize}
+		\item Esters are formed by combining a carboxylic acid with an alcohol in a condensation reaction
+		
+		\ch{RCOOH + R^{$\prime$}OH -> RCOOR^{$\prime$} + H2O}
+		\item Esters are named by the carboxylic acid name with an -oate ending, and the alcohol's parent alkyl name (methylpropanoate)
+		\item Esters will often have pleasant aromas (think banana laffy-taffys)
+		\item Esters linkages can also be used to form polymers, covered in the next section
+	\end{itemize}
+	\item Amides are like esters, but with an amine in place of the alcohol (\ch{RCONR^{$\prime$}R^{$\prime\prime$}})
+	\begin{itemize}
+		\item Amides are also formed by condensation reactions
+		
+		\ch{RCOOH + NHR^{$\prime$}R^{$\prime\prime$} -> RCONR^{$\prime$}R^{$\prime\prime$} + H2O}
+		\item Amides are named like esters, but with the -amide ending (methylethylpropanamide)
+		\item Amide bonds can also be used to form polymers, like proteins made from amino acids
+	\end{itemize}
+	\item Table 21.7 summarizes how to recognize and name these classes of organic compounds
+\end{itemize}
+\section{Polymers}
+\begin{itemize}
+	\item Polymers are very large molecules made from repeating smaller units over and over again
+	\item The smaller building blocks are called monomers
+	\item Figure 21.21 shows formation of a condensation polymer
+	\begin{itemize}
+		\item By using dicarboxylic acids and dialcohols, ester formation can continue in both directions
+		\item Polymers formed this way are called polyesters
+	\end{itemize}
+	\item Figure 21.22 shows formation of an addition polymer
+	\begin{itemize}
+		\item Alkene monomers are reacted to form one enormous alkane polymer
+		\item We won't cover the reaction mechanism in this class, but the electrons in the $\pi$ bonds are used to form new covalent bonds between monomers
+	\end{itemize}
+	\item Polymers have very different properties than their monomers, but the monomers \emph{do} affect the polymer properties
+	\item The discovery of polymer chemistry started a second mini industrial revolution based on plastics
+\end{itemize}
+
+\chapter{Coordination Chemistry}
+\section{Review of Using Oxidation States in Naming Compounds}
+\begin{itemize}
+	\item For metal cations which can take more than one charge (transition metals and a few main group metals), the charge must be indicated in the compound name with a Roman numeral
+	\item For example, \ch{Cu2SO4} is copper(I)sulfate and \ch{CuSO4} is copper(II)sulfate
+\end{itemize}
+\section{The Properties of Transition Metals}
+\begin{itemize}
+	\item Chemical properties of transition metals depend on the electronic configuration in the d-subshell
+	\item Table 22.1 gives the configurations for three rows of transition metals -- note exceptions like \ch{Cr}, \ch{Cu}, \ch{Pd}, etc.
+	\item Ions of transition metals will ususally lose $s$ electrons before $d$ electrons
+	\item Table 22.2 shows the possible oxidation states for one row of transition metals
+	\item Periodic trends in the transition metals follow general trends, but the changes are smaller than expected
+	\item Figure 22.2 shows atomic radius in the transition metals -- note the lanthanoid contraction
+	\item Figure 22.3 shows ionization energies -- Note a few deviations from the trend like \ch{Ag} and \ch{Cr}
+	\item Figure 22.4 shows electronegativities -- There are quite a few exceptions here because electronegativity depends complexly on the other properties
+\end{itemize}
+\section{Introducion to Coordination Compounds}
+\begin{itemize}
+	\item Complexes are composed of a metal cation (Lewis acid), and one or more ligands (Lewis bases)
+	\begin{itemize}
+		\item The resulting Lewis adduct is called a coordionation compound or a complex ion depending on whether it has an overall charge
+		\item The primary coordination sphere consists of ligands covalently bonded to the cation
+		\item The coordination \# is the number of ligand atoms bonded to the cation (not necessarily the same as the \# of ligands)
+		\item Other ions or molecules can bind to the complex through intermolecular forces -- called the secondary coordination sphere
+		\item Figure 22.5 shows the coordination spheres of \ch{[Co(NH3)6]Cl3}
+	\end{itemize}
+	\item Bonds in coordination complexes are coordinate covalent bonds (dative bonds)
+	\begin{itemize}
+		\item The atoms which donate the electron pair are called \emph{donor atoms}
+		\item Figure 22.6 shows how ligands donate electron pairs to form dative bonds
+		\item Some ligands can bond through more than one atom -- called polydentate ligands
+		\item Complexes with polydentate ligands are particularly stable, known as the chelate effect
+		\item Table 22.3 shows a list of common ligands and how they form bonds
+		\item Figure 22.7 shows hexadentate EDTA bonding with a cation -- EDTA is sometimes used to neutralize toxic metals
+	\end{itemize}
+	\item Coordination compounds bond in similar geometries to those predicted in VSEPR theory (Table 22.4)
+\end{itemize}
+\section{Nomenclature of Coordination Compounds}
+\begin{itemize}
+	\item The overall charge of a coordination compound or complex ion is the sum cation and ligand charges
+	\item Naming coordination compounds is complex and not important enough to warrant attention during our unplanned distance learning
+	\item You'll learn this nomenclature again in inorganic chemistry
+\end{itemize}
+\section{Isomerism in Coordination Compounds}
+\begin{itemize}
+	\item Coordination compounds can exhibit both structural and stereo isomerism
+	\item Structural isomers are further divided coordination and linkage isomers
+	\begin{itemize}
+		\item Coordination isomers switch ligands between the primary and secondary coordination spheres
+		\item \ch{[CO(NH3)5Cl]Br} and  \ch{[CO(NH3)5Br]Cl} are coordination isomers (The textbook has a small error here)
+		\item Linkage isomers connect ligands through different donor atoms
+		\item Thiocyanate can form bonds either through the \ch{S} or the \ch{N}
+		\item Thiocyanate ligands will be written \ch{SCN} or \ch{NCS} depending on the linkage
+		\item \ch{[Pd(NH3)2Cl(SCN)]} and \ch{[Pd(NH3)2Cl(NCS)]} are linkage isomers
+	\end{itemize}
+	\item Stereoisomers  are also divided into cis/trans and optical isomers
+	\begin{itemize}
+		\item Cis/trans in this case is different than what we've seen before -- there are no double bonds here
+		\item Figure 22.10 shows cisplatin and transplation coordination compounds
+		\item Figure 22.11 shows how some bidentate ligands can make the complex chiral, leading to optical isomerism
+	\end{itemize}
+\end{itemize}
+\section{Crystal Field Theory}
+\begin{itemize}
+	\item The donated electrons from coordination bonds will affect the energies of the $d$-orbitals in the cation because of their mutual repulsion
+	\item Crystal field theory predicts electronic, magnetic, and spectroscopic properties of coordination compounds based on these interactions
+	\item Figure 22.12 shows how ligands and $d$-orbitals are oriented in an octahedral complex
+	\begin{itemize}
+		\item The $d_{z^2}$ and $d_{x^2-y^2}$ orbitals point directly to a ligand, raising their energies
+		\item The $d_{xy}$, $d_{xz}$, and $d_{yz}$ orbitals point between ligands, minimizing the repulsion from ligand electrons
+		\item Figure 22.13 shows how the energies for all $d$ orbitals split when a complex forms
+		\item The energy splitting is on the order of the energy cost for pairing electrons in the same orbital
+		\item Electrons will fill the orbitals differently depending on how wide the splitting is (Figure 22.14)
+		\begin{itemize}
+			\item For small splittings, electrons will spread out, making a high-spin complex
+			\item For large splittings, electrons will pair up, making a low-spin complex
+		\end{itemize}
+		\item Figure 22.15 shows all possible electron configurations for octahedral complexes
+	\end{itemize}
+	\item Figure 22.16 shows how ligands and $d$-orbitals are oriented in a tetrahedral complex
+	\begin{itemize}
+		\item The $d_{z^2}$ and $d_{x^2-y^2}$ orbitals point mostly way from the ligands, minimizing the repulsion from ligand electrons
+		\item The $d_{xy}$, $d_{xz}$, and $d_{yz}$ orbitals point more toward the ligands, raising their energies
+		\item Figure 22.17 shows the splitting of $d$ orbitals when a complex forms
+		\item High-spin and low-spin complexes exist for tetrahedral geometries as well
+	\end{itemize}
+	\item Figure 22.18 shows how ligands and $d$-orbitals are oriented in a square planar complex
+	\begin{itemize}
+		\item The splitting in this case is more complicated, as shown in Figure 22.19
+	\end{itemize}
+\end{itemize}
+\section{The Spectrochemical Series, Color, and Magnetism}
+\begin{itemize}
+	\item Different ligands will lead to different magnitude crystal field splittings
+	\item Ligands which cause large splittings and form low-spin complexes are called strong-field ligands
+	\item Ligands which cause small splittings and form high-spin complexes are calld weak-field ligands
+	\item The range of ligands from weak-field to strong-field is called the spectrochemical series
+	\item \ch{I^- < Br^- < Cl^- < N3^- < F^- < OH^- < H2O = Cr2O4^{2-} < py < NH3 < en < NO2^- < CN^- = CO}
+	\item The magnitude of the crystal field splitting determines the color of a complex
+	\begin{itemize}
+		\item Most electronic transitions are in the ultraviolet, but all $d-d$ transitions are relatively low in energy
+		\item When the energy of transition falls in the visible light range, the compound will be colored
+		\item The absorbed wavelength can be found by $\Delta E = \dfrac{hc}{\lambda}$
+		\item The observed color of the complex will be complementary to the color absorbed (See Figure 22.20)
+	\end{itemize}
+	\item The magnitude of the crystal field splitting also determines magnetic properties
+	\begin{itemize}
+		\item Recall that compounds with all paired electrons are diamagnetic, and compounds with at least one unpaired electron is paramagnetic
+		\item Whether electrons pair or not depends on whether the complex is high-spin or low-spin
+		\item Consider \ch{ZnCl4}, and octahedral complex
+		\begin{itemize}
+			\item The \ch{Zn^{4+}} ion has 6 $d$ electrons
+			\item If \ch{ZnCl4} is low-spin, all electrons will be paired. If it is high-spin, 4 electrons will be unpaired (This compound is actually high-spin and paramagnetic)
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\chapter{Biochemistry}
+\section{Introduction to Biomolecules}
+\begin{itemize}
+	\item 
+\end{itemize}
+\section{Carbohydrates}
+\begin{itemize}
+	\item 
+\end{itemize}
+\section{Lipids}
+\begin{itemize}
+	\item 
+\end{itemize}
+\section{Amino Acids, Peptides, and Proteins}
+\begin{itemize}
+	\item 
+\end{itemize}
+\section{Nucleic Acids and Protein Synthesis}
+\begin{itemize}
+	\item 
+\end{itemize}
+
+\backmatter
+\chapter{Errata}
+\begin{itemize}
+	\item Figure 12.38 is inconsistent on how it shades the sliced faces of the ions (green or gray)
+	\item The equation embedded in Figure 14.4 is correct in the textbook but wrong on the lecture slides
+	\item The reaction presented in section 14.5, \ch{2 NO(g) + Cl2(g) -> N2(g) + 2 NOCl(g)} should not have any \ch{N2} on the product side
+	\item Section 22.5 presents \ch{[CO(NH5)Cl]Br} and  \ch{[CO(NH3)5Br]Cl} but \ch{[CO(NH5)Cl]Br} should be \ch{[CO(NH3)5Cl]Br}
+\end{itemize}
+\end{document}
