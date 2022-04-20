@@ -4,3 +4,5 @@ Exams
 *.out
 *.gz
 tags
+*.fdb_latexmk
+*.fls
