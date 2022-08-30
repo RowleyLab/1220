@@ -1,8 +1,6 @@
-Exams
 *.log
 *.aux
 *.out
 *.gz
-tags
 *.fdb_latexmk
 *.fls
