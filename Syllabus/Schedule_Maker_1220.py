@@ -4,10 +4,10 @@ import calendar
 import numpy as np
 
 #  Change these values to generate a new course schedule
-year = 2022
+year = 2024
 # Format is [month, day]
-start = [1,10]
-end = [4,24]
+start = [1,8]
+end = [4,18]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
 Days = [0, 2, 3, 4]
@@ -26,14 +26,14 @@ Holidays = {(7, 3): '\\nth{4} July',
             (7, 24): "\\nth{24} July"
             }
 # Spring Holidays
-Holidays = {(1, 17): 'Martin Luther King Day',
-            (2, 21): "President's Day",
+Holidays = {(1, 15): 'Martin Luther King Day',
+            (2, 19): "President's Day",
+            (2, 26): 'Spring Break',
+            (2, 27): 'Spring Break',
             (2, 28): 'Spring Break',
+            (2, 29): 'Spring Break',
             (3, 1): 'Spring Break',
-            (3, 2): 'Spring Break',
-            (3, 3): 'Spring Break',
-            (3, 4): 'Spring Break',
-            (3, 30): 'Festival of Excellence'
+            (3, 26): 'Festival of Excellence'
             }
 # Format is ['title', 'chapter', length] for topics
 # Format is ['Exam #'] for midterm exams
@@ -55,19 +55,21 @@ Topics = [['Intermolecular Forces and Liquid Properties', '12.1-12.2', 0.5],
           ['Equilibrium Expressions and Q', '15.3-15.4', 0.5],
           ['ICE Tables', '15.5', 0.5],
           ["Le Ch\\^atelier's Principle", '15.6', 0.5],
+          ['Catch-up/Review Day - Midterm Exam 2 (Ch. 14--15)'],
+          #['Midterm Exam 2 (Ch. 14--15)'],
           ['Acid and Base Reactions', '16.1-16.2', 0.5],
           ['Autoionization and pH', '16.3-16.4', 0.5],
           ['Weak Acids and Bases', '16.5', 0.5],
           ['Polyprotic Acids and Salts', '16.6-16.7', 0.5],
           ['Acid Strength and Lewis Acids', '16.8-16.9', 0.5],
-          ['Catch-up/Review Day - Midterm Exam 2 (Ch. 14--16)'],
-          #['Midterm Exam 2 (Ch. 14--16)'],
           ['Buffers and the H-H Equation', '17.1-17.2', 0.5],
           ['Strong Acid/Base Titrations', '17.3', 0.5],
           ['Weak Acid/Base Titrations', '17.4-17.5', 0.5],
           ['Solubility', '17.6-17.7', 0.5],
           ['Precipitation and Q', '17.8', 0.5],
           ['Metal Ions and Complexation', '17.9-17.10', 0.5],
+          ['Catch-up/Review Day - Midterm Exam 3 (Ch. 16--17)'],
+          #['Midterm Exam 3 (Ch. 16--17)'],
           ['Entropy and Spontaneity', '18.1', 0.5],
           ['Entropy Changes and Temperature', '18.2-18.3', 0.5],
           ['Gibbs Energy and Temperature', '18.4-18.5', 0.5],
@@ -77,26 +79,22 @@ Topics = [['Intermolecular Forces and Liquid Properties', '12.1-12.2', 0.5],
           ['Free Energy and Cell Potential', '19.6', 0.5],
           ['Nernst Equation and Applications', '19.7', 0.5],
           ['Electrochemical Cell Applications', '19.8-19.9', 0.5],
-          ['Catch-up/Review Day - Midterm Exam 3 (Ch. 17--19)'],
-          #['Midterm Exam 3 (Ch. 17--19)'],
           ['Radioactivity', '20.1-20.2', 0.5],
           ['Half-Life and Radiometric Dating', '20.3-20.4', 0.5],
           ['Fission and Fusion', '20.5', 0.5],
           ['Energy and Nuclear Reactions', '20.6-20.7', 0.5],
+          ['Catch-up/Review Day - Midterm Exam 4 (Ch. 18--20)'],
+          #['Midterm Exam 4 (Ch. 18--20)'],
           ['Hydrocarbons', '21.1-21.2', 0.5],
           ['Isomers', '21.3', 0.5],
           ['Classes of Organic Compounds', '21.4-21.5', 0.5],
           ['Polymers', '21.6', 0.5],
-          ['Transition Metals', '22.1-22.2', 0.5],
-          ['Coordination Compounds', '22.3', 0.5],
+          ['Transition Metals and Coordination Compounds', '22.1-22.3', 0.5],
           ['Nomenclature and Isomerism', '22.4-22.5', 0.5],
           ['Crystal Field Theory and Spectroscopy', '22.6-22.7', 0.5],
-          ['Catch-up/Review Day - Midterm Exam 4 (Ch. 20--22)'],
-          #['Midterm Exam 4 (Ch. 20--22)'],
           ['Carbohydrates', '23.1-23.2', 0.5],
-          ['Lipids', '23.3', 0.5],
-          ['Amino Acids', '23.4', 0.5],
-          ['Nucleic Acids', '23.5', 0.5]
+          ['Lipids, Amino Acids, and Nucleic Acids', '23.3-23.5', 0.5],
+          ['Catch-up/Review Day - Comprehensive Final Exam'],
           ]
 
 Day_Letters = ['M', 'T', 'W', 'R', 'F', 'S', 'S']
