@@ -10,7 +10,7 @@ start = [1,8]
 end = [4,18]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
-Days = [0, 2, 3, 4]
+Days = [0, 1, 2, 4]
 
 # Format is (month, day): 'Holiday Name'
 # Fall Holidaysy
@@ -94,7 +94,7 @@ Topics = [['Intermolecular Forces and Liquid Properties', '12.1-12.2', 0.5],
           ['Crystal Field Theory and Spectroscopy', '22.6-22.7', 0.5],
           ['Carbohydrates', '23.1-23.2', 0.5],
           ['Lipids, Amino Acids, and Nucleic Acids', '23.3-23.5', 0.5],
-          ['Catch-up/Review Day - Comprehensive Final Exam'],
+          # ['Catch-up/Review Day - Comprehensive Final Exam'],
           ]
 
 Day_Letters = ['M', 'T', 'W', 'R', 'F', 'S', 'S']
@@ -186,7 +186,7 @@ while day_num < len(Class_Days):
         topic_num +=1
     day_num += 1
 schedule = schedule + '\\midrule\n\\midrule\n'
-schedule = schedule + '& & \\multicolumn{3}{l}{\\textbf{Final Exam}}\\\\\n'
+schedule = schedule + 'Finals Week & M, Apr. 2 & \\multicolumn{3}{l}{\\textbf{Final Exam} ~ 11:00-12:50 ~ Bring a pencil and a scantron sheet}\\\\\n'
 schedule = schedule + '\\end{tabular}'
 print('Here is your schedule')
 print('---------------------')
