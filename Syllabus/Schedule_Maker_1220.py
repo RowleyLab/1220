@@ -10,7 +10,7 @@ start = [1, 8]
 end = [4, 18]
 
 # 0-M, 1-T, 2-W, 3-R, 4-F, 5-S, 6-S
-Days = [0, 2, 4]
+Days = [0, 1, 2, 4]
 
 # Format is (month, day): 'Holiday Name'
 # Fall Holidays
@@ -84,7 +84,7 @@ Topics = [['Comparison: Gases, Liquids, and Solids', '11.1', 0.75],
           ['The pH Scale', '16.4', 0.75],
           ['Strong Acids and Bases', '16.5', 0.75],
           ['Weak Acids and Bases', '16.6-7', 0.75],
-          ['Relationships Between K_a and K_b', '16.8', 0.75],
+          ['Relationships Between $K_a$ and $K_b$', '16.8', 0.75],
           ['Acid-Base Properties of Salt Solutions', '16.9', 0.75],
           ['Acid-Base Behavior and Chemical Structure', '16.10', 0.75],
           ['The Common-Ion Effect', '17.1', 0.75],
@@ -110,14 +110,8 @@ Topics = [['Comparison: Gases, Liquids, and Solids', '11.1', 0.75],
           ['Cell Potentials Under Nonstandard Conditions', '20.6', 0.75],
           ['Batteries and Fuel Cells', '20.7', 0.75],
           ['Corrosion and Electrolysis', '20.8-9', 0.75],
-          ['Radioactivity and Nuclear Equations', '21.1', 0.75],
-          ['Patterns of Nuclear Stability', '21.2', 0.75],
-          ['Nuclear Transmutations', '21.3', 0.75],
-          ['Rates of Radioactive Decay', '21.4', 0.75],
-          ['Detection of Radioactivity', '21.5', 0.75],
-          ['Energy Changes in Nuclear Reactions', '21.6', 0.75],
-          ['Nuclear Power: Fission and Fusion', '21.7-8', 0.75],
-          ['Radiation in the Environment and Living Systems', '21.9', 0.75],]
+          ['Nuclear Chemistry Fundamentals', '21.1-4', 0.75],
+          ['Nuclear Chemistry in the Real World', '21.5-9', 0.75],]
           # Exam 4: Ch. 19-21
 
 Day_Letters = ['M', 'T', 'W', 'R', 'F', 'S', 'S']
