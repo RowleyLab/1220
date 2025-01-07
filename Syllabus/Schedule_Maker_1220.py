@@ -94,8 +94,7 @@ Topics = [['Comparison: Gases, Liquids, and Solids', '11.1', 0.75],
           ['Factors that Affect Solubility', '17.5', 0.75],
           ['Precipitation and Separation of Ions', '17.6', 0.75],
           ['Qualitative Analysis for Metallic Elements', '17.7', 0.75],
-          ["Earth's Atmosphere", '18.1-2', 0.75],
-          ["Earth's Water and Green Chemistry", '18.3-5', 0.75],
+          ['Chemistry of the Environment', '18.1-5', 0.75],
           # Exam 3: Ch. 16-18
           ['Spontaneous Processes', '19.1', 0.75],
           ['Entropy and the Second Law of Thermodynamics', '19.2', 0.75],
@@ -210,7 +209,7 @@ while day_num < len(Class_Days):
         topic_num +=1
     day_num += 1
 schedule = schedule + '\\midrule\n\\midrule\n'
-schedule = schedule + 'Finals Week & M, Apr. 2 & \\multicolumn{3}{l}{\\textbf{Final Exam} ~ 11:00-12:50 ~ Bring a pencil and a scantron sheet}\\\\\n'
+schedule = schedule + 'Finals Week & X, XXX. X & \\multicolumn{3}{l}{\\textbf{Final Exam} ~ X:00-X:50 ~ Bring a pencil and a scantron sheet}\\\\\n'
 schedule = schedule + '\\end{tabular}'
 print('Here is your schedule')
 print('---------------------')
