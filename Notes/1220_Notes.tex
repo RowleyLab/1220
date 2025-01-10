@@ -74,7 +74,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item Lewis structures
 \end{itemize}
 
-\setcounter{chapter}{11}
+\setcounter{chapter}{10}
 \chapter{Liquids and Intermolecular Forces}
 \section{A Molecular Comparison of Gases, Liquids, and Solids}
 \begin{itemize}
@@ -83,6 +83,7 @@ There is a whole semester of material from 1210, and these are only the topics w
   \item The density of particles and how they move are illustrated in Figure 11.1
   \item Temperature affects mobility of particles, which in turn dictates melting and boiling points
 \end{itemize}
+
 \section{Intermolecular Forces}
 \begin{itemize}
 	\item Chemical bonds are strong attractions between atoms or ions \emph{within} a compound
@@ -135,8 +136,6 @@ There is a whole semester of material from 1210, and these are only the topics w
   \item Table 11.2 show the melting and boiling points for substances with different forces in play
 \end{itemize}
 
-{\HUGE Old Notes from older text begin here}
-% TODO: Continue updating notes here
 \section{Select Properties of Liquids}
 \begin{itemize}
 	\item The strength of intermolecular forces leads to different properties of liquids related to flow
@@ -148,41 +147,56 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\end{itemize}
 	\item Surface Tension is the tendency to liquids to minimize their surface area
 	\begin{itemize}
-		\item Figure 12.12 shows how surface molecules have fewer attractive interactions, and are therefore higher in energy
+		\item Figure 11.16 shows how surface molecules have fewer attractive interactions, and are therefore higher in energy
+    \item This inbalance of forces also results in a net pull of surface molecules inward toward the bulk
 		\item Spheres have the lowest surface area, so liquids will curve their surfaces to approach a spherical shape
-		\item Cohesion is the attraction between like particles, adhesion is the attraction between different particles
 	\end{itemize}
 	\item Capillary Action is the force which pulls liquids into any narrow cavity
 	\begin{itemize}
+		\item Cohesion is the attraction between like particles, adhesion is the attraction between different particles
 		\item Strong cohesive forces will pull a liquid into a capillary in order to create more liquid-capillary interactions
 		\item Capillary action is essential to life -- pulling water through the xylem of plant tissues
-		\item Figure 21.13 shows how competing adhesion and cohesion can affect the shape of a meniscus
+		\item Figure 11.17 shows how competing adhesion and cohesion can affect the shape of a meniscus
 	\end{itemize}
 	\item Vapor pressure depends on intermolecular forces too, but gets its own section below
 \end{itemize}
+
 \section{Phase Changes and Heating Curves}
 \begin{itemize}
-	\item Phase changes: fusion, freezing, vaporization, condensation, sublimation, deposition
+	\item Phase changes: fusion, freezing, vaporization, condensation, sublimation, deposition (Fig. 11.19)
 	\item Each phase change has an associated change in enthalpy $\left(\Delta H_{fus}, \Delta H_{vap}, \Delta H_{sub}\right)$
 	\item This is the energy required to overcome intermolecular interactions and change the phase
 	\item For water, $\Delta H_{fus}=6.01\dfrac{kJ}{mol}$ and $\Delta H_{vap}=40.7\dfrac{kJ}{mol}$, so $\Delta H_{sub}=46.7\dfrac{kJ}{mol}$
 	\item The heat required for a phase change is given by: $q=n\Delta H$ (when $\Delta H$ is a -per-mole value)
+  \item Figure 11.20 shows enthalpies of phase change for a number of different substances
 	\item As you add or remove heat through a phase change, the temperature remains constant
-	\item Figure 12.16 shows a heating curve through two phase changes
-	\item Find the final temperature if you add $32.0~kJ$ of heat to a $10.0~g$ sample of ice at $-5.00~^\circ C$?
-	
-	Table 12.3 gives the necessary values to solve this ($186.8~^\circ C$)
-	
+	\item Figure 11.21 shows a heating curve through two phase changes
+	\item Find the final temperature if you add $32.0~kJ$ of heat to a $10.0~g$ sample of ice at $-5.00~^\circ C$? ($186.8~^\circ C$)
+  \item Critical temperatures and pressures represent the point at which the gas phase is so compressed it is indistinguishable from the liquid phase
+  \begin{itemize}
+    \item Liquefaction is only possible below the critical temperature
+    \item At and above this critical point, a new phase is formed: supercritical fluid
+    \item This will point will be clearly illustrated when we talk about phase diagrams below
+    \item Table 11.5 gives critical values for a number of different substances
+  \end{itemize}
 \end{itemize}
-\section{Vapor Pressure, Boiling Point, and the Clausius-Clapeyron Equation}
+
+\section{Vapor Pressure}
 \begin{itemize}
 	\item Every substance (liquid or solid) has a vapor pressure, meaning it will vaporize until it reaches equilibrium with the gas phase at that pressure
+  \item Figure 11.22 illustrates how equilibrium is reached
+	\item If equilibrium cannot be established, the entire liquid will vaporize trying to achieve it. This is how things become dry even below the boiling point
 	\item Substances with a relatively high vapor pressure are called volatile	
 	\item Most vapor pressures are vanishingly small, making non-volatile substances
 	\item Vapor pressure depends on intermolecular forces and temperature, just like viscosity
-	\item Figure 12.19 shows how temperature affects the distribution of molecular kinetic energy, which in turn affects the vapor pressure
-	\item The enthalpy of vaporization is often given at both the boiling point and at $25~^\circ C$ (Table 12.4)
-	\item Because of the different specific heats for different phases, the enthalpy of vaporization will actually depend on temperature, but that dependence is realtively weak
+	\item Figure 11.23 shows how temperature affects the distribution of molecular kinetic energy, which in turn affects the vapor pressure
+	\item The boiling point is where the vapor pressure is equal to atmospheric pressure
+	\begin{itemize}
+		\item The boiling point at precisely $1.00~atm$ is called the \emph{normal} boiling point
+		\item Under low pressures (like in Cedar City), the boiling points of liquids are lowered
+		\item Under higher pressures (like in a pressure cooker), the boiling point is raised
+    \item Figure 11.24 shows how vapor pressure depends on temperature for several common substances
+	\end{itemize}
 	\item The Clausius Clapeyron equation relates $\Delta H_{vap}$ to vapor pressure at different temperatures
 	\begin{itemize}
 		\item There are two forms of the equation:
@@ -191,45 +205,51 @@ There is a whole semester of material from 1210, and these are only the topics w
 			\item $\ln\dfrac{P_2}{P_1}=\dfrac{-\Delta H_{vap}}{R}\left(\dfrac{1}{T_2} - \dfrac{1}{T_1}\right)$
 		\end{itemize}
 		\item Note that the proper form of the gas constant here is $R=8.314~\dfrac{J}{mol~K}$
-		\item Either form can be illustrated by Figure 12.20
+		\item Either form can be illustrated by Figure 11.26
 		\item Methanol has a normal boiling point of $64.60~^\circ C$ and a heat of vaporization of $35.2~\dfrac{kJ}{mol}$. What is the vapor pressure of methanol at $25~^\circ C$? ($0.189~atm$)
 		\item The vapor pressure for diethyl ether is $401~mmHg$ at $18.00~^\circ C$ and $660~mmHg$ at $32.00~^\circ C$. What is $\Delta H_{vap}$ for diethyl ether? ($26.3~\dfrac{kJ}{mol}$)
 	\end{itemize}
-	\item The boiling point is where the vapor pressure is equal to atmospheric pressure
-	\begin{itemize}
-		\item The boiling point at precisely $1.00~atm$ is called the \emph{normal} boiling point
-		\item Under low pressures (like in Cedar City), the boiling points of liquids are lowered
-		\item Under higher pressures (like in a pressure cooker), the boiling point is raised
-	\end{itemize}
-	\item Distillation is a method for separating liquid mixtures
-	\begin{itemize}
-		\item Each component in a mixture has its own vapor pressure
-		\item At the right temperature, the more volatile component will boil off much more rapidly than the the other component
-		\item This is how solvents are purified, distilled spirits are made, and how crude oil is separated into different fuel products
-		\item A more detailed description of distillation is covered in CHEM 3610
-	\end{itemize}
-	\item Vapor pressures represent a dynamic equilibrium (Figure 12.24)
-	\item If equilibrium cannot be established, the entire liquid will vaporize trying to achieve it. This is how things become dry even below the boiling point
 \end{itemize}
+
 \section{Phase Diagrams}
 \begin{itemize}
 	\item The phase of a substance depends on both temperature and pressure
-	\item A phase diagram summarizes which phase is stable under which conditions (Figure 12.25)
+	\item A phase diagram summarizes which phase is stable under which conditions (Figure 11.27)
 	\begin{itemize}
 		\item The boundaries between phases represent melting points, boiling points, and sublimation points
 		\item The triple point is the only combination of temperature and pressure where solid, liquid, and gas can all coexist \emph{at equilibrium}
 		\item Note that a glass of ice water will not maintain all three phases forever \emph{unless} it is precisely at the triple point
-		\item At the critical point, a discrete phase transition between liquid and gas disappears
-		\item Beyond it, a fluid will become \emph{supercritical}, and exhibit properties of both liquids and gases
+		\item The critical point is shows at the end of the liquid/gas transition line
 		\item The solid/liquid boundary is usually very steep, but positively sloped
 	\end{itemize}
-	\item Water has an unusual phase diagram because of its strong hydrogen bonds (Figure 12.27)
+	\item Water has an unusual phase diagram because of its strong hydrogen bonds (Figure 11.28)
 	\begin{itemize}
 		\item Hydrogen bonds give solid water an open structure, making it less dense than liquid water
 		\item This gives the solid/liquid boundary a negative slope
 		\item Water also has an unusually large range of conditions where the liquid phase is stable
 	\end{itemize}
+  \item Carbon dioxide also has an interesting phase diagram (Figure 11.29)
+  \begin{itemize}
+    \item The triple point is unusually \emph{high} and the critical point is unusually \emph{low}, leading to the following features:
+    \item The liquid phase is stable over a small range of conditions, and is absent at all temperatures below $5.11~atm$
+    \item Supercritical \ch{CO2} is particularly accessible
+  \end{itemize}
 \end{itemize}
+
+\section{Liquid Crystals}
+\begin{itemize}
+  \item Liquid crystals are a phases intermediate between liquid and solid which is not present in most substances
+  \item Liquid crystals exhibit structure at the molecular scale like a solid, but still flow like a liquid
+  \item Phase changes into and out of the liquid crystal phase are observed in heating curves as normal
+  \item Figure 11.31 shows the liquid crystal and liquid phases of cholesteryl benzoate
+  \item Figure 11.32 shows the molecular-scale structure of different types of liquid crystals
+  \item Figure 11.33 illustrates the structural elements that make liquid crystal phases possible
+\end{itemize}
+
+\chapter{Solids and Modern Materials}
+
+{\HUGE Old Notes from older text begin here}
+% TODO: Continue updating notes here
 \section{Classification of Solids}
 \begin{itemize}
 	\item Solids can be classified by the degree of order in their microscopic structure
