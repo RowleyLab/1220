@@ -409,31 +409,46 @@ There is a whole semester of material from 1210, and these are only the topics w
 \end{itemize}
 
 \chapter{Solutions}
-{\HUGE Old Notes from older text begin here}
-% TODO: Continue updating notes here
 \section{The Solution Process}
 \begin{itemize}
 	\item A \emph{solution} is any homogeneous mixture (not just things dissolved in water)
 	\item The \emph{solvent} is the majority component of the mixture
 	\item The \emph{solutes} are all other components of the mixture
-	\item Table 13.1 shows diverse types of solutions in everyday life
+	\item Give examples of solutions (air, alloys, dental amalgum, etc.)
 	\item Solvation is the process of dissolving a solute in a solvent
 	\begin{itemize}
-		\item The rule ``Like dissolves like'' refers to intermolecular forces
-		\item Figure 13.2 shows how ionic compounds are dissolved in water
+    \item The natural tendency toward mixing is driven by entropy (Figure 13.1)
+    \item The enthalpy of mixing can be either endothermic or exothermic, but endothermic mixing fights against spontanaety
+		\item The rule ``Like dissolves like'' refers to intermolecular forces (Figure 13.2)
+		\item Figure 13.3 shows how ionic compounds are dissolved in water
 		\item To dissolve, solute-solute and solvent-solvent interactions are replaced by solvent-solute interactions
-		\item Figure 13.3 shows the energetics involved, which can be exothermic or endothermic
+		\item Figure 13.4 shows the energetics involved, which can be exothermic or endothermic
 		\item When water is the solvent, $\Delta H_{sol}$ is sometimes called the \emph{hydration energy}		
 	\end{itemize}
+  \item Some solutions are formed via \emph{chemical reactions} and not simple \emph{solvation} (Figure 13.6)
 \end{itemize}
-\section{Saturated, Unsaturated, and Supersaturated Solutions}
+
+\section{Saturated Solutions and Solubility}
 \begin{itemize}
 	\item Most solutes will only dissolve to a certain limit, and no more
 	\item This limit is called the \emph{solubility}, and it depends on the solute, solvent, and temperature
-	\item The units of solubility are usually in units of $\dfrac{g_{solute}}{g_{solvent}}$
+  \item Solvation is a dynamic equilibrium process (the reverse is called \emph{crystallization})
+  \item Definition of \emph{saturated}, \emph{unsaturated}, and \emph{supersaturated}
+	\item The units of solubility are usually in units of $\dfrac{g_{solute}}{g_{solvent}}$ or $\dfrac{g_{solute}}{ml_{solvent}}$
+  \item Figure 13.7 shows the crystallization of a supersaturated sodium acetate solution (Show video)
+\end{itemize}
+
+\section{Factors Affecting Solubility}
+\begin{itemize}
+  \item In general, stronger solute-solvent interactions lead to higher solubilities (refer again to Figure 13.4)
+	\item Liquids which can mix together in any ratios are called \emph{miscible}
+	\item Liquids which are mostly insoluble together are called \emph{immiscible} (Figure 13.8)
+	\item The solubility of a gas is dependent on the partial pressure of the gas (Figure 13.12)
+	\item $S_g = kP$ is called Henry's Law, where $S_g$ is the solubility of the gas
+	\item \ch{CO2} has a Henry's Law constant $k=0.034\dfrac{M}{atm}$ in water. Cans of soda have a pressure of about $2.5~atm$. What is the molar concentration of \ch{CO2} in a can of soda?
 	\item Higher temperatures will increase the solubility (sometimes by a lot) of most solids, but decrease the solubility of gases
 	\item Gases decrease in solubility at higher temperature because molecules with more kinetic energy are more likely to escape into the gas phase
-	\item Figure 13.4 shows the temperature dependence of solubility for several compounds
+	\item Figure 13.15 and 13.16 show the temperature dependence of solubility for several compounds
 	\item A solute can be purified through \emph{recrystalization}
 	\begin{itemize}
 		\item Dissolve the solute and any impurities in a minimum of hot solvent
@@ -447,13 +462,12 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item The supersaturated solution is unstable - a seed crystal or even a shock can nucleate recrystalization
 		\item Supersaturated sodium acetate demo
 	\end{itemize}
-	\item The solubility of a gas is also dependent on the partial pressure of the gas
-	\item $[gas] = kP$ is called Henry's Law
-	\item \ch{CO2} has a Henry's Law constant $k=0.034\dfrac{M}{atm}$. Cans of soda have a pressure of about $2.5~atm$. What is the molar concentration of \ch{CO2} in a can of soda?
-	\item Liquids which can mix together in any ratios are called \emph{miscible}
-	\item Liquids which are mostly insoluble together are called \emph{immiscible}
 \end{itemize}
-\section{Concentration Units}
+
+{\HUGE Old Notes from older text begin here}
+% TODO: Continue updating notes here
+
+\section{Expressing Solution Concentration}
 \begin{itemize}
 	\item Molarity is only one convenient unit of concentration
 	\item For these units we need to be careful to distinguish between solvent, solute, and solution
@@ -463,7 +477,8 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item Table 13.2 summarizes each of these concentration units
 	\item Give the concentration in these three units for a solution with $12.5~g$ of \ch{C12H22O11} in $100.0~ml$ of water
 \end{itemize}
-\section{Colligative Properties of Nonelectrolytes}
+
+\section{Colligative Properties}
 \begin{itemize}
 	\item Colligative properties depend on the concentration of solute particles, but do not depend on the identity of those particles
 	\item Vapor-pressure lowering, freezing-point depression, boiling-point elevation, and osmotic pressure are colligative properties
@@ -503,15 +518,20 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item IV solutions must be \emph{isotonic} to avoid hemolysis or crenation of blood cells
 		\item Calculate $\Pi$ for a solution which contains $75~g$ of \ch{C12H22O11} in $200.0~g$ of water
 	\end{itemize}
+\item Colligative properties of electrolytes
+  \begin{itemize}
+    \item When electrolytes dissolve, they produce more than a molar amount of ions in solution
+    \item We account for this with a van't Hoff factor: $i=\dfrac{n_{particles}}{n_{solute}}$
+    \item In principle, $i$ can become very complicated because dissolved ions form clusters, but we will assume that electrolytes dissociate completely
+    \item For \ch{NaCl}, $i=2$ \hspace{2em} for \ch{CaCl2}, $i=3$ \hspace{2em} for \ch{HNO3}, $i=2$
+    \item Each different particle counts toward the total osmotic pressure
+    \item For electrolytes, $\Pi=iMRT$
+  \end{itemize}
 \end{itemize}
-\section{Colligative Properties of Electrolytes}
+
+\section{Colloids}
 \begin{itemize}
-	\item When electrolytes dissolve, they produce more than a molar amount of ions in solution
-	\item We account for this with a van't Hoff factor: $i=\dfrac{n_{particles}}{n_{solute}}$
-	\item In principle, $i$ can become very complicated because dissolved ions form clusters, but we will assume that electrolytes dissociate completely
-	\item For \ch{NaCl}, $i=2$ \hspace{2em} for \ch{CaCl2}, $i=3$ \hspace{2em} for \ch{HNO3}, $i=2$
-	\item Each different particle counts toward the total osmotic pressure
-	\item For electrolytes, $\Pi=iMRT$
+  \item ~
 \end{itemize}
 
 \chapter{Chemical Kinetics}
