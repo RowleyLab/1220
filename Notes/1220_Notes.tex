@@ -464,17 +464,17 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\end{itemize}
 \end{itemize}
 
-{\HUGE Old Notes from older text begin here}
-% TODO: Continue updating notes here
-
 \section{Expressing Solution Concentration}
 \begin{itemize}
-	\item Molarity is only one convenient unit of concentration
+  \item Many different units of concentration are used according to the situation
 	\item For these units we need to be careful to distinguish between solvent, solute, and solution
 	\item $\%~by~Mass = \dfrac{Solute~Mass}{Solution~Mass}*100\%$
-	\item $Molality = \dfrac{Moles~of~Solute}{kg~of~Solvent}$
+	\item $ppm = \dfrac{Solute~Mass}{Solution~Mass}*1\times10^6$
+	\item $ppb = \dfrac{Solute~Mass}{Solution~Mass}*1\times10^9$
 	\item Mole Fraction: ~  $\chi_{_A}=\dfrac{Moles~of~A}{Total Moles}$
-	\item Table 13.2 summarizes each of these concentration units
+	\item $Molarity (M) = \dfrac{Moles~of~Solute}{L~of~Solvent}$
+	\item $Molality (m) = \dfrac{Moles~of~Solute}{kg~of~Solvent}$
+	\item Table 13.17 summarizes each of these concentration units
 	\item Give the concentration in these three units for a solution with $12.5~g$ of \ch{C12H22O11} in $100.0~ml$ of water
 \end{itemize}
 
@@ -484,7 +484,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item Vapor-pressure lowering, freezing-point depression, boiling-point elevation, and osmotic pressure are colligative properties
 	\item Vapor-pressure lowering
 	\begin{itemize}
-		\item Figure 13.10 shows how solute molecules block solvent access to the surface
+		\item Figure 13.18 shows how solute molecules block solvent access to the surface
 		\item This will reduce the vapor pressure
 		\item Raoult's law: $P_A=\chi_{_A}P^\circ_A$
 		\item $P^\circ_A$ is the vapor pressure of pure solvent 
@@ -492,19 +492,14 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item Solutions with strong A-B interactions will exhibit lower vapor pressures, and solutions with weak A-B interactions will exhibit higher vapor pressures compared to an ideal solution
 		\item For a mixture of two volatile components, $P_{total} = \chi_{_A}P^\circ_A + \chi_{_B}P^\circ_B$
 	\end{itemize}
-	\item Vapor composition
-	\begin{itemize}
-		\item The composition of the vapor phase will not be equal to the composition of the solution phase
-		\item $\dfrac{n_A}{n_B} = \dfrac{P_A}{P_B}$
-		\item $\chi_{_{A,gas}}=\dfrac{P_A}{P_{total}}$
-	\end{itemize}
 	\item Freezing-point depression and boiling-point elevation
 	\begin{itemize}
-		\item Figure 13.12 shows how a solute can disrupt freezing and depress the freezing point
-		\item For freezing point depression, $T_{f,solution}=T_{f,solvent}-K_fm$
-		\item $m$ is molality and $K_f$ is the freezing point depression constant for the solvent
-		\item For boiling point elevation, $T_{b,solution}=T_{b,solvent}+K_bm$
-		\item $m$ is molality and $K_b$ is the boiling point elevation constant for the solvent
+		\item Figures 13.20 and 13.21 show how a solute can disrupt freezing and depress the freezing point
+    \item For freezing point depression, $\Delta T_{f} = -iK_fm$
+		\item $m$ is molality $K_f$ is the freezing point depression constant for the solvent, and $i$ is the van't Hoff factor
+    \item Figure 13.22 illustrates the van't Hoff factor
+		\item For boiling point elevation, $\Delta T_{f} = iK_bm$ 
+		\item $K_b$ is the boiling point elevation constant for the solvent
 		\item $K_b$ and $K_f$ are independent of the solute
 		\item Table 13.3 gives some values for freezing point depression and boiling point elevation
 		\item Find the freezing point for a solution which contains $300~g$ of Naphthalene in $500.0~g$ of cyclohexane
@@ -512,29 +507,37 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item Osmotic pressure
 	\begin{itemize}
 		\item A semipermeable membrane will allow water to pass through it, but not any dissolved solutes
-		\item Water will flow across such a membrane to equalize the molality on either side (draw diagram)
+		\item Water will flow across such a membrane to equalize the molality on either side (Figure 13.23)
 		\item This flow is powered by osmotic pressure
-		\item $\Pi = \dfrac{nRT}{V}=MRT$ where $M$ is the molar concentration
-		\item IV solutions must be \emph{isotonic} to avoid hemolysis or crenation of blood cells
+		\item $\Pi = \dfrac{inRT}{V}=iMRT$ where $M$ is the molar concentration
+		\item IV solutions must be \emph{isotonic} to avoid hemolysis or crenation of blood cells (Figure 13.24)
+    \item Osmotic pressure is also the pressure required to be applied to purify water through \emph{reverse} osmosis
 		\item Calculate $\Pi$ for a solution which contains $75~g$ of \ch{C12H22O11} in $200.0~g$ of water
 	\end{itemize}
-\item Colligative properties of electrolytes
-  \begin{itemize}
-    \item When electrolytes dissolve, they produce more than a molar amount of ions in solution
-    \item We account for this with a van't Hoff factor: $i=\dfrac{n_{particles}}{n_{solute}}$
-    \item In principle, $i$ can become very complicated because dissolved ions form clusters, but we will assume that electrolytes dissociate completely
-    \item For \ch{NaCl}, $i=2$ \hspace{2em} for \ch{CaCl2}, $i=3$ \hspace{2em} for \ch{HNO3}, $i=2$
-    \item Each different particle counts toward the total osmotic pressure
-    \item For electrolytes, $\Pi=iMRT$
-  \end{itemize}
+  \item Colligative properties can be used to determine molar mass
+
+        $\Pi=1.54 torr$ when $3.50mg$ of a protein are dissolved in $5.00ml$ of solution at $25^\circ C$. ($M=8450\nicefrac{g}{mol}$)
 \end{itemize}
 
 \section{Colloids}
 \begin{itemize}
-  \item ~
+  \item Colloids occupy the boundary region between homogeneous and inhomogeneous mixtures
+  \item Table 13.5 lists some common colloids
+  \item Colloids will not separate under normal gravity
+  \item Colloids will scatter light (Figure 13.27 and gatorade vs milk)
+  \item Hydrophobic colloids
+  \begin{itemize}
+    \item Hydrophobic particles would normally collect together and separate from the solution
+    \item Hydrophilic groups on the particle can stabilize it (Figures 13.28 and 13.29)
+    \item Surfactants can stabilize hydrophobic particles without hydrophilic groups of their own (Figure 13.30)
+  \end{itemize}
+  \item Colloids will undergo random movements called \emph{Brownian motion} as they are buffeted by solvent molecules
 \end{itemize}
 
 \chapter{Chemical Kinetics}
+
+{\HUGE Old Notes from older text begin here}
+% TODO: Continue updating notes here
 \section{Rates of Reactions}
 \begin{itemize}
 	\item One of the most important ideas in chemistry is not what a reaction produces, but how quickly it is produced
