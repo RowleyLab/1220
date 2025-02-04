@@ -535,20 +535,17 @@ There is a whole semester of material from 1210, and these are only the topics w
 \end{itemize}
 
 \chapter{Chemical Kinetics}
-
-{\HUGE Old Notes from older text begin here}
-% TODO: Continue updating notes here
-\section{Rates of Reactions}
+\section{Reaction Rates}
 \begin{itemize}
 	\item One of the most important ideas in chemistry is not what a reaction produces, but how quickly it is produced
 	\item The study of reaction rates is called \emph{chemical kinetics}
 	\item Kinetics are controlled by 5 factors:
 	\begin{itemize}
-		\item Particle size of solid reactants (surface area)
+		\item Physical State of the Reactants: Particle size of solid reactants (surface area)
 		\item Concentration of dissolved and gas reactants
-		\item Temperature
-		\item The nature of the reaction (activation energy, sterics, etc.)
+		\item Reaction Temperature
 		\item The presence of a \emph{catalyst}
+		\item The nature of the reaction (activation energy, sterics, etc.). These factors are beyond our control
 	\end{itemize}
 	\item Reaction rates are expressed mathematically
 	\begin{itemize}
@@ -557,16 +554,14 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item $\nu$ is the stoichiometric coefficient in the balanced chemical reaction
 		\item $\nu$ is positive for products, and negative for reactants, so the rate is always positive
 	\end{itemize}
-	\item Figures 14.1 through 14.4 show concentration curves for many different types of reactions
+	\item Figures 14.3 shows a concentration curve for one reaction
+  \item Unnumbered figure (or my own sketch) shows concentration curves for reactants and products together
 	\item We can sometimes directly measure the concentrations of reactants and products
 	\begin{itemize}
 		\item Some chemical species can be monitored by an electrochemical potential (voltage)
-		\item Others absorb light and can be monitored by spectroscopy
+		\item Others absorb light and can be monitored by spectroscopy (Figures 14.4 and 14.5)
 		\item Beer's law relates how much light is absorbed: $A=\alpha lc$
 	\end{itemize}
-\end{itemize}
-\section{Reaction Rates and Concentration: Rate Laws}
-\begin{itemize}
 	\item There are two ways to measure reaction rates
 	\begin{itemize}
 		\item If your data has low time resolution, the \emph{average} rate is given by $\dfrac{\Delta\left[A\right]}{\nu_A\Delta t}$
@@ -579,6 +574,10 @@ There is a whole semester of material from 1210, and these are only the topics w
 		{\bfseries Time (s)}&$0$&$5$&$10$&$15$ \\ \midrule
 		{\bfseries $\left[B\right](M)$}&$0$&$0.0160$&$0.0295$&$0.0503$
 	\end{tabular}
+\end{itemize}
+
+\section{Rate Laws and Rate Constants: The Method of Initial Rates}
+\begin{itemize}
 	\item The reaction rate changes with reactant  according to the \emph{rate law}
 	\begin{itemize}
 		\item For reaction \ch{aA + bB -> cC + dD}, the rate law will be $rate=k\left[A\right]^m\left[B\right]^n$
@@ -588,6 +587,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item The overall reaction order is the sum of $m$ and $n$
 		\item Consider the effect of doubling the concentration of a reactant that is zero, first, and second order
 		\item These ideas extend to reactions with more or fewer reactants than shown here
+	  \item Note that the units of $k$ depend on the overall reaction order (Write a table on the board)
 	\end{itemize}
 	\item The rate law is related to the rate by: $\dfrac{\Delta\left[A\right]}{\nu_A\Delta t}=k\left[A\right]^m\left[B\right]^n$
 	\item The initial rate method for determining reaction order:
@@ -598,7 +598,6 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item There is a mathematically rigorous way to deal with this, but doubling the reactant concentrations makes it very simple
 	\end{itemize}
 	\item After finding the reaction orders, you can take any data point and back-calculate the value of $k$
-	\item Note that the units of $k$ depend on the overall reaction order as shown in Table 14.4
 	\item Use the data below to find the complete rate law (including the value of $k$) for the reaction:
 	
 	\ch{aA + bB -> cC + dD}
@@ -610,7 +609,11 @@ There is a whole semester of material from 1210, and these are only the topics w
 		$3$ & $0.0500$ & $0.0500$ & $1.63\times10^{-2}$ \\
 	\end{tabular}
 \end{itemize}
-\section{Integrated Rate Laws and Half-lives}
+
+{\HUGE Old Notes from older text begin here}
+% TODO: Continue updating notes here
+
+\section{Integrated Rate Laws}
 \begin{itemize}
 	\item We can take the relation of concentration to the rate law, and rearrange it collect like terms on the same side
 	\item $-\dfrac{\Delta \left[A\right]}{\Delta t} = k\left[A\right]^m$ ~~ becomes ~~ $-\dfrac{\Delta \left[A\right]}{\left[A\right]^m} = k\Delta t$
@@ -651,7 +654,8 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item Figure from Example 14.10a shows how to graph real concentration data to determine the reaction order
 	\item Use my prepared Excell spreadsheet to look at real data
 \end{itemize}
-\section{Reaction Rates and Temperature: Activation Energy}
+
+\section{Temperature and Rate: Activation Energy and the Arrhenius Equation}
 \begin{itemize}
 	\item Reaction coordinate diagrams show how the energy changes over the course of a reaction
 	\begin{itemize}
@@ -692,6 +696,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	
 	Determine the activation energy and frequency factor for this reaction $\left(218\dfrac{kJ}{mol}~\mathrm{and}~1.91\times10^{10}\dfrac{1}{M~s}\right)$
 \end{itemize}
+
 \section{Reaction Mechanisms}
 \begin{itemize}
 	\item Chemical reaction \emph{can} happen in just one step, but often proceed in two or more distinct steps
@@ -763,6 +768,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\end{itemize}
 	\item Reaction mechanisms can become complex and interesting for certain reactions (harpoon mechanism and collisional activation)
 \end{itemize}
+
 \section{Catalysis}
 \begin{itemize}
 	\item Catalysts provide an alternative reaction mechanism which is faster than the uncatalyzed pathway
