@@ -610,9 +610,6 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\end{tabular}
 \end{itemize}
 
-{\HUGE Old Notes from older text begin here}
-% TODO: Continue updating notes here
-
 \section{Integrated Rate Laws}
 \begin{itemize}
 	\item We can take the relation of concentration to the rate law, and rearrange it collect like terms on the same side
@@ -620,7 +617,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item If we change our $\Delta$s to $\mathrm{d}$s, then we can integrate to get a function of $\left[A\right]$ over time
 	\item Perhaps the most important part of this function is the \emph{half-life}
 	\begin{itemize}
-		\item The half-life is the time it takes for half of a reactant to be consumed (Figure 14.11)
+		\item The half-life is the time it takes for half of a reactant to be consumed (Figure 14.10)
 		\item Sometimes the half-life changes over the course of the reaction
 		\item Sometimes the half-life is totally independent of concentration and is constant across time
 	\end{itemize}
@@ -630,6 +627,8 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item We can rearrange this into a linear format: $\ln \left[A\right]_t = -kt + \ln\left[A\right]_0$
 		\item The line slope is $-k$
 		\item The half-life is given by: $t_{\nicefrac{1}{2}}=\dfrac{\ln 2}{k}$ 
+    \item Another form of this integrated rate law which focuses on $t_{\nicefrac{1}{2}}$: 
+      $\dfrac{[A]_t}{[A]_0} = \left(\dfrac{1}{2}\right)^{\frac{t}{t_{\nicefrac{1}{2}}}}$
 	\end{itemize}
 	\item Second-order kinetics:
 	\begin{itemize}
@@ -643,7 +642,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item The line slope is $-k$
 		\item The half-life is given by: $t_{\nicefrac{1}{2}}=\dfrac{\left[A\right]_0}{2k}$ 
 	\end{itemize}
-	\item Table 14.5 summarizes the integrated rate laws and half-lives
+	\item Write a table which summarizes the integrated rate laws and half-lives
 	\item Determining reaction order graphically:
 	\begin{itemize}
 		\item The linear forms of the integrated rate laws are all different
@@ -651,15 +650,20 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item Two will be curved, but one will be straight, indicating the overall reaction order
 		\item Making one reactant in excess will probe the reaction order of only the other reactant
 	\end{itemize}
-	\item Figure from Example 14.10a shows how to graph real concentration data to determine the reaction order
 	\item Use my prepared Excell spreadsheet to look at real data
 \end{itemize}
 
 \section{Temperature and Rate: Activation Energy and the Arrhenius Equation}
 \begin{itemize}
+	\item Collision theory explains reaction rates in terms of molecular collisions
+	\begin{itemize}
+		\item Reactions only occur when reactant molecules encounter each other in collisions, but not all collisions will lead to a reaction
+		\item Some collisions happen in the wrong orientation to lead to reaction (Figure 14.14)
+		\item Some collisions don't have enough energy to overcome the activation energy barrier (Figure 14.15)
+  \end{itemize}
 	\item Reaction coordinate diagrams show how the energy changes over the course of a reaction
 	\begin{itemize}
-		\item Figure 14.14 and 14.15 show typical reaction coordinate diagrams
+		\item Figure 14.16 shows a typical reaction coordinate diagram
 		\item For simple reactions the x-axis can represent actual measurements, like bond lengths
 		\item Generally, the x-axis just represents progress in the reaction from reactants to products
 		\item The diagram shows if the reaction is exothermic or endothermic
@@ -667,12 +671,8 @@ There is a whole semester of material from 1210, and these are only the topics w
 		\item At the transition state, reactant bonds are nearly broken but product bonds have barely started to form
 		\item The activation energy is the energy required to reach the transition state
 	\end{itemize}
-	\item Collision theory explains reaction rates in terms of molecular collisions
-	\begin{itemize}
-		\item Reactions only occur when reactant molecules encounter each other in collisions, but not all collisions will lead to a reaction
-		\item Some collisions don't have enough energy to overcome the activation energy barrier
-		\item Some collisions happen in the wrong orientation to lead to reaction (Figure 14.16)
-		\item These considerations are summarized by the Arrhenius Equation: $k=Ae^{-\nicefrac{E_a}{RT}}$
+  \item These considerations are summarized by the Arrhenius Equation: $k=Ae^{-\nicefrac{E_a}{RT}}$
+  \begin{itemize}
 		\item $k$ is the rate constant from the rate law
 		\item $A$ is the frequency factor, and it includes both the rate of collisions, and the fraction of those collisions which lead to reaction
 		\item $A$ is dependent only weakly temperature, so we'll assume that it is constant
@@ -722,14 +722,14 @@ There is a whole semester of material from 1210, and these are only the topics w
 			\item Bimolecular steps involve an encounter between two molecules: \ch{A + B -> C} or \ch{2 A -> B}
 			\item Termolecular steps are very rare, but can occur
 		\end{itemize}
-		\item The rate law can be inferred from the stoichiometry of the step
+		\item The rate law can be inferred from the stoichiometry of the step (Table 14.3)
 		\begin{itemize}
 			\item \ch{AB -> A + B} ~~ gives ~~ $rate=k\left[AB\right]$
 			\item \ch{A + B -> C} ~~ gives ~~ $rate=k\left[A\right]\left[B\right]$
 			\item \ch{2 A -> B} ~~ gives ~~ $rate=k\left[A\right]^2$
 		\end{itemize}
 		\item While each step has its own rate, the overall reaction can only proceed at the rate of the \emph{slowest} step
-		\item The slowest step is therefore called the \emph{rate-limiting} step of the reaction
+		\item The slowest step is therefore called the \emph{rate-limiting} step of the reaction (Figure 14.20)
 		\item Looking at the reaction of \ch{NO2} and \ch{CO} above, the first step is slower so the overall reaction rate will be $rate=k\left[NO2\right]^2$
 	\end{itemize}
 	\item Any proposed mechanism must, at a minimum, add up to the total equation, and produce a rate law consistent with observations
@@ -768,6 +768,9 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\end{itemize}
 	\item Reaction mechanisms can become complex and interesting for certain reactions (harpoon mechanism and collisional activation)
 \end{itemize}
+
+{\HUGE Old Notes from older text begin here}
+% TODO: Continue updating notes here
 
 \section{Catalysis}
 \begin{itemize}
