@@ -267,29 +267,156 @@ There is a whole semester of material from 1210, and these are only the topics w
 \chapter{Solutions and Colloids}
 
 \section{The Dissolution Process}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Some vocabulary: \emph{Solution}, \emph{Solvent}, \emph{Solute}, and \emph{solvation}
+  \item Table 11.1 shows many different types of solutions, with different phases of solvent and solute
+  \item Molecular compounds dissolve to form one solute:
+
+    \ch{C6H12O6(s) -> C6H12O6(aq)}
+  \item Ionic compounds will dissolve into individual ions:
+
+    \ch{Na2SO3(s) -> Na2SO3(aq) -> 2 Na^+(aq) + SO3^{2-}(aq)}
+  \item Dissolving soluble compounds is a thermodynamically \emph{spontaneous} process
+  \begin{itemize}
+    \item Spontaneity is covered in more detail in chapter 16
+    \item Solvation mixes solvent and solute, increasing the system \emph{entropy} (Figure 11.3)
+    \item Solvation can be either \emph{exothermic} (favors spontaneity) or \emph{endothermic} (hampers spontaneity) depending on the strength of solvent-solvent, solute-solute, and solvent-solute intermolecular forces (Figure 11.4)
+    \item Demonstration, dissolving \ch{NaOH(s)} and \ch{NH4NO3(s)} in water (Don't overdo the \ch{NaOH}!)
+    \item When solvation has $\Delta H \approx 0$, the result is an \emph{ideal solution}, whose properties best match simple laws
+  \end{itemize}
+\end{itemize}
 
 \section{Electrolytes}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Electrolytes will yield ions when dissolved in water, yielding a solution which conducts electricity (Figure 11.6)
+  \begin{description}
+    \item[Non-electrolytes:] Do not yield ions at all when dissolved (Most molecular compounds)
+    \item[Strong electrolytes:] Produce a large (stoichiometric) amount of ions when dissolved (Soluble ionic compounds and \emph{strong} acids/bases)
+    \item[Weak electrolytes:] Produce a smaller amount of ions when dissolved (\emph{weak} acids/bases)
+  \end{description}
+  \item Ionic electrolytes produce ions by directly \emph{dissociating} into their cations and anions (Figure 11.7)
+  \item Molecular electrolytes produce ions by reacting with the solvent or other molecules
+
+    \ch{NH3(aq) + H2O(l) <=> NH4^+(aq) + OH^-(aq)}
+\end{itemize}
 
 \section{Solubilty}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Table 4.1 gave rules to predict if an ionic compound is soluble or insoluble, but in reality solubilities lie on a spectrum
+  \item In Chapter 15, we will explore solubility with mathematic rigor. For now, we will focus on trends and factors affecting solubility
+  \item Solubility is a type of reaction governed by \emph{equilibrium}
+  \begin{description}
+    \item[Unsaturated] solutions have not yet reached their limit of how much solute they can dissolve
+    \item[Saturated] solutions have met their solubility limit and are in equilibrium. You can recognize a saturated solution by the presence of undissolved solute in contact with the solution
+    \item[Supersaturated] solutions have exceeded their solubility limit. This situation is only \emph{metastable} and usually contrived by quick changes in temperature or volume (``Jeremy Krug'' Youtube video of supersaturated \ch{NaCH3CO2})
+  \end{description}
+  \item Solutions of gases in liquids
+  \begin{itemize}
+    \item Gas-in-liquid solvation is always exothermic and solubility depends primarily on solvent-solute interactions
+    \item Solubility is decreases as temperature rises (Figures 11.8 and 11.9)
+    \item Solubility also depends on the gas partial pressure, according to Henry's law. Figure 11.8 gives $k_H$, and Figure 11.10 illustrates how to use Henry's law to supersaturate a solution (carbonation!)
+
+      $C_{gas}=k_HP_{gas}$
+  \end{itemize}
+  \item Solutions of liquids in liquids
+  \begin{itemize}
+    \item Miscible liquids are infinitely soluble in each other (mix in any ratio)
+    \item Immiscible liquids have very low solubility in each other, and separate to form layers. Oil and water (Figure 11.14) are a classic example of immiscible liquids and illustrate the axiom that ``like dissolves like'' because their intermolecular forces are so different
+    \item Partially miscible liquids will form two layers when mixed, but each layer contains significant amounts of the other solute liquid
+  \end{itemize}
+  \item Solutions of solids in liquids
+  \begin{itemize}
+    \item Figure 11.6 shows the temperature dependance of solubility for several solids
+    \item \emph{Exothermic} $\Delta H_{solv}$ leads to lower solubility at higher temperatures
+    \item \emph{Endothermic} $\Delta H_{solv}$ leads to higher solubility at higher temperatures
+  \end{itemize}
+\end{itemize}
+\paragraph*{Quiz 11.1 - The Solvation Process}
+\paragraph*{Homework 11.1}
+\begin{itemize}
+  \item 11.3: Energetics of solvation
+  \item 11.9: Rule of like dissolves like
+  \item 11.13: Classifying electrolytes
+  \item 11.23: Henry's law
+\end{itemize}
 
 \section{Colligative Properties}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Colligative properties of solutions depend on the \emph{amount} of solute present, regardless of the chemical identity of the solutes
+  \item Some colligative properties depend on less common units of concentration
+  \begin{itemize}
+    \item Recall molarity from chapter 3
+    \item \emph{Mass \%} is $\dfrac{m_{solute}}{m_{total}}\times 100\%$
+    \item \emph{Mole fraction} is $\chi_A=\dfrac{n_A}{n_{total}}$
+    \item \emph{Molality} is $m=\dfrac{moles_{solute}}{kg_{solvent}}$
+    \item Practice interconverting between these units: $\chi_{\ch{C6H12O6}}=0.25$ in aqueous solution
+    \item For electrolytes, we will also need the van't Hoff factor, $i = $ \# of particles produce on solvation
+  \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 11.2 - Concentrations}
+\paragraph*{Homework 11.2}
+\begin{itemize}
+  \item 11.19: \% by mass and solubility
+  \item 11.31: Mole fraction
+  \item 11.39: Molality
+\end{itemize}
+
+\paragraph*{Back to Section 11.4  Colligative Properties}
+\begin{itemize}
+  \item Vapor pressure lowering
+  \begin{itemize}
+    \item Figure 11.8 illustrates why solutes lower the vapor pressure of the solvent
+    \item Rault's law: $P_A=\chi_AP^\star_A$
+    \item If the solute is a liquid, we can apply Rault's law to the solute as well $P_{total}=\chi_AP^\star_A+\chi_BP^\star_B$
+    \item This gives a different composition of the gas phase from the liquid phase, allowing for purification through distillation (Figures 11.19 and 11.20)
+  \end{itemize}
+  \item Changes in phase tranistion temperatures
+    \begin{itemize}
+      \item Boiling point elevation is a consequence of vapor pressure lowering
+      \item Freezing point depression follows a similar forumula 
+      \item $\Delta T_{f/b}=iK_{f/b}m$
+      \item Table 11.2 gives $T_b$, $K_b$, $T_f$, and $K_f$ for several substances
+      \item These effects manifest on a phase diagram like in Figure 11.23
+    \end{itemize}
+  \item Osmotic pressure
+  \begin{itemize}
+    \item Figure 11.24 shows how water will flow across a selectively permeable membrane via osmosis
+    \item Figure 11.25 shows how and applied pressure can reverse this process and purify water
+    \item $\pi=\dfrac{inRT}{V} = iMRT$
+    \item Figure 11.27 shows how blood salinity can impact the health of red blood cells (isotonic, hypertonic, hypotonic, hemolysis, crenation)
+  \end{itemize}
+  \item Measuring colligative properties can give the molar mass of an unknown, as long as we know the van't Hoff factor
+\end{itemize}
+\paragraph*{Quiz 11.3 - Colligative Properties}
+\paragraph*{Homework 11.3}
+\begin{itemize}
+  \item 11.45: Freezing point depression
+  \item 11.61: Osmotic pressure
+  \item 11.65: Vapor pressures of mixtures
+\end{itemize}
 
 \section{Colloids}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Colloids occupy the blurry boundry region between homogeneous and heterogeneous mixtures (Figure 11.29)
+  \item Colloids can be identified by several properties:
+  \begin{itemize}
+    \item Particle size is on a range of tens- to hundreds- of nanometers
+    \item Particles will not settle out on their own under the influence of gravity
+    \item Particles will scatter light, called the Tyndall Effect (Figure 11.30)
+  \end{itemize}
+  \item Table 11.4 gives some examples of colloids in various phases
+  \item Emulsifying agents can create an emulsion, or colloidal suspension of two immiscible liquids
+  \item Soaps and detergents can create colloidal suspensions of oils in water (Figure 11.33)
+\end{itemize}
+\paragraph*{Quiz 11.4 - Molar Masses and Colloids}
+\paragraph*{Homework 11.4}
+\begin{itemize}
+  \item 11.49: Molar mass from boiling point
+  \item 11.59: Molar mass from osmotic pressure
+  \item 11.73: Colloid particle size
+\end{itemize}
+
 
 \chapter{Kinetics}
 
@@ -309,38 +436,83 @@ There is a whole semester of material from 1210, and these are only the topics w
 % \end{itemize}
 
 \section{Integrated Rate Laws}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Collision Theory}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Reaction Mechanisms}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Catalysis}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \chapter{Fundamental Equilibrium Concepts}
 
 \section{Chemical Equilibria}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Equilibrium Constants}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Shifting Equilibria: Le Ch\^atelier's Principle}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Equilibrium Calculations}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \chapter{Acid-Base Equilibria}
 
 \section{Brønsted-Lowry Acids and Bases}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{pH and pOH}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Relative Strengths of Acids and Bases}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Hydrolysis of Salts}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Polyprotic Acids}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Buffers}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Acid-Base Titrations}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \chapter{Equilibria of Other Reaction Classes}
 
