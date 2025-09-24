@@ -421,24 +421,87 @@ There is a whole semester of material from 1210, and these are only the topics w
 \chapter{Kinetics}
 
 \section{Chemical Reaction Rates}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Two reactions which we can write, but do not observe:
+
+    \ch{2 Au(s) + 3 H2O(l) -> Au2O3(s) + 3 H2(g)} \hspace{2em} Thermodynamically non-spontaneous
+
+    \ch{C_{diamond} -> C_{graphite}} \hspace{2em} Kinetically hindered
+  \item Kinetics is the study of reaction rates (how quickly the reaction proceeds)
+  \item The reaction rate is the rate of dissappearance of reactant or production of product, normalized by the stoichiometric coefficients
+
+    $rate=\dfrac{\mathrm{d}\left[A\right]}{\nu_A\mathrm{d}t}$
+  \item This is the \emph{instantaneous} rate, and in practice can only be approximated
+  \item We can monitor the concentration of reactant or product over time, and calculate the average rate at different intervals
+  \item Consider the reaction \ch{2 H2O2(aq) -> 2 H2O(l) + O2(g)} (Figures 12.2 and 12.3)
+
+    $rate = -\dfrac{\mathrm{d}\left[\ch{H2O2}\right]}{2\mathrm{d}t} = \dfrac{\mathrm{d}\left[\ch{H2O}\right]}{2\mathrm{d}t} = \dfrac{\mathrm{d}\left[\ch{H2}\right]}{\mathrm{d}t}$
+
+    $rate \approx -\dfrac{\Delta\left[\ch{H2O2}\right]}{2\Delta t} = \dfrac{\Delta\left[\ch{H2O}\right]}{2\Delta t} = \dfrac{\Delta\left[\ch{H2}\right]}{\Delta t}$
+  \item Practice: Consider \ch{2 NH3(g) <=> N2(g) + 3 H2(g)} (Figure 12.5). Calculate the rate using each curve
+\end{itemize}
+
 
 \section{Factors Affecting Reaction Rates}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Reaction rates can vary widely from virtually instantaneous to so slow the reactiond doesn't practically happen at all
+  \item Many factors affecte rates, including some that can be controlled and some that cannot
+  \item The pysical state of the reactants 
+  \begin{itemize}
+    \item For solids, reactions occur at the surface so fine powders react more quickly than coarse ones (Figure 12.6)
+    \item For heterogeneous reaction, the reaction occurs at the interface
+  \end{itemize}
+  \item Temperature: All reactions increase their rate as temperature increases
+  \item Concentration of reactants
+  \begin{itemize}
+    \item Increasing reactants generally increases the rate of reaction (We won't see any exceptions in this class)
+    \item Product concentration generally has no effect on reaction rates (again, no exceptions in this class)
+    \item Figure 12.7 shows how degradation of statues is accelerated in areas with high \ch{H2SO4} concentration
+  \end{itemize}
+\item The presence of a \emph{catalyst} (more on this in section 12.7)
+\end{itemize}
 
 \section{Rate Laws}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The reaction rate can be related to reactant concentration through a \emph{rate law}
+    \begin{itemize}
+      \item For a generic reaction \ch{aA+bB->cC+dD}, $rate=k\left[A\right]^m\left[B\right]^n$
+      \item $m$ and $n$ are called the reaction orders, and are unrelated to the stoichiometric coefficients (equations at the end of the section)
+      \item $m+n$ gives the \emph{overall} reaction order
+      \item $k$ is called the \emph{rate constant}, and will take different units depending on the overall reaction order (Table 12.1)
+    \end{itemize}
+  \item Rate laws can be determined through the \emph{Initial Rate Method}
+    \begin{itemize}
+      \item Do several runs of the reaction with different concentrations of reactants
+      \item Measure the initial rate of reaction for each run
+      \item Compare runs pairwise, choosing pairs which keep one reactant concentration constant and change the other
+      \item Take the ratios of the rates, equal to the ratios of the rate laws for each condition
+      \item Simplify the ratio of rate laws mathematically (just show this on the whiteboard)
+      \item Calculate the value of $k$ using data from one trial (or all of them, and average the results)
+      \item Practice: Work example 12.4 from the text
+    \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 12.1 - Reaction Rates}
+\paragraph*{Homework 12.1}
+\begin{itemize}
+  \item 5: Find rates from concentration data 
+  \item 7: Factors affecting rate laws
+  \item 25: Initial rate method
+\end{itemize}
 
 \section{Integrated Rate Laws}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item We can set the definition of reaction rate equal to the rate law: $-\dfrac{\mathrm{d}\left[A\right]}{\mathrm{d}t}=k\left[A\right]^m$
+  \item Rearrange this to separate the infinitesimal terms and integrate: $\int\dfrac{\mathrm{d}\left[A\right]}{\left[A\right]^m}=\int-k\mathrm{d}t$
+  \item This will integrate to give different integrated rate laws depending on the reaction order
+  \item First-order
+    \begin{itemize}
+      \item Linear form: $\ln\left[A\right]_t=\ln\left[A\right]_0-kt$
+      \item Two-point form:
+      \item Half-life: 
+    \end{itemize}
+\end{itemize}
 
 \section{Collision Theory}
 % \begin{itemize}
