@@ -535,19 +535,176 @@ There is a whole semester of material from 1210, and these are only the topics w
 \end{itemize}
 
 \section{Collision Theory}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item Collision theory explains reaction rates in terms of molecular collisions
+	\begin{itemize}
+		\item Reactions only occur when reactant molecules encounter each other in collisions, but not all collisions will lead to a reaction
+		\item Some collisions happen in the wrong orientation to lead to reaction (Figure 12.13)
+		\item Some collisions don't have enough energy to overcome the activation energy barrier
+  \end{itemize}
+	\item Reaction coordinate diagrams show how the energy changes over the course of a reaction
+	\begin{itemize}
+		\item Figure 12.14 shows a typical reaction coordinate diagram
+		\item For simple reactions the x-axis can represent actual measurements, like bond lengths
+		\item Generally, the x-axis just represents progress in the reaction from reactants to products
+		\item The diagram shows if the reaction is exothermic or endothermic
+		\item The highest energy point is called the \emph{transition state}
+		\item At the transition state, reactant bonds are nearly broken but product bonds have barely started to form
+		\item The activation energy is the energy required to reach the transition state
+	\end{itemize}
+  \item These considerations are summarized by the Arrhenius Equation: $k=Ae^{-\nicefrac{E_a}{RT}}$
+  \begin{itemize}
+		\item $k$ is the rate constant from the rate law
+		\item $A$ is the frequency factor, and it includes both the rate of collisions, and the fraction of those collisions which lead to reaction
+		\item $A$ is dependent only weakly temperature, so we'll assume that it is constant
+		\item $E_a$ is the activation energy in $\dfrac{J}{mol}$, so we should use $R=8.314\dfrac{J}{mol~K}$
+		\item The exponential term is called a Boltzmann factor, and gives the fraction of collisions which have enough energy
+		\item Figure 12.15 shows how temperature affects the kinetic energy of collisions
+	\end{itemize}
+	\item We can use the Arrhenius Equation to measure the activation energy
+	\begin{itemize}
+		\item Take the natural log of both sides of the Arrhenius equation
+		\item $\ln k=\ln\left(Ae^{-\nicefrac{E_a}{RT}}\right)$ ~~ becomes ~~ $\ln k = \ln A - \dfrac{E_a}{RT}$
+		\item If we plot the $\ln k$ at different temperatures against $\dfrac{1}{T}$, we get a linear equation
+		\item The slope of the line is $-\dfrac{E_a}{RT}$ and the intercept is $\ln A$
+		\item We can also create the two-point form of this equation: $\ln\left(\dfrac{k_1}{k_2}\right)=\dfrac{E_a}{R}\left(\dfrac{1}{T_2}-\dfrac{1}{T_1}\right)$
+		\item Measure the reaction rate and get the rate constant at two or more temperatures
+		\item Put the values into the two-point equation to get $E_a$		
+	\end{itemize}
+	\item The decomposition of \ch{HI} proceeds as follows: \ch{2 HI(g) -> H2(g) + I2(g)}
+	
+	At $655~K$ the rate constant is $8.15\times10^{-8}\dfrac{1}{M~s}$ and at $705~K$ the rate constant is $1.39\times10^{-6}\dfrac{1}{M~s}$
+	
+	Determine the activation energy and frequency factor for this reaction $\left(218\dfrac{kJ}{mol}~\mathrm{and}~1.91\times10^{10}\dfrac{1}{M~s}\right)$
+\end{itemize}
+
+\paragraph*{Quiz 12.3 - Arrhenius Equation}
+\paragraph*{Homework 12.3}
+\begin{itemize}
+  \item 50: Factors in collision theory
+  \item 58: Determining the frequency factor
+  \item 62: Determining the activation energy
+\end{itemize}
 
 \section{Reaction Mechanisms}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item My figure about how we often don't think about the \emph{mechanics} of how chemical reactions proceed
+	\item Chemical reaction \emph{can} happen in just one step, but often proceed in two or more distinct steps
+	\item The details of how a reaction actually proceeds is called the Reaction Mechanism
+	\item Each step in the mechanism cannot be broken down or simplified further, and is called an \emph{elementary step} 
+	\item Elementary steps involve either the spontaneous decomposition of a single molecule, or an encounter between two molecules
+	\item Consider the following reaction: \ch{NO2(g) + CO(g) -> NO(g) + CO2(g)}
+	
+	Elementary Step 1: \ch{NO2(g) + NO2(g) -> NO(g) + NO3(g)} \hspace{1em} SLOW
+	
+	Elementary Step 2: \ch{NO3(g) + CO(g) -> NO2(g) + CO2(g)} \hspace{1em} FAST
+	\item The two steps add up to the total equation
+	\item \ch{NO3(g)} is produced in the first step, then consumed in the second step, so it never shows up in the overall reaction
+	\item This makes \ch{NO3(g)} an \emph{intermediate}
+	\item Intermediates are different from transition states because they are energetically stable (minimum in the reaction coordinate diagram)
+	\item Intermediates may sometimes be observed directly in the course of the reaction, or they may be so dilute or so short-lived that they cannot be observed
+	\item A reaction coordinate diagram for a two-step reaction like this one will feature two peaks (Draw one on the board)
+	\item Elementary steps each have their own reaction rates:
+	\begin{itemize}
+		\item The rate law for an elementary step depends on the \emph{molecularity} of the step
+		\begin{itemize}
+			\item Unimolecular steps have only one reactant: \ch{AB -> A + B} (cyclobutane decomposition figure)
+			\item Bimolecular steps involve an encounter between two molecules: \ch{A + B -> C} or \ch{2 A -> B} (Figure 12.17)
+			\item Termolecular steps are very rare, but can occur
+		\end{itemize}
+		\item The rate law can be inferred from the stoichiometry of the step
+    \begin{itemize}
+			\item \ch{AB -> A + B} ~~ gives ~~ $rate=k\left[AB\right]$
+			\item \ch{A + B -> C} ~~ gives ~~ $rate=k\left[A\right]\left[B\right]$
+			\item \ch{2 A -> B} ~~ gives ~~ $rate=k\left[A\right]^2$
+		\end{itemize}
+		\item While each step has its own rate, the overall reaction can only proceed at the rate of the \emph{slowest} step
+		\item The slowest step is therefore called the \emph{rate-limiting} step of the reaction (Figure 12.18\ldots a bit strained analogy)
+		\item Looking at the reaction of \ch{NO2} and \ch{CO} above, the first step is slower so the overall reaction rate will be $rate=k\left[NO2\right]^2$
+	\end{itemize}
+	\item Any proposed mechanism must, at a minimum, add up to the total equation, and produce a rate law consistent with observations
+	\item This is not conclusive proof of a mechanism's validity, as one could contrive infinite mechanisms within these two constraints
+	\item Some elementary steps are reversible, and establish an equilibrium (subject of the next chapter):
+	\begin{itemize}
+		\item Consider the reaction \ch{2 NO(g) + Cl2(g) -> 2 NOCl(g)} \hspace{1em} $rate=k\left[NO\right]^2\left[Cl\right]$
+		\item This observed rate law seems consistent with a single-step \emph{termolecular} mechanism, but termolecular reactions are exceptionally rare
+		\item An alternative proposed mechanism is:
+		
+		\ch{NO(g) + Cl2(g) <=>[ $k_1$ ][ $k_{-1}$ ] NOCl2(g)} \hspace{1em} FAST
+		
+		\ch{NOCl2(g) + NO(g) ->[ $k_2$ ] 2 NOCl(g)} \hspace{1em} SLOW
+		\item The first step will reach an equilibrium, where the forward rate will equal the reverse rate
+		
+		$k_1\left[\ch{NO}\right]\left[\ch{Cl2}\right] = k_{-1}\left[\ch{NOCl2}\right]$
+		\item Rearrange this to give the equilibrium concentration of the intermediate $\left[\ch{NOCl2}\right]=\dfrac{k_1}{k_{-1}}\left[\ch{NO}\right]\left[\ch{Cl2}\right]$
+		\item The reaction rate is ultimately determined by the formation of product in the second step:
+		
+		$rate=k_2\left[\ch{NOCl2}\right]\left[\ch{NO}\right]$
+		\item Substitute in our expression for $\left[\ch{NOCl2}\right]$
+		
+		$rate=k_2\left(\dfrac{k_1}{k_{-1}}\left[\ch{NO}\right]\left[\ch{Cl2}\right]\right)\left[\ch{NO}\right]=\dfrac{k_2k_1}{k_{-1}}\left[\ch{NO}\right]^2\left[\ch{Cl2}\right]$		
+	\end{itemize}
+	\item Consider the reaction: \ch{2 NO(g) + O2(g) -> 2 NO2(g)} \hspace{1em} $\Delta H_{rxn}=-116.2\dfrac{kJ}{mol}$ 
+	\begin{itemize}
+		\item The observed rate law is: $rate=k\left[\ch{NO}\right]^2\left[\ch{O2}\right]$
+		\item A proposed mechanism is:
+		
+		\ch{NO(g) + O2(g) <=> NO3(g)} \hspace{1em} FAST
+		
+		\ch{NO(g) + NO3(g) -> 2 NO2(g)} \hspace{1em} SLOW
+		\item Is the reaction mechanism consistent with the observed rate law?
+		\item What is the value of $k$ in terms of the elementary step rate constants?
+		\item Draw a basically accurate reaction coordinate diagram for this reaction
+	\end{itemize}
+	\item Reaction mechanisms can become complex and interesting for certain reactions (harpoon mechanism and collisional activation)
+\end{itemize}
 
 \section{Catalysis}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item Catalysts provide an alternative reaction mechanism which is faster than the uncatalyzed pathway
+	\item Figure 12.19 shows a typical reaction coordinate diagram for a catalyzed reaction
+	\item Catalysts appear in in the reaction mechanism, being first \emph{consumed}, then \emph{regenerated}
+	\item The reaction \ch{2 H2O2(aq) -> 2 H2O(l) + O2(g)} can be catalyzed by \ch{HBr(aq)}
+	
+	\ch{H2O2(aq) + 2 HBr(aq) -> Br2(aq) + 2 H2O(l)} \hspace{1em} SLOW
+	
+	\ch{Br2(aq) + H2O2(aq) -> O2(g) + 2 HBr(aq)} \hspace{1em} FAST
+	\item Note that the \ch{HBr} is consumed in the first step, but regenerated in the second step
+  \item Homogeneous catalysis has the catalyst in the same phase as the reactants
+  \item Heterogeneous catalysis has a catalyst in a different phase (Figure 12.23)
+	\item Some ways catalysts can operate:
+	\begin{itemize}
+		\item Heterogeneous catalysts confine reactants to a surface, increasing the encounter frequency
+		\item Enzymes hold the reactants in precise configurations, improving the steric component of the frequency factor and stabilizing the activated complex
+		\item Homogeneous catalysts produce new compounds which shift electron density and weaken bonds which must be broken for the reaction to proceed
+	\end{itemize}
+  \item Enzymes are a special class of catalyst important for living organisms
+  \begin{itemize}
+    \item Enzymes are usually large proteins, sometimes incorporating metal cofactors
+    \item Enzymes can be incredibly efficient by reducing the activation energy barrier to near $0$
+    \item Figure 12.25 shows a schematic of how enzymes work
+  \end{itemize}
+	\item Analyze the following reaction mechanism for additional practice:
+	
+	\ch{C3H6(aq) + H^+(aq) -> C3H7^+(aq)}
+	
+	\ch{C3H7^+(aq) + H2O(l) -> C3H9O^+(aq)}
+	
+	\ch{C3H9O^+(aq) -> C3H8O(aq) + H^+(aq)}
+	\begin{itemize}
+		\item Give the total overall reaction
+		\item Identify any catalysts and intermediates
+	\end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 12.4 - Reaction Mechanisms}
+\paragraph*{Homework 12.4}
+\begin{itemize}
+  \item 72: Rate laws of elementary steps
+  \item 74: Validating a mechanism for a real reaction
+  \item 78: Catalysts and mechanisms
+  \item 80: Catalysis and reaction coordinate diagrams
+\end{itemize}
 
 \chapter{Fundamental Equilibrium Concepts}
 
