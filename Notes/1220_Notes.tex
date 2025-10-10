@@ -709,24 +709,188 @@ There is a whole semester of material from 1210, and these are only the topics w
 \chapter{Fundamental Equilibrium Concepts}
 
 \section{Chemical Equilibria}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Figure 13.1 illustrates how \ch{CO2} in our blood and blood $pH$ are mediated by equilibrium reactions
+  \item Some reactions can go in both the forward and reverse directions
+	
+	\ch{N2O4(g) -> 2 NO2(g)} and \ch{2 NO2(g) -> N2O4(g)}
+	\item Such reactions will reach an equilibrium
+	\begin{itemize}
+		\item Equilibrium is when the forward reaction rate and the reverse reaction rate are equal
+    \item Treating these as single-step (elementary) reactions yields: $rate_f=k_f[\ch{N2O4}]$ and $rate_r=k_r[\ch{NO2}]^2$
+		\item The concentrations of reactants and products remains steady indefinitely once equilibrium is reached
+		\item Figure 13.2 shows how the amounts of reactant and product and the reaction rates shift over time until the rates are equalized and equilibrium is reached
+		\item Equilibrium is a dynamic state -- reactions continue, they merely balance each other (Figure 13.3)
+		\item The precise concentrations at equilibrium will depend on the starting conditions
+	\end{itemize}
+	\item The above two reactions can be combined into one equation: \ch{N2O4(g) <=> 2 NO2(g)}
+  \item Figure 13.4 illustrates how vapor pressure is an equilibrium process (\ch{Br2(l) <=> Br2(g)})
+\end{itemize}
 
 \section{Equilibrium Constants}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The current concentrations of reactants and products can be summarized with the \emph{reaction quotient} $Q$
+  \item For a generic reaction: \ch{m A + n B <=> x C + y D} the reaction quotient is:
+
+    $Q_C=\dfrac{\left[C\right]^x\left[D\right]^y}{\left[A\right]^m\left[B\right]^n}$
+
+    $Q_P=\dfrac{P_C^xP_D^y}{P_A^mP_B^n}$
+  \item For heterogeneous reactions, we exclude (s) and (l) species from $Q$ and $K$ (reasons for this are a bit complex)
+  \item Practice with the equation: \ch{N2(g) + 3 H2(g) <=> 2 NH3(g)} ($K_{C,300K}=2.7\times10^{8}$)
+  \item As the system approaches equilibrium, the value of $Q$ approaches $K$
+  \item $K$ has the same mathematical form as $Q$, but has concentrations or pressures that are already at equilibrium
+  \item Both $K$ and $Q$ are unitless, for reasons we don't cover in this class
+  \item At a given temperature, the equilibrium conditions may be different for different starting points, but the value of $K$ is the same
+  \item The magnitude of $K$ can tell about general conditions at equilibrium
+	\begin{itemize}
+		\item If $K \gg 1$ then equilibrium will favor products
+		\item If $K \ll 1$ then equilibrium will favor reactants
+	\end{itemize}
+  \item For a given starting position, we can calculate $Q$ to determine what direction the system needs to shift to reach equilibrium
+    \begin{itemize}
+      \item If $Q<K$ then the system must shift toward products
+      \item If $Q>K$ then the system must shift toward reactants
+    \end{itemize}
+	\item Equilibrium can be reached whether you start with reactants or start with products (Figure 13.5)
+	\item Note that \ch{N2(g)} alone or \ch{H2(g)} alone cannot lead to equilibrium from the reactant side -- both are needed
+  \item We can show that $K_p = K_c\left(RT\right)^{\Delta n}$ by substituting in $P=MRT$
+  \item Give the relationship between $K_p$ and $K_c$ for the formation of ammonia: $K_p = \dfrac{K_c}{\left(RT\right)^2}$
+\end{itemize}
+
+\paragraph*{Quiz 13.1 - Equilibrium Constants}
+\paragraph*{Homework 13.1}
+\begin{itemize}
+  \item 3: Recognize when a system reaches equilibrium
+  \item 9: Reactant-favored reactions
+  \item 15: Reaction quotient for many reactions
+\end{itemize}
+
+\section*{Resuming Section 13.2 - Equilibrium Constants}
+\begin{itemize}
+  \item Using the equilibrium constant
+    \begin{itemize}
+      \item We can measure the concentrations at equilibrium and directly measure the equilibrium constant
+      \begin{itemize}
+        \item Consider the reaction: \ch{CO(g) + H2O(g) <=> CO2(g) + H2(g)}
+        \item Find $K_c$ if $\left[\ch{CO}\right]=0.0600~M$, $\left[\ch{H2O}\right]=0.120~M$, $\left[\ch{C2O}\right]=0.150~M$, and $\left[\ch{H2}\right]=0.300~M$
+        \item Figure 13.6 shows how many different reaction mixture compositions can all satisfy the equilibrium expression
+      \end{itemize}
+      \item We can use the equilibrium constant to find an unknown concentration
+      \begin{itemize}
+        \item \ch{CH3CO2H(aq) + H2O(l) <=> H3O^+(aq) + CH3CO2^_(aq)} \hspace{1em} $K=1.8\times10^{-5}$
+        \item Find $\left[\ch{H3O^+}\right]$ if $\left[\ch{CH3COOH}\right] = 0.250~M$ and $\left[\ch{CH3COO^-}\right]=0.350~M$
+      \end{itemize}
+      \item We can easily find $K$ for doubled, reversed, or added equations (\emph{not in your text})
+      \begin{itemize}
+        \item For a reversed equation, reactants and products switch, so $K_{reverse} = K_{normal}^(-1)$
+        \item For a doubled (or tripled) reaction, $K$ should be squared (or cubed)
+        \item For added reactions (multi-step) $K_{total}=K_1K_2$
+      \end{itemize}
+      \item Find $K$ for the reaction: \ch{N2(g) + 2 O2(g) <=> 2 NO2(g)}
+      
+      \ch{N2(g) + O2(g) <=> 2 NO(g)} \hspace{1em} $K=2.0\times10^{-25}$
+      
+      \ch{2 NO(g) + O2(g) <=> 2 NO2(g)} \hspace{1em} $K=6.4\times10^{9}$
+    \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 13.2 - Working with K}
+\paragraph*{Homework 13.2}
+\begin{itemize}
+  \item 19: Predict direction to reach equilibrium
+  \item 25: Covert $K_C$ to $K_P$
+  \item 52: Calculate $K$ from concentrations
+\end{itemize}
 
 \section{Shifting Equilibria: Le Ch\^atelier's Principle}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item When changes are made to a system at equilibrium, it will shift in response to that change to maintain equilibrium
+	\item This is called Le Ch\^atelier's Principle
+	\item We can calculate $Q$ after the change and compare it to $K$
+	\item In practice, though, a few simple rules are sufficient without any calculations
+	\item Adding or removing a reactant or product
+	\begin{itemize}
+		\item If a reactant or product is added or removed, the system will respond to counteract the change
+		\item A U-pipe with water is a good analogy for this shift
+		\item Consider the reaction \ch{2 H2S(g) <=> 2 H2(g) + S2(g)}
+		
+		How would the reaction shift if each species is added or removed in turn?
+	\end{itemize}
+	\item Changing volume
+	\begin{itemize}
+		\item If the reaction volume changes, all the concentrations or pressures will change together
+		\item The effect this has depends on the stoichiometry of the reaction
+		\item Consider the reaction \ch{3 H2(g) + N2(g) <=> 2 NH3(g)} -- How will the reaction quotient change if the volume doubles?
+		\item The shift depends on $\Delta_n$, considering only the moles of gas or aqueous substances
+		\item If volume increases (dilution), the reaction will shift to the side with \emph{more} moles
+		\item If volume decreases (concentration), the reaction will shift to the side with \emph{fewer} moles
+		\item If $\Delta_m=0$, then the reaction is unaffected by dilution and concentration
+	\end{itemize}
+	\item Temperature changes
+	\begin{itemize}
+		\item Unlike with the other changes, a change in $T$ will actually change the value of $K$
+		\item How $K$ changes depends on $\Delta H_{rxn}$
+		\item We will explore this relationship mathematically later, but for now we can use a trick to determine the direction of the shift
+		\item Consider ``heat'' as a reactant for endothermic reactions, and as a product for exothermic reactions
+		\item Heat is not really a product or reactant (how many $g$ of heat are produced)
+		\item Lowering $T$ removes heat and the reaction will respond just like removing any other reactant or product
+		\item Raising $T$ adds heat and will have the same effect as adding any other reactant or product
+	\end{itemize}
+	\item Equilibrium is often not the most important factor in industrial settings. The Haber process is run at high temperatures to increase the reaction rate even though it pushes equilibrium toward reactants
+	\item Addition of a catalyst has \emph{no} effect on the equilibrium position
+\end{itemize}
+
+\paragraph*{Quiz 13.3 - Le Ch\^atelier's Principle}
+\paragraph*{Homework 13.3}
+\begin{itemize}
+  \item 36: How to maximize product
+  \item 38: Temperature changes and equlibrium
+  \item 42: Predicting response to changes
+\end{itemize}
 
 \section{Equilibrium Calculations}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item If we know the equilibrium constant, we can find equilibrium concentrations based on the initial conditions
+	\item We do this using an ICE table:
+	\begin{itemize}
+		\item I -- Initial conditions (often one or more species will have an initial concentration of $0$)
+		\item C -- Change. Express the change in terms of $x$ and be sure to consider stoichiometry
+		\item E -- Equilibrium conditions. These values (I + C) should be put in the equilibrium expression
+		\item Once you have the equilibrium expression you can calculate the change amount ($x$)
+		\item You can do this technique with pressures or molar concentrations, depending on the form of $K$
+		\item If you do your change calculations in pure moles, be sure to change them into $P$ or $[]$ before you put them into the equilibrium expression
+	\end{itemize}
+	\item Consider the reaction \ch{H2(g) + I2(g) <=> 2 HI(g)}
+	
+	$5.00~mol$ \ch{H2} and $0.500~mol$ \ch{I2} are reacted in a $1.00~L$ chamber and at equilibrium $\left[\ch{HI}\right] = 0.900~M$. Find the value of $K_C$ ($324$)
+	\item Consider the reaction \ch{CO(g) + H2O(g) <=> H2(g) + CO2(g)} \hspace{1em} $K_C=5.80$
+	
+	Find the equilibrium conditions if initial concentrations are: $\left[\ch{CO}\right]= \left[\ch{H2O}\right]=0.0125~M$
+	\item Often the equilibrium expression will lead to a quadratic equation when solving for $x$
+	\item The quadratic formula is: $ax^2 + bx + c = 0 \rightarrow x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$
+	\item Consider the reaction: \ch{I2(g) <=> 2 I(g)} \hspace{1em} $K_{P,1000K}=0.260$
+	
+	Find the equilibrium conditions if a reaction chamber is initially charged with $0.200~atm$ \ch{I} and $0.00500~atm$ \ch{I2}
+	\item Some quadratic equations can be greatly simplified by recognizing when $x$ is small compared to initial amounts
+	\begin{itemize}
+		\item If $x$ is small, then it can be neglected from any species with an initial amount
+		\item First solve the equation \emph{assuming} that $x$ can be neglected
+		\item Compare the solved value of $x$ to the amounts it was neglected from
+		\item If $x$ is less than $5\%$ of those values then your simplification was valid
+		\item If not, then you must go back and solve the complete quadratic equation
+	\end{itemize}
+	\item Consider the reaction \ch{HCOOH(aq) + H2O(l) <=> H3O^+(aq) + HCOO^-(aq)} \hspace{1em} $K_C=1.8\times10^{-4}$
+	
+	Find the equilibrium conditions for a solution that begins with $\left[\ch{HCOOH}\right]=0.250~M$
+\end{itemize}
+
+\paragraph*{Quiz 13.4 - ICE Tables}
+\paragraph*{Homework 13.4}
+\begin{itemize}
+  \item 54: Calculate $K$ using an ICE table
+  \item 76: Use ICE table to calculate equlibrium amounts
+  \item 88: Calculate pressures using an ICE table
+\end{itemize}
 
 \chapter{Acid-Base Equilibria}
 
