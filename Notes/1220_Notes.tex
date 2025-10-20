@@ -895,90 +895,379 @@ There is a whole semester of material from 1210, and these are only the topics w
 \chapter{Acid-Base Equilibria}
 
 \section{Brønsted-Lowry Acids and Bases}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Arrhenius acid/base theory defines acids and bases in terms of \ch{H3O^+} and \ch{OH^-} ions
+	\begin{itemize}
+		\item \ch{HCl(aq) + H2O(l) -> H3O^+(aq) + OH^-(aq)}
+		\item \ch{NaOH(s) ->[water] Na^+(aq) + OH^-(aq)}
+	\end{itemize}
+	\item \ch{H^+} vs \ch{H3O^+}
+	\begin{itemize}
+		\item In the past, you may have used \ch{H^+(aq)} in your equations
+		\item I will tend to use \ch{H3O^+} instead, but either way is acceptable
+		\item Really, \ch{H^+} is a flagrant lie. Bare protons don't exist in water. \ch{H3O^+} is also a little bit of a lie. The extra proton and the charge create clusters of many water molecules. It gets really complicated
+	\end{itemize}
+  \item Arrhenius theory is unable to account for reactions that don't involve \ch{H3O^+} and \ch{OH^-} ions directly
+	\item Consider \ch{HNO2(aq) + ClO2^-(aq) <=> HClO2(aq) + NO2^-(aq)} -- should this reaction be considered acid/base?
+	\item Br\o nsted-Lowry theory defines acids as proton \emph{donors} and bases as proton \emph{acceptors}
+	\item \ch{HNO2} is the acid, and \ch{ClO2} is the base
+	\item Conjugate pairs
+	\begin{itemize}
+		\item We can also consider the reverse reaction, where \ch{HClO2} is the acid and \ch{NO2^-} is the base
+		\item We call these linked species \emph{conjugate pairs}
+		\item \ch{HNO2} is the conjugate acid to \ch{NO2^-}, while \ch{NO2^-} is the conjugate base to \ch{HNO2}
+		\item The strengths of a conjugate pair are inverse to each other -- A stronger acid has a weaker conjugate base and vice-versa
+	\end{itemize}
+	\item Some acids are \emph{multiprotic} and some bases are \emph{multibasic}
+	\begin{itemize}
+		\item Consider the series \ch{H2SO3 <=> HSO3^- <=> SO3^{2-}} 
+		\item Or the series \ch{H3PO4 <=> H2PO4^- <=> HPO4^{2-} <=> PO4^{3-}}
+		\item \ch{H2SO3} is a diprotic acid, and \ch{SO3^{2-}} is a dibasic base because they can exchange 2 protons
+		\item \ch{H3PO4} is a triprotic acid, and \ch{PO4^{3-}} is a tribasic base because they can exchange 3 protons
+		\item The intermediates, \ch{HSO3^-}, \ch{ H2PO4^-} and \ch{HPO4^{2-}} can act as either an acid or a base
+		\item These types of ions are called \emph{amphoteric} or \emph{amphiprotic}
+		\item Whether they act as an acid or a base depends on the context -- what is their reaction partner
+	\end{itemize}
+\end{itemize}
 
 \section{pH and pOH}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Autoionization of Water
+    \begin{itemize}
+      \item Water is also amphoteric: \ch{H3O^+ <=> H2O <=> OH^-}
+      \item Because of this, water will undergo autoionization: \ch{2 H2O(l) <=> H3O^+(aq) + OH^-(aq)} \hspace{1em} $K_w=1.00\times10^{-14}$
+      \item For pure water, this leads to concentrations of $\left[\ch{H3O^+}\right]=\left[\ch{OH^-}\right]=1.00\times10^{-7}$
+      \item This water ionization equilibrium is the great arbiter of acid/base chemistry. It defines what is an acid, what is a base, and what are their various strengths
+      \item Even for reactions which don't explicitly contain water (\ch{NH3(aq) + HNO2(aq) -> NH4^+(aq) + NO2^-{aq}}), water is actually mediating the proton exchange behind the scenes
+      \item Because of this, acidity and basicity are defined by the balance between $\left[\ch{H3O^+}\right]$ and $\left[\ch{OH^-}\right]$ (Table 14.1)
+      \begin{itemize}
+        \item $\left[\ch{H3O^+}\right] > \left[\ch{OH^-}\right]$ is an acid
+        \item $\left[\ch{H3O^+}\right] < \left[\ch{OH^-}\right]$ is a base
+        \item $\left[\ch{H3O^+}\right] = \left[\ch{OH^-}\right]$ is neutral
+      \end{itemize}
+      \item We can always find $\left[\ch{H3O^+}\right]$ or $\left[\ch{OH^-}\right]$ from the other, based on $K_w = \left[\ch{H3O^+}\right]\left[\ch{OH^-}\right]$
+    \end{itemize}
+  \item Acidity of a solution is summarized by the quantity $pH = -\log\left[\ch{H3O^+}\right]$
+	\item Neutral solutions have $pH=7$, acidic solutions have $pH<7$, and basic solutions have $pH>7$
+	\item $0$ and $14$ are actually not boundaries at all, and you \emph{can} have solutions with $pH<0$ or $pH>14$
+	\item We can find the $\left[\ch{H3O^+}\right]$ by $\left[\ch{H3O^+}\right]=10^{-pH}$
+	\item Table 14.2 shows both the $pH$ and $\left[\ch{H3O^+}\right]$ for several common substances
+	\item We can make similar calculations for $\left[\ch{OH^-}\right]$ and $pOH$
+	\item This gives us the interesting relationship that $pH+pOH=14$ -- draw the conversion rectangle
+	\item We can measure $pH$ in several ways:
+	\begin{itemize}
+		\item Color indicators are chemicals which change color based on $pH$ conditions
+		\item We will see that these indicators are themselves weak acids/base conjugate pairs
+		\item Indicators can be dissolved in the solution or applied onto paper strips
+		\item By mixing several indicators, we can get a different value at each $pH$, making a ``universal indicator''
+		\item Figure 14.5 shows how a universal indicator $pH$ paper works
+		\item We can also measure an electrochemical response using a $pH$ probe (Figure 14.4)
+		\item How these $pH$ probes work is a bit complicated, but they can measure $\left[\ch{H3O^+}\right]$ across a wide range
+	\end{itemize}
+\end{itemize}
 
 \section{Relative Strengths of Acids and Bases}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item Acids and bases can be \emph{strong} or \emph{weak}
+	\begin{itemize}
+		\item Strong acids and bases are those which dissociate completely (or, at least, nearly so) 
+		\item Weak acids and bases establish an equilibrium which is usually highly reactant-favored
+    \item Figure 14.6 lists some strong acids and bases
+	\end{itemize}
+  \item Weak acids and weak bases will react with water to reach an equilibrium
+	\item Because equilibrium concentrations are different from initial concentrations, pedantic people (like me!) will sometimes use \emph{formal} concentration, $F$, instead of molar concentration
+	\item The equilibrium constant for their hydrolysis reactions are given the name $K_a$ for acids, and $K_b$ for bases
+	\item Figure 14.8 shows the $K_a$ and $K_b$ values for a number of different acids and bases
+	\item It is also sometimes useful to find the $pK_a = -\log K_a$ or the $pK_b=-\log K_b$
+	\item We can use these equilibrium constants with an ICE table to find the $pH$ of a solution under different circumstances
+	\begin{itemize}
+		\item Weak acids always follow the same format: $K_a=\dfrac{\left[\ch{A^-}\right]\left[\ch{H3O^+}\right]}{\left[\ch{HA}\right]}$
+		\item Weak bases always follow the same format: $K_b=\dfrac{\left[\ch{HB^+}\right]\left[\ch{OH^-}\right]}{\left[\ch{B}\right]}$
+		\item We will often be able to use the simplification that the change is much less than the initial amounts
+	\end{itemize}
+	\item Find the $pH$ for a $0.250~F$ solution of nitrous acid ($K_a=4.0\times10^{-4}$)
+	\item Find the $pH$ for a $0.325~F$ solution of pyridine ($K_b=1.7\times10^{-9}$)
+	\item A few useful relations that are not in your textbook:
+	\begin{itemize}
+		\item For conjugate acid/base pairs: $K_aK_b=K_w$
+		\item For the reaction between an acid and a base: $K=\dfrac{K_aK_b}{K_w}$
+	\end{itemize}
+  \item Relating Acid Strength to Structure
+  \begin{itemize}
+    \item Acid strength ultimately comes from the strength of the \ch{H} bond and the stability of the product ions
+    \item Bond strength:
+    \begin{itemize}
+      \item Weaker \ch{H} bonds lead to stronger acids
+      \item Longer bonds tend to be weaker, hence the strength of \ch{HI} is greater than the strength of \ch{HF} (Figure 14.11)
+      \item Electronegative groups nearby pull electrons away from the \ch{H} bond and make it weaker (Figure 14.12)
+    \end{itemize}
+    \item Ion stability:
+    \begin{itemize}
+      \item Even strong \ch{H} bonds can be acidic if the anion after deprotonation is particularly stable
+      \item Consider the structure of acetic acid and acetate
+      \begin{itemize}
+        \item Acetic acid does not exhibit resonance, but acetate ion does
+        \item By losing a hydrogen, the acetate ion can stabilize with resonance
+        \item This makes acetic acid stronger than we might have assumed based only on the \ch{O-H} bond strength
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
 
 \section{Hydrolysis of Salts}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Some salts have no effect on $pH$ when dissolved on water, while others do
+	\item To determine the acid/base strength of a salt, look at the individual ions which dissociate in the water
+	\item Cations are usually neutral with two exceptions:
+	\begin{itemize}
+		\item \ch{NH4^+} and others based off of it are weak acids
+		\item Some metal cations can act as acids -- we will cover this more in the Lewis Acids section
+	\end{itemize}
+	\item The anions are usually where the activity lies:
+	\begin{itemize}
+		\item Many anions are neutral, such as the conjugates to strong acids
+		\item Some anions are amphoteric, and their effect depends on their $K_a$ and $K_b$ values
+		\item If $K_a>K_b$, then the anion will be acidic, and if $K_a<K_b$, then the ion will be basic
+		\item Some anions are simply weak bases
+	\end{itemize}
+	\item You can then find the $pH$ based on the acid/base activity of the individual ions
+	\item Find the $pH$ of a $0.125~M$ solution of \ch{CaF2}
+  \item Some metal cations are acidic in a surprising way
+    \begin{itemize}
+      \item The metal cation will complex one or more water molecules
+      \item The bound water molecules have weaker O-H bond strengths, so one \ch{H^+} is donated
+      \item Figure 14.13 shows this process for \ch{Al^{3+}}
+      \item The text lists the $pK_a$ for several metal cations
+      \item This type of acid is sometimes called a \emph{Lewis} acid
+    \end{itemize}
+\end{itemize}
 
 \section{Polyprotic Acids}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item For polyprotic acids and bases, each step has its own $K_a$ or $K_b$ values
+	\item Each successive proton loss will have significantly lower acid strength
+	\item Table  shows $K_a$ values for several polyprotic acids
+	\item Amphoteric species can establish multiple simultaneous and interdependent equilibria, but we will only look at the simple problems
+	\item Find pH, $\left[\ch{H2C6H6O6}\right]$, $\left[\ch{HC6H6O6^-}\right]$, and  $\left[\ch{C6H6O6^{2-}}\right]$ for a $0.500~F$ solution of Ascorbic acid
+	\begin{itemize}
+		\item First, solve the ICE table for the first deprotonation
+		\item Then, use the $\left[\ch{H3O^+}\right]$ and $\left[\ch{HC6H6O6^-}\right]$ as starting values for the second deprotonation
+		\item Because the $\left[\ch{H3O^+}\right]$ will not change much, we don't have to revisit the first equilibrium
+	\end{itemize}
+\end{itemize}
 
 \section{Buffers}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Introduction to Buffer Solutions
+  \begin{itemize}
+    \item Buffer solutions resist a change in $pH$ when acid or base is added to them
+    \item Buffer solutions are everywhere in nature -- blood, soil, ocean water, etc.
+    \item The common-ion effect is critical to how buffer solutions work
+    \begin{itemize}
+      \item Consider the equilibrium reaction: \ch{HNO2(aq) + H2O(l) <=> NO2^-(aq) + H3O^+(aq)}
+      \item Adding \ch{NaNO2} will affect this equilibrium because it adds nitrite ion to solution
+      \item Le Ch\^atelier's principle will shift the reaction left, reducing the effect \ch{HNO2} has on $pH$
+      \item Any equilibrium reaction involving ions can be affected by addition of other salts containing those emails -- This is the common ion effect
+    \end{itemize}
+    \item Buffer solutions contain amounts of both members of a weak conjugate acid/base pair
+    \begin{itemize}
+      \item Adding strong acid or strong base to the buffer will react with the weak base/acid rather than with water, resulting in a suppressed change in $pH$
+      \item Figure 14.14 shows how $pH$ changes after adding $1ml$ of $0.01M$ \ch{HCl} in a buffered and unbuffered solution starting at $pH=8.00$ 
+      \item The buffer can only absorb a certain amount of acid or base, called the buffer capacity, which will be covered later
+      \item Figure 14.15 shows how concentrations of the buffering species change when acid or base are added
+    \end{itemize}
+  \end{itemize}
+  \item The Henderson-Hasselbach Equation
+  \begin{itemize}
+    \item For a buffer solution, we can solve an ICE table with initial amounts of both \ch{HA} and \ch{A^-}
+    \item In this case, the equilibrium expression simplifies to: $\left[\ch{H3O^+}\right]=K_a\dfrac{\left[\ch{HA}\right]}{\left[\ch{A^-}\right]}$
+    \item We can calculate the $pH$ from here to be: $pH = pK_a-\log\dfrac{\left[\ch{HA}\right]}{\left[\ch{A^-}\right]}$
+    \item This is the Henderson-Hasselbach equation
+    \item Buffer capacity describes the range of $pH$ values where a buffer works
+    \begin{itemize}
+      \item The buffer performs best (smallest $pH$ changes) when $pH=pK_a$
+      \item $pH$ changes become more pronounced as more acid or base is added
+      \item Once the $pH$ strays beyond $\pm 1$ of $K_a$, the buffer capacity is exceeded and the buffer will stop working
+      \item Higher concentrations of \ch{HA} and \ch{A^-} can absorb more acid or base before its capacity is exceeded
+    \end{itemize}
+    \item \ch{H2S} has $K_a=9.1\times10^{-8}$. Find the $pH$ of a solution if $2.7~g$ of \ch{H2S} and $1.5~g$ of \ch{NaHS} are dissolved in $0.50~L$ of water
+    \item \ch{H2PO4^-} has $pK_a=6.8$ and is responsible for regulating the $pH$ of blood at $pH=7.4$. 
+    \begin{itemize}
+      \item If $\left[\ch{HPO4^{2-}}\right]\approx0.200~M$, find the $\left[\ch{H2PO4^{-}}\right]$ to maintain proper blood $pH$
+      \item How many $g$ of \ch{HCl} could be added to $5.0~L$ of blood before the buffer capacity is exceeded?
+      \item How many $g$ of \ch{NaOH} could be added to $5.0~L$ of blood before the buffer capacity is exceeded?	
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
 
 \section{Acid-Base Titrations}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item A titration is the gold standard technique for determining the concentration of a solute
+	\item The unknown substance is called the \emph{analyte}
+	\item A solution of suitable reaction partner, called the \emph{titrant} is slowly added until the analyte is completely consumed
+	\item Acid/base, redox, and precipitation reactions can all be titrated, though the first two are by far more common
+	\item Figures 17.3 and 17.4 show typical titration setups, with different methods of determining the exact point where the analyte is consumed (called the \emph{equivalence point})
+	\item Figure 14.18(a) shows a titration curve for a strong acid with a strong base
+	\begin{itemize}
+		\item Point A will be the pH of the analyte solution, $pH=-\log\left[\ch{H3O^+}\right]=-\log\left[\ch{HA}\right]$
+		\item In region B the base is reacting with the acid and causing the $pH$ to rise
+		\item Solve the $pH$ using a BCA table
+		\item At point C, the equivalence point, the base has precisely neutralized the acid, and $pH=7.00$ exactly
+		\item In region D, the $pH$ changes as excess base is added
+	\end{itemize}
+	\item At the equivalence point, moles of titrant added is equal to moles of analyte
+	\item This relation can be summarized as $M_aV^\circ_a=M_tV_{eq}$
+  \item Titrations of Weak Acids and Weak Bases
+  \begin{itemize}
+    \item Titrating a weak acid or base follows a similar process as titrating a strong acid or base
+    \item The buffering property of weak acids and bases does change the details of the titration curve (Figure 14.18(b))
+    \begin{itemize}
+      \item The starting point A must be solved using a ICE table after the concentration is known
+      \item Region B is called the buffer region, and will be centered around $K_a$
+      \item Solve for the $pH$ using the Henderson-Hasselbach equation
+      \item $pH=pK_a$ at precisely half of the equivalence volume
+      \item Point C, the equivalence point, will have a pH determined by the strength of the conjugate base (Solve using an ICE table)
+      \item In region D, the $pH$ is governed by the excess base added as in strong acid/base titrations
+      \item These curves can be very different for different acids, even at the same concentration
+      \item Note the strong inflection in curves for very weak acids
+    \end{itemize}
+    \item The equivalence point is recognized as the point with steepest $pH$ change	
+    \item Multiprotic acids or bases will pass through more than one equivalence point (Draw titration curve)
+  \end{itemize}
+  \item Indicators in Acid-Base Titrations
+  \begin{itemize}
+    \item Color indicators are often used in titrations instead of $pH$ probes
+    \item Color indicators are themselves weak acid/base conjugate pairs
+    \begin{itemize}
+      \item \ch{HA(aq) + H2O(l) <=> A-(aq) + H3O^+(aq)}
+      \item \ch{HA} is one color, and \ch{A^-} is another
+      \item The indicator is in such low concentration, that the $pH$ is governed by the titrant and analyte rather than by the indicator
+      \item The ratio of \ch{HA} and \ch{A^-} responds to the $pH$ according to the H-H equation
+      \item Over the buffer range ($pK_a \pm1$) the indicator goes from primarily \ch{HA} to primarily \ch{A^-} and the solution color changes
+    \end{itemize}
+    \item A color indicator should be carefully chosen to match the titration it will be used for
+    \begin{itemize}
+      \item The expected equivalence point $pH$ should lie within the buffer range for the indicator
+      \item The point of color change, when you actually stop the titration, is called the \emph{end point} and should be close to the true equivalence point
+      \item Figure 14.20 shows how the end point and equivalence point are situated in a titration curve
+      \item Figure 14.19 shows the appropriate ranges for some common indicators
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
 
 \chapter{Equilibria of Other Reaction Classes}
 
 \section{Precipitation and Dissolution}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Lewis Acids and Bases}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Coupled Equilibria}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \chapter{Thermodynamics}
 
 \section{Spontaneity}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Entropy}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{The Second and Third Laws of Thermodynamics}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Free Energy}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \chapter{Electrochemistry}
 
 \section{Review of Redox Chemistry}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Galvanic Cells}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Electrode and Cell Potentials}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Potential, Fee Energy, and Equilibrium}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Batteries and Fuel Cells}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Corrosion}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Electrolysis}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \setcounter{chapter}{20}
 \chapter{Nuclear Chemistry}
 
 \section{Nuclear Structure and Stability}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Nuclear Equations}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Radioactive Decay}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Transmutation and Nuclear Energy}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Uses of Radioisotopes}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \section{Biological Effects of Radiation}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \backmatter
 \chapter{Errata}
+% \begin{itemize}
+%   \item 
+% \end{itemize}
 
 \end{document}
