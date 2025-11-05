@@ -1140,7 +1140,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item The unknown substance is called the \emph{analyte}
 	\item A solution of suitable reaction partner, called the \emph{titrant} is slowly added until the analyte is completely consumed
 	\item Acid/base, redox, and precipitation reactions can all be titrated, though the first two are by far more common
-	\item Figures 17.3 and 17.4 show typical titration setups, with different methods of determining the exact point where the analyte is consumed (called the \emph{equivalence point})
+	\item Titrations can use either a pH probe or a color indicator to determine the end-point (find figures from the Internet)
 	\item Figure 14.18(a) shows a titration curve for a strong acid with a strong base
 	\begin{itemize}
 		\item Point A will be the pH of the analyte solution, $pH=-\log\left[\ch{H3O^+}\right]=-\log\left[\ch{HA}\right]$
@@ -1207,9 +1207,78 @@ There is a whole semester of material from 1210, and these are only the topics w
 \chapter{Equilibria of Other Reaction Classes}
 
 \section{Precipitation and Dissolution}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Solubility Products
+  \begin{itemize}
+    \item Most insoluble salts are really just \emph{sparingly} soluble (Figure 15.2)
+    \item This means that the solvation of the solid salt is a reactant-favored equilibrium
+    \item For \ch{PbI2}, the equation is: \ch{PbI2(s) <=> Pb^{2+}(aq) + 2 I^-(aq)} \hspace{1em} $K_{sp} = 9.8\times10^{-9}$
+    \item The equilibrium expression here would be: $K_{sp}=\left[\ch{Pb^{2+}}\right]\left[\ch{I^-}\right]^2$
+    \item $K_{sp}$ determines the ion concentrations, but is not mathematically equivalent to the solubility (Appendix J)
+    \item Solubility is usually defined as the moles of the salt which will dissolve in $1.00~L$ of solution
+    \begin{itemize}
+      \item We solve the molar solubility with an ICE table just like with other equilibria
+      \item Be careful about the stoichiometry
+      \item $x$ will represent the molar solubility
+      \item For \ch{PbI2}, this would be: $9.8\times10^{-9}=x\left(2x\right)^2 = 4x^3$, which solves to: $x = 1.35\times10^{-3}$
+      \item The molar solubility is $1.35\times10^{-3}~M$
+      \item The same equation can be used in reverse to find $K_{sp}$ from the molar solubility
+    \end{itemize}
+    \item Find the molar solubility for \ch{Sr3(PO4)2}
+    \item Find $K_{sp}$ for \ch{AgI}, which has a molar solubility of $9.0\times10^{-9}~M$
+  \end{itemize}
+  \item The Common Ion effect
+  \begin{itemize}
+    \item If either cations or anions from the compound are already present in solution, solubility will be suppressed
+    \item This is apparent when we put them in as initial concentrations on the ICE table
+    \item Solubility in a salt solution will not be the same as solubility in pure water
+    \item Even very soluble salts will become insoluble with the common ion effect
+    \item \ch{NaCl} has a $K_{sp} = 37.66$. Find how many grams of \ch{NaCl} can dissolve in $100.0~ml$ of a $12~M$ \ch{HCl} solution
+    \item Many hydroxide salts are insoluble in pure water but soluble in acidic solutions
+    \begin{itemize}
+      \item This can be explained because even insoluble salts have some small amount of ions in solution
+      \item Acidic solutions will react with the tiny amount of \ch{OH^-} and drive the reaction toward products
+      \item Even very low $K_{sp}$ salts will dissolve if the $\left[\ch{OH^-}\right]$ is held low by the $pH$
+    \end{itemize}
+  \end{itemize}
+  \item Solubility and precipitation
+  \begin{itemize}
+    \item Unlike other equilibrium reactions, solvation reactions are often stuck in non-equilibrium states
+    \item Consider first a fairly soluble salt when very little salt is added to solution:
+    \begin{itemize}
+      \item If all of the salt dissolves, it has likely not reached equilibrium
+      \item There are simply not enough ions to reach $K_{sp}$, and $Q<K$
+      \item Such a solution is called \emph{unsaturated}
+      \item \ch{NaCl} has a $K_{sp} = 37.66$. Calculate $Q$ if $2.00~g$ of \ch{NaCl} are dissolved in $100.0~ml$ of water
+    \end{itemize}
+    \item A solution which has achieved equilibrium is called \emph{saturated}
+    \begin{itemize}
+      \item You can tell a solution is saturated when some solid salt remains behind
+      \item The salt will not lose mass because the ion concentration has already reached its maximum amount
+      \item This equilibrium is a dynamic state (ions are dissolved and deposited at the same rate)
+      \item Show my 3-year salt solution with larger crystals due to dynamic equilibrium
+    \end{itemize}
+    \item Sometimes a solution can have $Q>K$
+    \begin{itemize}
+      \item This type of solution is called \emph{supersaturated}
+      \item A supersaturated solution can be made taking advantage of the temperature dependence of solubility
+      \item A lot of salt is dissolved in hot water, which is then carefully cooled to make a supersaturated solution
+      \item This solution is metastable, and will form precipitate once a seed crystal is introduced
+      \item Demonstrate supersaturated sodium acetate solution
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 15.1 - Molar Solubility}
+\paragraph*{Homework 15.1}
+\begin{itemize}
+  \item 7: Weak base anions and solubility
+  \item 9: $K_{sp}$ for ionic compounds
+  \item 11: $K_{sp}$ from $\nicefrac{g}{100ml}$ solubility
+  \item 13: Molar solubility from $K_{sp}$
+  \item 15: Common ion effect
+  \item 31: Predicting precipitation from concentrations and $K_{sp}$
+\end{itemize}
 
 \section{Lewis Acids and Bases}
 \begin{itemize}
@@ -1227,39 +1296,179 @@ There is a whole semester of material from 1210, and these are only the topics w
 	
 	\ch{Al^{3+}(aq) + 6 H2O(l) -> Al(H2O)6^{3+}(aq)}
 	\item Carbonic acid makes gas due to Lewis acid action: \ch{H2CO3(aq) <=> CO2(g) + H2O(l)}
+  \item Lewis acids and \emph{formation reaction} equilibria
+    \begin{itemize}
+      \item Transition metals will often act as Lewis acids and form coordinate covalent bonds with other species in solution
+      \item The Lewis adduct is called a complex ion, and the Lewis bases are called \emph{ligands}
+      \item These complex ions will be formed by an equilibrium reaction whose equilibrium constant is called a formation constant $K_f$
+      \item Appendix K gives formation constants for several common complex ions -- note that they tend to be large numbers
+      \item Find the equilibrium concentrations for a \ch{Co(NH3)6^{2+}} formation reaction
+      \begin{itemize}
+        \item Suppose you start with $\left[\ch{Co^{2+}}\right]=0.0200~M$ and $\left[\ch{NH3}\right]=0.100~M$
+        \item Trying to find the concentrations with a normal ICE table will lead to problems because $x$ is so large
+        \item The equilibrium condition will be reached from different starting conditions as long as they are consistent
+        \item First, assume that the complex ion is formed completely in a limiting reactant problem
+        \item Then, do an ICE table where $x$ represents the dissociation of the complex ion
+      \end{itemize}
+    \end{itemize}
 \end{itemize}
 
 \paragraph*{Quiz 15.2 - Lewis Acids}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\paragraph*{Homework 15.2}
+\begin{itemize}
+  \item 76: Lewis acid/base reactions
+\end{itemize}
 
 \section{Coupled Equilibria}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item This section is actually just a repeat of how the equilibrium constants of chained reactions are combined, as we covered in section 13.2
+  \item If we have time, we could talk about the copper system from the Le Ch\^atelier's Principle lab
+
+    \ch{Cu^{2+}(aq) + 2 OH^-(aq) <=> Cu(OH)2(s)} \hspace{3em} $K=\nicefrac{1}{K_{sp}}=4.55\times10^{19}$
+
+    \ch{Cu^{2+}(aq) + 4 NH3(aq) <=> $\left[\right.$Cu(NH3)4$\left.\right]^{2+}$(aq)} \hspace{3em} $K_f=1.7\times10^{13}$
+
+    \ch{NH3(aq) + H2O(l) <=> NH4^+(aq) + OH^-(aq)} \hspace{4em} $K_b=1.8\times10^{-5}$
+    % TODO: Find out how to represent complex ions with my chemistry package
+\end{itemize}
+
+\paragraph*{Quiz 15.3 - Formation Reactions}
+\paragraph*{Homework 15.3}
+\begin{itemize}
+  \item 64: Formation equilibrium
+  \item 74: Formation reactions used to increase solubility
+\end{itemize}
 
 \chapter{Thermodynamics}
 
 \section{Spontaneity}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+	\item Thermodynamics is the study of how heat and work are involved in chemical reactions
+	\item For us, thermodynamics primarily concerns the \emph{spontaneity} of a process
+	\begin{itemize}
+		\item We can write a well-balanced reaction and talk about its products, $\Delta H_{rxn}$, etc, but some reactions simply will \emph{not} happen
+		\item \ch{2 Au(s) + 3 H2O(l) -> Au2O3(s) + 3 H2(g)} -- Gold doesn't corrode in water (Gold coins in old shipwrecks still shine)
+    \item \ch{C_{Diamond} -> C_{Graphite}} -- Diamonds do convert to graphite. . . but over \emph{very} long timescales (like, > the age of the universe)
+		\item Reactions that happen under the current conditions are called \emph{spontaneous}, while those that don't are called \emph{non-spontaneous}
+		\item Some spontaneous reactions are slow -- perhaps they take millions of years -- but they will eventually happen
+		\item Non-spontaneous reactions will \emph{never} happen, unless conditions change
+	\end{itemize}
+  \item Spontaneous processes in nature tend to ``spread out'' both matter and energy
+    \begin{itemize}
+      \item Figure 16.4 shows a gas expansion
+      \item Figure 16.5 shows heat transfer
+    \end{itemize}
+	\item First Law of Thermodynamics
+	\begin{itemize}
+		\item The total energy of the universe is constant
+		\item This leads to our understanding of enthalpy, $\Delta H$
+		\item Any chemical potential energy lost or gained by the chemical reaction must be given to or taken from the surroundings
+	\end{itemize}
+\end{itemize}
 
 \section{Entropy}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item A colloquial defintion of entropy is: \emph{disorder}
+  \item The original definition of entropy is: $\mathrm{d} S = \dfrac{\mathrm{d}q}{T}$
+  \item This definition was based on studies of the efficiency of heat engines
+	\item The Boltzmann definition of entropy is: $S=k_B\ln W$
+	\begin{itemize}
+		\item $k_B$, the Boltzmann constant, is actually $\dfrac{R}{N_A} = 1.38\times10^{-23}\dfrac{J}{K}$
+		\item $W$ is the number of microstates for the current macrostate, or microscopic configurations of the system with the same observable state variables
+		\item Figure 18.2 shows how expansion increases the value of $W$
+		\item Figure 18.3 explores the value of $W$ an idealized system
+		\item My spheres\_demo program showing how systems tend toward macrostates with greatest $W$
+	\end{itemize}
+\end{itemize}
 
 \section{The Second and Third Laws of Thermodynamics}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item The second Law of Thermodynamics
+    \begin{itemize}
+      \item Spontaneous processes always result in an increase in the entropy of the universe (though not necessarily the system)
+      \item \emph{Entropy} ($S$) was originally defined as an abstract thermodynamic potential, $\int \dfrac{\mathrm{d}q}{T}$
+      \item Today, we usually talk about entropy as a measure of disorder or randomness in a system
+      \item Higher $S$ systems have more potential configurations -- are more disordered
+      \item The following processes have positive $\Delta S$
+      \begin{itemize}
+        \item An upward phase change (\ch{s->l}, \ch{l->g})
+        \item Mixing (including solvation of a solid into aqueous solution)
+        \item Increasing the temperature
+        \item Increasing the number of particles (positive $\Delta n$)
+        \item Increasing the volume of an aqueous or gaseous system
+      \end{itemize}
+    \end{itemize}
+  \item The third law of thermodynamics
+    \begin{itemize}
+      \item The third law defines $0$ entropy as the entropy of a perfectly ordered crystal at absolute $0$
+      \item For such a crystal, $W=1$, so $\ln W = 0$		
+    \end{itemize}
+  \item Substances at $298~K$ have a standard molar enthalpy $S^{\circ}$ based off of this $0$ standard
+  \item Table 18.1 gives the standard molar enthalpies for several common substances
+  \item For a reaction, we can find $\Delta S^{\circ}_{rxn}$ just like $\Delta H_{rxn}$
+  \item  $\displaystyle\Delta S^{\circ}_{rxn} = \sum\limits_{i, products} \nu_iS_i^{\circ} - \sum_{j, reactants} \nu_jS_j^{\circ}$
+  \item Entropy and Temperature
+    \begin{itemize}
+      \item While we do see reactions with $\Delta S^{\circ}_{rxn}<0$, the second law requires that $\Delta S_{universe}>0$
+      \item $\Delta S_{universe} = \Delta S_{sys} + \Delta S_{surr}$
+      \item We can calculate the entropy change of the surroundings based on the heat released by the system
+      \item For isothermal processes, $\Delta S_{surr} = \dfrac{-q_sys}{T}$, and at constant pressure this is: $\Delta S_{surr} = \dfrac{-\Delta H_{sys}}{T}$
+      \item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for combustion of $1~mol$ of methane at room temperature
+      \item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for condensing $1.00~g$ of water vapor ($\Delta H_{vap}=2257~\dfrac{J}{g}$)
+    \end{itemize}
+\end{itemize}
 
 \section{Free Energy}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Gibbs Free Energy
+  \begin{itemize}
+    \item A new equation can be derived from the second law: $\Delta G = \Delta H - T\Delta S$
+    \item We will often use the form:  $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, which is under standard conditions
+    \item Standard conditions means $1~M$ for solutes and $1~bar$ ($\approx1~atm$) for gases
+    \item $G$ is called \emph{Gibbs free energy}, and is a measure of spontanaety
+    \item $\Delta G < 0$ for spontaneous processes, and $\Delta G > 0$ for non-spontaneous processes
+    \item Systems at equlibrium will have $\Delta G=0$
+    \item Find $\Delta G$ for the reaction: \ch{2 H2(g) + O2(g) -> 2 H2O(g)} \hspace{1em} $\Delta H_{rxn} = -483.6~\dfrac{kJ}{mol}$ \hspace{1em} $\Delta S_{rxn} = -89.0~\dfrac{J}{mol~K}$
+    \begin{itemize}
+      \item At $T=298~K$
+      \item At $T=5500~K$ (Assume $\Delta H_{rxn}$ and $\Delta S_{rxn}$ are independent of temperature)
+    \end{itemize}
+    \item Appendix A.2 also has $\Delta G^{\circ}_f$ values, so you don't have to calculate $\Delta H^{\circ}_{rxn}$ and $\Delta S^{\circ}_{rxn}$ values independently -- These values \emph{only} work at $298~K$
+    \item Endothermic reactions must have a sufficiently large $T\Delta S_{rxn}$ to make $\Delta G_{rxn}<0$
+    \item Solvation reactions are prominent examples - dissolving a regular, ordered crystal lattice has a very large $\Delta S_{rxn}$
+    \item The $\Delta G_{rxn}$ for dissolving a substance is called the free energy of solution
+  \end{itemize}
+  \item Free-Energy Changes and Temperature
+  \begin{itemize}
+    \item Looking at $\Delta G = \Delta H - T\Delta S$, we can see that temperature plays a role in the spontaneity of a process
+    \item Draw my quadrant diagram for $\pm\Delta H_{rxn}$ and $\pm\Delta S_{rxn}$
+    
+    \begin{tabular}{cc|c|c|}
+      && \multicolumn{2}{c}{$\Delta H_{rxn}$}\\
+      && $+$ & $-$ \\ \midrule
+      \multirow{2}{*}{$\Delta S_{rxn}$} & $+$ & Spontaneous @ High $T$ & Always Spontaneous \\ \cmidrule{2-4}
+      & $-$ & Never Spontaneous & Spontaneous @ Low $T$ \\ \midrule
+    \end{tabular}
+    \item We can find the threshold temperature by solving the Gibbs energy equation for\\$\Delta G_{rxn} = 0 \rightarrow 0 = \Delta H_{rxn} - T\Delta S_{rxn}$
+    \item This simplifies to: $T_{threshold}=\dfrac{\Delta H_{rxn}}{\Delta S_{rxn}}$
+  \end{itemize}
+  \item Gibbs Free Energy and Equilibrium
+  \begin{itemize}
+    \item We will often have to deal with reactions that are not at the standard state
+    \item We can relate any conditions to standard conditions through: $\Delta G = \Delta G^{\circ} + RT\ln Q$
+    \begin{itemize}
+      \item $Q$ is the reaction quotient
+      \item $R$ is the gas constant, $R=8.314~\dfrac{J}{mol~K}$
+      \item $T$ must be in Kelvin
+      \item $\ln$ is the base-$e$ natural logarithm
+    \end{itemize}
+    \item When a system is at equilibrium, $\Delta G=0$ and $Q=K$
+    \item This transforms the above equation into: $\Delta G^{\circ} = -RT\ln K$ and therefore $K = e^{\left(-\dfrac{\Delta G^{\circ}}{RT}\right)}$
+    \item Figure 18.9 shows how $G$ varies with reaction progress for various reactions
+    \item Find the equilibrium constant for the combustion of hydrogen gas at $298~K$ and $5500~K$
+    \item Solvation of \ch{NaCl} at $298~K$ has $K_{sp}=37.66$ Calculate $\Delta G^{\circ}_{soln}$ for \ch{NaCl}
+  \end{itemize}
+\end{itemize}
 
 \chapter{Electrochemistry}
 
@@ -1333,8 +1542,9 @@ There is a whole semester of material from 1210, and these are only the topics w
 
 \backmatter
 \chapter{Errata}
-% \begin{itemize}
-%   \item 
-% \end{itemize}
+\begin{itemize}
+  \item Just general typographical inconsistency. Some chemical formulas are in normal font with subscripts and superscripts, while some chemical formulas are written in TeX and rendered with MathJax (probably). It would be a great improvement to make formulas consistently in TeX.
+  \item The solution to problem 15.78 a) shows \ch{PH3} as a cation in the Lewis structure, when it should be neutral
+\end{itemize}
 
 \end{document}
