@@ -1294,7 +1294,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 	\item Consider the reaction of \ch{BF3} with \ch{NH3}
 	\item Many metal cations can act as a Lewis acid by forming coordinate bonds with water molecules
 	
-	\ch{Al^{3+}(aq) + 6 H2O(l) -> Al(H2O)6^{3+}(aq)}
+    \ch{Al^{3+}(aq) + 6 H2O(l) -> ~ [Al(H2O)6]^{3+}(aq)}
 	\item Carbonic acid makes gas due to Lewis acid action: \ch{H2CO3(aq) <=> CO2(g) + H2O(l)}
   \item Lewis acids and \emph{formation reaction} equilibria
     \begin{itemize}
@@ -1326,7 +1326,7 @@ There is a whole semester of material from 1210, and these are only the topics w
 
     \ch{Cu^{2+}(aq) + 2 OH^-(aq) <=> Cu(OH)2(s)} \hspace{3em} $K=\nicefrac{1}{K_{sp}}=4.55\times10^{19}$
 
-    \ch{Cu^{2+}(aq) + 4 NH3(aq) <=> $\left[\right.$Cu(NH3)4$\left.\right]^{2+}$(aq)} \hspace{3em} $K_f=1.7\times10^{13}$
+    \ch{Cu^{2+}(aq) + 4 NH3(aq) <=> ~ [Cu(NH3)4]^{2+}(aq)} \hspace{3em} $K_f=1.7\times10^{13}$
 
     \ch{NH3(aq) + H2O(l) <=> NH4^+(aq) + OH^-(aq)} \hspace{4em} $K_b=1.8\times10^{-5}$
     % TODO: Find out how to represent complex ions with my chemistry package
@@ -1351,7 +1351,7 @@ There is a whole semester of material from 1210, and these are only the topics w
     \item \ch{C_{Diamond} -> C_{Graphite}} -- Diamonds do convert to graphite. . . but over \emph{very} long timescales (like, > the age of the universe)
 		\item Reactions that happen under the current conditions are called \emph{spontaneous}, while those that don't are called \emph{non-spontaneous}
 		\item Some spontaneous reactions are slow -- perhaps they take millions of years -- but they will eventually happen
-		\item Non-spontaneous reactions will \emph{never} happen, unless conditions change
+		\item Non-spontaneous reactions will \emph{never} happen, unless conditions change, and the reverse will actually be spontaneous
 	\end{itemize}
   \item Spontaneous processes in nature tend to ``spread out'' both matter and energy
     \begin{itemize}
@@ -1368,17 +1368,43 @@ There is a whole semester of material from 1210, and these are only the topics w
 
 \section{Entropy}
 \begin{itemize}
+  \item Reversibility is also an important idea in thermodynamics
+    \begin{itemize}
+      \item This is a more nuanced condition that simple a process which \emph{can} be run in reverse
+      \item A process is \emph{thermodynamically} reversible if it is at equilibrium at every step of the process
+      \item This includes thermal equilibrium of all parts and the surroundings
+      \item In practice, reversible processes must be slow to allow everying to remain at equilibrium
+    \end{itemize}
   \item A colloquial defintion of entropy is: \emph{disorder}
-  \item The original definition of entropy is: $\mathrm{d} S = \dfrac{\mathrm{d}q}{T}$
+  \item The original definition of entropy is: $\mathrm{d} S = \dfrac{\mathrm{d}q_{rev}}{T}$
   \item This definition was based on studies of the efficiency of heat engines
 	\item The Boltzmann definition of entropy is: $S=k_B\ln W$
 	\begin{itemize}
 		\item $k_B$, the Boltzmann constant, is actually $\dfrac{R}{N_A} = 1.38\times10^{-23}\dfrac{J}{K}$
 		\item $W$ is the number of microstates for the current macrostate, or microscopic configurations of the system with the same observable state variables
-		\item Figure 18.2 shows how expansion increases the value of $W$
-		\item Figure 18.3 explores the value of $W$ an idealized system
+		\item Figure 16.8 shows how expansion of a gas increases the value of $W$
+		\item Figure 16.9 shows how spreading out thermal energy increases the value of $W$
 		\item My spheres\_demo program showing how systems tend toward macrostates with greatest $W$
+    \item For a simple system of distinguishable particles, $W=(\#~of~states)^{\#~of~particles}$
+    \item Practice: Find $W$ for passwords and dice rolls
 	\end{itemize}
+  \item We can use these principles to examine when $\Delta S>0$ for simple processes
+    \begin{itemize}
+      \item An upward phase change (\ch{s->l}, \ch{l->g}) (Figure 16.10)
+      \item Mixing (including solvation of a solid into aqueous solution)
+      \item Increasing the temperature (Figure 16.11)
+      \item Increasing the number of particles (positive $\Delta n$)
+      \item Increasing the volume of an aqueous or gaseous system
+    \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 16.1 - Entropy}
+\paragraph*{Homework 16.1}
+\begin{itemize}
+  \item 3: Spontaneity in common processes
+  \item 11: Boltzmann entropy and a toy model system
+  \item 15: Comparing entropies of similar molecules
+  \item 17: Predicting entropy changes for processes
 \end{itemize}
 
 \section{The Second and Third Laws of Thermodynamics}
@@ -1386,36 +1412,28 @@ There is a whole semester of material from 1210, and these are only the topics w
   \item The second Law of Thermodynamics
     \begin{itemize}
       \item Spontaneous processes always result in an increase in the entropy of the universe (though not necessarily the system)
-      \item \emph{Entropy} ($S$) was originally defined as an abstract thermodynamic potential, $\int \dfrac{\mathrm{d}q}{T}$
-      \item Today, we usually talk about entropy as a measure of disorder or randomness in a system
-      \item Higher $S$ systems have more potential configurations -- are more disordered
-      \item The following processes have positive $\Delta S$
-      \begin{itemize}
-        \item An upward phase change (\ch{s->l}, \ch{l->g})
-        \item Mixing (including solvation of a solid into aqueous solution)
-        \item Increasing the temperature
-        \item Increasing the number of particles (positive $\Delta n$)
-        \item Increasing the volume of an aqueous or gaseous system
-      \end{itemize}
+      \item $\Delta S_{universe}=\Delta S_{sys} + \Delta S_{surr}$
+      \item $\Delta S_{surr}=\dfrac{-q_{sys}}{T_{surr}}=\dfrac{-\Delta H_{sys}}{T_{surr}}$ ~ for constant pressure processes
+      \item Note that the formula in the text uses a poor definition of $q$ as the ``heat transferred,'' then define the system as the hotter object. In the end, $q_{sys}=-q$ and $q_{surr}=+q$ by their definition
+      \item This law gives us a new definition for spontanaety \emph{without} using Gibbs energy (discussed later)
+        \begin{itemize}
+          \item Spontaneous: $\Delta S_{universe} > 0$
+          \item Non-spontaneous: $\Delta S_{universe} < 0$
+          \item Equilibrium: $\Delta S_{universe} = 0$
+          \item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for combustion of $1~mol$ of methane at room temperature
+          \item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for condensing $1.00~g$ of water vapor ($\Delta H_{vap}=2257~\dfrac{J}{g}$)
+        \end{itemize}
     \end{itemize}
   \item The third law of thermodynamics
     \begin{itemize}
       \item The third law defines $0$ entropy as the entropy of a perfectly ordered crystal at absolute $0$
       \item For such a crystal, $W=1$, so $\ln W = 0$		
+      \item From there, we can find the entropy at different temperatures through calorimetry (Figure 16.11)
     \end{itemize}
   \item Substances at $298~K$ have a standard molar enthalpy $S^{\circ}$ based off of this $0$ standard
-  \item Table 18.1 gives the standard molar enthalpies for several common substances
+  \item Table 16.2 and Appendix G give the standard molar enthalpies for several common substances
   \item For a reaction, we can find $\Delta S^{\circ}_{rxn}$ just like $\Delta H_{rxn}$
   \item  $\displaystyle\Delta S^{\circ}_{rxn} = \sum\limits_{i, products} \nu_iS_i^{\circ} - \sum_{j, reactants} \nu_jS_j^{\circ}$
-  \item Entropy and Temperature
-    \begin{itemize}
-      \item While we do see reactions with $\Delta S^{\circ}_{rxn}<0$, the second law requires that $\Delta S_{universe}>0$
-      \item $\Delta S_{universe} = \Delta S_{sys} + \Delta S_{surr}$
-      \item We can calculate the entropy change of the surroundings based on the heat released by the system
-      \item For isothermal processes, $\Delta S_{surr} = \dfrac{-q_sys}{T}$, and at constant pressure this is: $\Delta S_{surr} = \dfrac{-\Delta H_{sys}}{T}$
-      \item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for combustion of $1~mol$ of methane at room temperature
-      \item Find $\Delta S_{universe}$, $\Delta S_{sys}$, and $\Delta S_{surr}$ for condensing $1.00~g$ of water vapor ($\Delta H_{vap}=2257~\dfrac{J}{g}$)
-    \end{itemize}
 \end{itemize}
 
 \section{Free Energy}
@@ -1425,23 +1443,28 @@ There is a whole semester of material from 1210, and these are only the topics w
     \item A new equation can be derived from the second law: $\Delta G = \Delta H - T\Delta S$
     \item We will often use the form:  $\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ$, which is under standard conditions
     \item Standard conditions means $1~M$ for solutes and $1~bar$ ($\approx1~atm$) for gases
-    \item $G$ is called \emph{Gibbs free energy}, and is a measure of spontanaety
-    \item $\Delta G < 0$ for spontaneous processes, and $\Delta G > 0$ for non-spontaneous processes
-    \item Systems at equlibrium will have $\Delta G=0$
+    \item $G$ is called \emph{Gibbs free energy}, and is a measure of spontanaety (CHEM 3610 for technical definition of $G$)
+      \begin{itemize}
+        \item $\Delta G < 0$ for spontaneous processes, and $\Delta G > 0$ for non-spontaneous processes
+        \item Systems at equlibrium will have $\Delta G=0$
+      \end{itemize}
     \item Find $\Delta G$ for the reaction: \ch{2 H2(g) + O2(g) -> 2 H2O(g)} \hspace{1em} $\Delta H_{rxn} = -483.6~\dfrac{kJ}{mol}$ \hspace{1em} $\Delta S_{rxn} = -89.0~\dfrac{J}{mol~K}$
     \begin{itemize}
       \item At $T=298~K$
       \item At $T=5500~K$ (Assume $\Delta H_{rxn}$ and $\Delta S_{rxn}$ are independent of temperature)
+      \item Note that $\Delta S$ should be converted to $\nicefrac{kJ}{mol}$ in these problems
     \end{itemize}
-    \item Appendix A.2 also has $\Delta G^{\circ}_f$ values, so you don't have to calculate $\Delta H^{\circ}_{rxn}$ and $\Delta S^{\circ}_{rxn}$ values independently -- These values \emph{only} work at $298~K$
+    \item Appendix G also has $\Delta G^{\circ}_f$ values, so you don't have to calculate $\Delta H^{\circ}_{rxn}$ and $\Delta S^{\circ}_{rxn}$ values independently -- These values \emph{only} work at $298~K$
     \item Endothermic reactions must have a sufficiently large $T\Delta S_{rxn}$ to make $\Delta G_{rxn}<0$
     \item Solvation reactions are prominent examples - dissolving a regular, ordered crystal lattice has a very large $\Delta S_{rxn}$
     \item The $\Delta G_{rxn}$ for dissolving a substance is called the free energy of solution
+    \item $G$ is called ``Free energy'' becuase it is the maximum amount of non-expansion work that a process can do
+    \item For coupled reactions, we can calculate $\Delta G_{rxn}$ using Hess's law just like $\Delta H_{rxn}$
   \end{itemize}
   \item Free-Energy Changes and Temperature
   \begin{itemize}
     \item Looking at $\Delta G = \Delta H - T\Delta S$, we can see that temperature plays a role in the spontaneity of a process
-    \item Draw my quadrant diagram for $\pm\Delta H_{rxn}$ and $\pm\Delta S_{rxn}$
+    \item Draw quadrant diagram for $\pm\Delta H_{rxn}$ and $\pm\Delta S_{rxn}$ (Figure 16.12)
     
     \begin{tabular}{cc|c|c|}
       && \multicolumn{2}{c}{$\Delta H_{rxn}$}\\
@@ -1451,7 +1474,22 @@ There is a whole semester of material from 1210, and these are only the topics w
     \end{tabular}
     \item We can find the threshold temperature by solving the Gibbs energy equation for\\$\Delta G_{rxn} = 0 \rightarrow 0 = \Delta H_{rxn} - T\Delta S_{rxn}$
     \item This simplifies to: $T_{threshold}=\dfrac{\Delta H_{rxn}}{\Delta S_{rxn}}$
+    \item Figure 16.13 shows how $\Delta G_{rxn}$ changes with temperature for different types of reactions
   \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 16.2 - Gibbs Energy and Temperature}
+\paragraph*{Homework 16.2}
+\begin{itemize}
+  \item 29: Calculating standard entropies of reaction
+  \item 31: Determine spontanaeity from enthalpy and entropy
+  \item 33: Calculating standard Gibbs energies of reaction
+  \item 35: Gibbs energy and Hess's law
+  \item 37: Gibbs energy and temperature
+\end{itemize}
+
+\paragraph*{Resuming Section 16.4}
+\begin{itemize}
   \item Gibbs Free Energy and Equilibrium
   \begin{itemize}
     \item We will often have to deal with reactions that are not at the standard state
@@ -1464,10 +1502,18 @@ There is a whole semester of material from 1210, and these are only the topics w
     \end{itemize}
     \item When a system is at equilibrium, $\Delta G=0$ and $Q=K$
     \item This transforms the above equation into: $\Delta G^{\circ} = -RT\ln K$ and therefore $K = e^{\left(-\dfrac{\Delta G^{\circ}}{RT}\right)}$
-    \item Figure 18.9 shows how $G$ varies with reaction progress for various reactions
+    \item Figure 16.14 shows how $G$ varies with reaction progress for various reactions
     \item Find the equilibrium constant for the combustion of hydrogen gas at $298~K$ and $5500~K$
     \item Solvation of \ch{NaCl} at $298~K$ has $K_{sp}=37.66$ Calculate $\Delta G^{\circ}_{soln}$ for \ch{NaCl}
   \end{itemize}
+\end{itemize}
+
+\paragraph*{Quiz 16.3 - Gibbs Energy and Equilibrium}
+\paragraph*{Homework 16.3}
+\begin{itemize}
+  \item 39: Calculating $G$ from $K$
+  \item 41: Calculating $K$ from $G$
+  \item 62: Calculating $G$ under non-standard conditions
 \end{itemize}
 
 \chapter{Electrochemistry}
